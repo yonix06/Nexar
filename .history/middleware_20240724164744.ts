@@ -30,14 +30,6 @@ export const config = {
     "/modele_selection/*",
     "/consultation",
     "/edition_documents",
-    "/diffusion",
-    "/archivage",
     "/recherche",
-    "/404",
-    "/500",
-    "/_error",
-    "/_error/*",
-    "/api/*",
-
   ],
 }
