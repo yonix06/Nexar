@@ -34,5 +34,6 @@
     "sqlite3-editor-database",
     "tailwindcss"
   ],
-  "cSpell.language": "en,lorem,en-US,fr,fr-FR"
+  "cSpell.language": "en,lorem,en-US,fr,fr-FR",
+  "cmake.sourceDirectory": "C:/Users/admjm/Dev/next-enterprise/node_modules/bare-fs"
 }
