@@ -19,7 +19,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
       { source: "/api/healthz", destination: "/api/health" },
       { source: "/health", destination: "/api/health" },
       { source: "/ping", destination: "/api/health" },
-      { source: "/login", destination: "/categorie/login" }, //todo: definir categorie et architecturer le dossier accordément
+      { source: "/login", destination: "/categorie/login" },
       { source: "/register", destination: "/categorie/register" },
       { source: "/profile", destination: "/categorie/profile" },
       { source: "/ping", destination: "/categorie/ping" },

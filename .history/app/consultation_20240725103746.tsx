@@ -1,9 +1,9 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
-//import { DatabaseManager } from "data/databaseManager"
+import { DatabaseManager } from "data/databaseManager";
 import { LP_GRID_ITEMS } from "lp-items"
 
-const DatabaseManager = require('data/databaseManager');
+const DatabaseManager = require('../data/databaseManager');
 
 // Créer une instance du gestionnaire de base de données
 const dbManager = new DatabaseManager();
