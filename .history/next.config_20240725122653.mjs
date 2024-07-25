@@ -14,7 +14,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
   },
   experimental: { instrumentationHook: true },
   rewrites() {
-    return [ //TODO: creer les pages dans les dossiers correspondant déjà créés.
+    return [ //TODO: creer les pages dans les dossiers correspondant déjà créés
       { source: "/healthz", destination: "/api/health" },
       { source: "/api/healthz", destination: "/api/health" },
       { source: "/health", destination: "/api/health" },
