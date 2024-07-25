@@ -14,12 +14,12 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
   },
   experimental: { instrumentationHook: true },
   rewrites() {
-    return [ //TODO: creer les pages dans les dossiers correspondant déjà créés. laisser le layout dehors.
+    return [
       { source: "/healthz", destination: "/api/health" },
       { source: "/api/healthz", destination: "/api/health" },
       { source: "/health", destination: "/api/health" },
       { source: "/ping", destination: "/api/health" },
-      { source: "/login", destination: "/categorie/login" },
+      { source: "/login", destination: "/categorie/login" }, //TODO: definir categorie et architecturer le dossier accordément
       { source: "/register", destination: "/categorie/register" },
       { source: "/profile", destination: "/categorie/profile" },
       { source: "/ping", destination: "/categorie/ping" },
