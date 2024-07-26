@@ -13,7 +13,7 @@ dbManager.createUser('LDAPuser', 'pubkey') // TODO: add pubkey + a travailler
   .then(() => {
     console.log('Utilisateur créé avec succès !');
   })
-  .catch((error: { message: any; }) => {
+  .catch((error) => {
     console.error(error.message);
   });
 

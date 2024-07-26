@@ -1,21 +1,6 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
-//import { DatabaseManager } from "data/databaseManager"
 import { LP_GRID_ITEMS } from "lp-items"
-
-const DatabaseManager = require('data/databaseManager');
-
-// Créer une instance du gestionnaire de base de données
-const dbManager = new DatabaseManager();
-
-// Utiliser le gestionnaire de base de données pour effectuer des opérations
-dbManager.createUser('LDAPuser', 'pubkey') // TODO: add pubkey + a travailler
-  .then(() => {
-    console.log('Utilisateur créé avec succès !');
-  })
-  .catch((error: { message: any; }) => {
-    console.error(error.message);
-  });
 
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
@@ -33,6 +18,7 @@ export const metadata: Metadata = {
     ],
   },
 }
+
 
 export default function Web() {
   return (
