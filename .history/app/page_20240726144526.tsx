@@ -31,8 +31,6 @@ export default function Web() {
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               - Faire les TODO dans le code avec "slash slash TODO"<br />
-              - Refaire le ReadMe <br />
-              - Uploader les logo pour le projet <br />
               - Mettre des raccourcis pour les interface de gestion dans un panel admin <br />
                  exemple: Prisma / Prettier / Tailwindcss etc ... <br />
               - Verifier les routes et les fichiers correspondants <br />

@@ -30,17 +30,9 @@ export default function Web() {
             WIP: Application de gestion: Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              - Faire les TODO dans le code avec "slash slash TODO"<br />
-              - Refaire le ReadMe <br />
-              - Uploader les logo pour le projet <br />
-              - Mettre des raccourcis pour les interface de gestion dans un panel admin <br />
-                 exemple: Prisma / Prettier / Tailwindcss etc ... <br />
-              - Verifier les routes et les fichiers correspondants <br />
-              - Travailler sur les composants react et les composants Next <br />
-              - Structurer et build la base de données  <br />
-              - Ajouter des tests unitaires
-              - Definir toutes les fonctions backend et frontend <br />
-              - Travailler sur le design à partir du fichier layout <br />
+              Commencez votre projet d'entreprise avec notre boîte à outils hautement performante et fonctionnelle de Next.js !
+              Bénéficiez d'un développement d'interface utilisateur rapide, d'un contrôle automatisé de code via des révisions de code AI,
+              et d'un ensemble complet d'outils pour une expérience de développement fluide et agréable.
             </p>
             <Button href="https://github.com/yonix06/next-enterprise" className="mr-3">
               On démarre ici

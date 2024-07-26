@@ -23,33 +23,25 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <section className="bg-blue-100 dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-            WIP: Application de gestion: Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
+              Next.js Enterprise Boilerplate
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              - Faire les TODO dans le code avec "slash slash TODO"<br />
-              - Refaire le ReadMe <br />
-              - Uploader les logo pour le projet <br />
-              - Mettre des raccourcis pour les interface de gestion dans un panel admin <br />
-                 exemple: Prisma / Prettier / Tailwindcss etc ... <br />
-              - Verifier les routes et les fichiers correspondants <br />
-              - Travailler sur les composants react et les composants Next <br />
-              - Structurer et build la base de données  <br />
-              - Ajouter des tests unitaires
-              - Definir toutes les fonctions backend et frontend <br />
-              - Travailler sur le design à partir du fichier layout <br />
+              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
+              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
+              enjoyable development process.
             </p>
-            <Button href="https://github.com/yonix06/next-enterprise" className="mr-3">
-              On démarre ici
+            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
+              Get started
             </Button>
             <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-enterprise"
+              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
               intent="secondary"
             >
-              Test Déploiement avec Vercel
+              Deploy Now
             </Button>
           </div>
         </div>
