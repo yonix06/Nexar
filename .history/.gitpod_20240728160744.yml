@@ -9,7 +9,7 @@ image:
 
 tasks:
   - name: Initialisation en cours
-    before: yarn global add pre-commit prisma sqlite3
+    before: yarn global add pre-commit prisma 
     init: yarn install --frozen-lockfile && yarn run build
     command: |
       if [ -f .env ]; then
