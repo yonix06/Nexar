@@ -2,7 +2,6 @@ import { Metadata } from "next"
 import Images from "next/image"
 import { url } from "inspector"
 import { pathToFileURL } from "url"
-import panel_admin from "app/panel_admin/panel_admin"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
@@ -29,7 +28,7 @@ export default function Web() {
       <section className="bg-blue-100 dark:bg-gray-900">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
-            <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />
+            <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" /> <br />
             <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
             WIP: <br /> Application de gestion: Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
             </h1>

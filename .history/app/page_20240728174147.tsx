@@ -49,8 +49,8 @@ export default function Web() {
             <Button href="https://github.com/yonix06/next-gestion-arretes" className="mr-3">
               On démarre ici
             </Button>
-            <Button href="/panel_admin/panel_admin" className="mr-3">
-              Panel Admin
+            <Button href="/panel_admin/panel_admin" className="mr-3" onError={(error) => console.error(error)}>
+            Panel Admin
             </Button>
             <Button
               href="https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-gestion-arretes"

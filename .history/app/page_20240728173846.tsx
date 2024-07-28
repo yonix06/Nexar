@@ -2,7 +2,6 @@ import { Metadata } from "next"
 import Images from "next/image"
 import { url } from "inspector"
 import { pathToFileURL } from "url"
-import panel_admin from "app/panel_admin/panel_admin"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
