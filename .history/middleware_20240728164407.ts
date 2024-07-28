@@ -8,7 +8,6 @@ export function middleware(request: NextRequest) {
   }
 }
 
-//TODO: Ajouter les paths ici aussi
 export const config = {
   matcher: [
     /*
