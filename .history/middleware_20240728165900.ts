@@ -19,7 +19,9 @@ export const config = {
      * - favicon.ico (favicon file)
      */
     "/((?!api|_next/static|_next/image|favicon.ico).*)",
-    "/gestion_arretes/(upload_docs|modele_selection|consultation|edition_documents|diffusion|archivage|recherche)",
-    "/gestion_utilisateur/(login|register|profile)"
+    "/gestion_arretes/(?!upload_docs|modele_selection|consultation|edition_documents|diffusion|archivage|recherche).*",
+    "/gestion_utilisateur/(?!login|register|profile).*",
+    "/status/(?!ping|health).*",
+    "/errpages/(?!404|500|_error).*"
   ],
 }
