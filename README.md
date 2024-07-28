@@ -1,6 +1,6 @@
 <img align="right" width="360px" height="410px" src="./.github/assets/project-logo-vertical.png">
 
-# Next.js Enterprise Boilerplate </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
+# Next.js Enterprise Boilerplate </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-yonix06-badge-link]
 
 Bienvenue sur le modèle _Next.js Enterprise Boilerplate_, un modèle open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. Nous avons fait tout le travail lourd pour vous, donc asseyez-vous, relaxez-vous et préparez-vous à dominer le monde avec votre incroyable app ! 🌍
 
