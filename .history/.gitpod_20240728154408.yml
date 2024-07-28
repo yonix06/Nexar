@@ -47,7 +47,7 @@ ports:
       description: Webapp Preview Dev
       visibility: private
       protocol: https
-
+      
 vscode:
   extensions:
     - ms-azuretools.vscode-docker
