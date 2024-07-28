@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
-  // TODO: Verifier la redirection, comment elle marche, et ou elle s'applique
+  // TODO: Feel free to remove this block
   if (request.headers?.get("host")?.includes("next-gestion-arretes.vercel.app")) {
     return NextResponse.redirect("https://arretes.saintjeancapferrat.fr/", { status: 301 })
   }
