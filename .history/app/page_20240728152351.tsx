@@ -3,7 +3,7 @@ import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
-  title: "Template de départ - Application de gestion pour les arrêtés municipaux pour la ville de Saint-Jean-Cap-Ferrat",
+  title: "Template de départ - Application de gestion pour les arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat",
   twitter: {
     card: "summary_large_image",
   },

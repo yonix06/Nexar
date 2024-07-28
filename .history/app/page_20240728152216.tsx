@@ -3,7 +3,7 @@ import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
-  title: "Template de départ - Application de gestion pour les arrêtés municipaux pour la ville de Saint-Jean-Cap-Ferrat",
+  title: "Template de départ - Application de gestion pour les Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat",
   twitter: {
     card: "summary_large_image",
   },
@@ -30,7 +30,7 @@ export default function Web() {
             WIP: Application de gestion: Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              - Faire les TODO dans le code avec slash slash TODO<br />
+              - Faire les TODO dans le code avec "slash slash TODO"<br />
               - Refaire le ReadMe <br />
               - Uploader les logo pour le projet <br />
               - Mettre des raccourcis pour les interface de gestion dans un panel admin <br />
