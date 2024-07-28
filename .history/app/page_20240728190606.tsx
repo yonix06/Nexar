@@ -4,7 +4,7 @@ import { url } from "inspector"
 import { pathToFileURL } from "url"
 import panel_admin from "app/panel_admin/panel_admin"
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "components/liste-outils"
+import { LP_GRID_ITEMS } from "components/lp-items"
 
 export const metadata: Metadata = {
   title: "Template de départ - Application de gestion pour les arrêtés municipaux pour la ville de Saint-Jean-Cap-Ferrat",
