@@ -28,8 +28,8 @@ export default function Web() {
       <section className="bg-blue-100 dark:bg-gray-900">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
-            <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-            <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" /> <br /> WIP: <br /> Application de gestion: Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
+            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+            WIP: <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" /> <br /> Application de gestion: Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               - Faire les TODO dans le code avec slash slash TODO<br />
