@@ -5,7 +5,7 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 image:
-  file: DockerDevfile # .gitpod.Dockerfile
+  file: Dockerfile # .gitpod.Dockerfile
 
 tasks:
   - name: Initialisation en cours
