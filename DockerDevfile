@@ -17,14 +17,14 @@ RUN yarn add prisma
 # Setup dev node_modules
 FROM base as developement-deps
 WORKDIR /app
-COPY --from=deps /node_modules /node_modules
+COPY --from=deps ./node_modules ./node_modules
 ADD package.json ./ yarn.lock
 RUN npm prune --omit=dev
 
 # Build the app
 FROM base as build
 WORKDIR /app
-COPY --from=deps /node_modules /node_modules
+COPY --from=deps ./node_modules ./node_modules
 # ADD prisma .
 RUN npx prisma generate
 RUN npm run build
