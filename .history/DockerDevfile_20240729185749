@@ -25,24 +25,6 @@ RUN yarn postinstall
 ENV DATABASE_URL=file:/data/database.db
 ENV PORT="3000"
 ENV NEXT_TELEMETRY_DISABLED="1"
-ENV NODE_ENV="development"
-ENV PRISMA_CLIENT_ENGINE_TYPE="binary"
-ENV PRISMA_DML="preview"
-ENV PRISMA_QUERY_ENGINE_TYPE="binary"
-ENV PRISMA_MIGRATION_ENGINE_TYPE="binary"
-ENV PRISMA_MIGRATION_GENERATOR_TYPE="binary"
-ENV PRISMA_HIDE_UPDATE_MESSAGE="true"
-ENV PRISMA_LOG="warn"
-ENV PRISMA_SCHEMA="schema.prisma"
-ENV PRISMA_TELEMETRY_ENABLED="false"
-ENV NEXT_PUBLIC_API_URL="http://localhost:3000"
-ENV NEXT_PUBLIC_BASE_URL="http://localhost:3000"
-ENV NEXT_PUBLIC_NEXTAUTH_URL="http://localhost:3000"
-ENV NEXT_PUBLIC_NEXTAUTH_URL_INTERNAL="http://localhost:3000"
-ENV NEXT_PUBLIC_NEXTAUTH_SECRET="secret"
-ENV NEXT_PUBLIC_BASE_URL_INTERNAL="http://localhost:3000"
-ENV NEXT_PUBLIC_API_URL_INTERNAL="http://localhost:3000"
-ENV PRISMA_SLOW_QUERIES="true"
 
 # Raccourcis pour CLI SQLite3
 RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-cli && chmod +x /usr/local/bin/database-cli

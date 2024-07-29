@@ -40,9 +40,6 @@ ENV NEXT_PUBLIC_BASE_URL="http://localhost:3000"
 ENV NEXT_PUBLIC_NEXTAUTH_URL="http://localhost:3000"
 ENV NEXT_PUBLIC_NEXTAUTH_URL_INTERNAL="http://localhost:3000"
 ENV NEXT_PUBLIC_NEXTAUTH_SECRET="secret"
-ENV NEXT_PUBLIC_BASE_URL_INTERNAL="http://localhost:3000"
-ENV NEXT_PUBLIC_API_URL_INTERNAL="http://localhost:3000"
-ENV PRISMA_SLOW_QUERIES="true"
 
 # Raccourcis pour CLI SQLite3
 RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-cli && chmod +x /usr/local/bin/database-cli
