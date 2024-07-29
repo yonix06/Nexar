@@ -29,7 +29,7 @@ COPY --from=deps ./node_modules ./node_modules
 RUN npx prisma generate
 RUN npm run build
 
-# Finally, build the dev environment
+# Finnalement, on build l'environement de dev
 FROM base
 ENV DATABASE_URL=file:/data/database.db
 ENV PORT="3000"
