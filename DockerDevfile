@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y openssl sqlite3
 # Install all node_modules, including dev dependencies
 FROM base as deps
 WORKDIR /app
-ADD package.json .npm-only-allow/ ./ .npmrc yarn.lock
+ADD package.json .npm-only-allow/ ./ yarn.lock
 #RUN npm install --include=dev
 RUN yarn install --frozen-lockfile
 RUN yarn add prisma
@@ -17,7 +17,7 @@ RUN yarn add prisma
 FROM base as developement-deps
 WORKDIR /app
 COPY --from=deps /node_modules /node_modules
-ADD package.json .npmrc ./ yarn.lock
+ADD package.json ./ yarn.lock
 RUN npm prune --omit=dev
 
 # Build the app
