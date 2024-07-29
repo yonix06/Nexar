@@ -24,7 +24,7 @@ RUN npm prune --omit=dev
 FROM base as build
 WORKDIR /app
 COPY --from=deps /node_modules /node_modules
-ADD prisma .
+# ADD prisma .
 RUN npx prisma generate
 RUN npm run build
 
