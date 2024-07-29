@@ -4,23 +4,32 @@ FROM node:20.1.0-slim
 # Installation de openssl pour Prisma et de git pour Gitpod
 RUN apt-get update && apt-get install -y openssl git
 RUN npm install -g prisma
-RUN git config --global --add safe.directory /workspace
+#RUN git config --global --add safe.directory /workspace
 
 
 # Installation de tout les modules Node avec yarn, incluant les modules de dev
 WORKDIR /
-COPY node_modules ./node_modules
+#COPY node_modules ./node_modules
 COPY package.json ./
 COPY yarn.lock ./
 COPY env.mjs ./
+COPY *.ts ./
+COPY *.js ./
+COPY app ./app
+COPY public ./public
+COPY components ./components
+COPY data ./data
+COPY e2e ./e2e
+COPY styles ./styles
+COPY .storybook ./.storybook
 #COPY prisma ./prisma
 
 #Commandes d'installation
-RUN npx prisma generate
-RUN yarn preinstall
-RUN yarn install --frozen-lockfile
-RUN yarn add pre-commit
-RUN yarn postinstall
+#RUN npx prisma generate
+#RUN yarn preinstall
+#RUN yarn install --frozen-lockfile
+#RUN yarn add pre-commit
+#RUN yarn postinstall
 
 # Raccourcis pour CLI SQLite3
 RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-cli && chmod +x /usr/local/bin/database-cli
