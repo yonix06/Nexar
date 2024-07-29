@@ -1,27 +1,26 @@
 # Image de base sur Node slim
 FROM node:22-slim
-
 # Installation de openssl et SQLite3 pour Prisma et de git pour Gitpod
 RUN apt-get update && apt-get install -y openssl sqlite3 git
 
 # Installation de tout les modules Node avec yarn, incluant les modules de dev
-WORKDIR /
+WORKDIR /app
+COPY /data /data
+COPY /public /public
+COPY /styles /styles
 ADD package.json ./
 ADD yarn.lock ./
-ADD env.mjs ./
-ADD .eslintrc.js ./
-ADD .storybook/ ./.storybook/
-ADD e2e/ ./e2e/
 RUN yarn preinstall
 RUN yarn install --frozen-lockfile
 RUN yarn add pre-commit
-#RUN yarn add -y coupling-graph
+RUN yarn add madge
 RUN yarn postinstall
-#RUN yarn coupling-graph
+RUN yarn coupling-graph
 
 #ADD prisma .
 #RUN npx prisma generate
 
+RUN yarn build
 ENV DATABASE_URL=file:/data/database.db
 ENV PORT="3000"
 ENV NEXT_TELEMETRY_DISABLED="1"
@@ -37,7 +36,7 @@ RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-c
 #COPY --from=build /start.sh /start.sh
 #COPY --from=build /prisma /prisma
 
-#RUN yarn storybook
+RUN yarn storybook
 
 #ENTRYPOINT [ "./start.sh" ]
 ENTRYPOINT [ "yarn", "run", "dev" ]

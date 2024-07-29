@@ -1,34 +1,43 @@
 # Image de base sur Node slim
-FROM node:22-slim
-
+FROM node:22-slim as base
+# Défini comme base dont tout les layers vont hériter
 # Installation de openssl et SQLite3 pour Prisma et de git pour Gitpod
 RUN apt-get update && apt-get install -y openssl sqlite3 git
 
 # Installation de tout les modules Node avec yarn, incluant les modules de dev
-WORKDIR /
+WORKDIR /app
 ADD package.json ./
 ADD yarn.lock ./
-ADD env.mjs ./
-ADD .eslintrc.js ./
-ADD .storybook/ ./.storybook/
-ADD e2e/ ./e2e/
-RUN yarn preinstall
+#RUN npm install --include=dev
 RUN yarn install --frozen-lockfile
-RUN yarn add pre-commit
-#RUN yarn add -y coupling-graph
-RUN yarn postinstall
-#RUN yarn coupling-graph
+RUN yarn add prisma
+COPY /data /data
 
+# Layer avec uniquement les dépendences dev
+#FROM base as developement-deps
+#WORKDIR /app
+#COPY --from=deps /node_modules /node_modules
+#ADD package.json ./
+#ADD yarn.lock ./
+#RUN npm prune --omit=dev
+
+# Layer sans les dépendences dev, proche du build de production
+#FROM base as build
+#WORKDIR /app
+#COPY --from=deps /node_modules /node_modules
 #ADD prisma .
 #RUN npx prisma generate
+RUN yarn run build
 
+# Finnalement, on build l'environement de dev
+#FROM base
 ENV DATABASE_URL=file:/data/database.db
 ENV PORT="3000"
+ENV NODE_ENV="developement"
 ENV NEXT_TELEMETRY_DISABLED="1"
-
 # Raccourcis pour CLI SQLite3
 RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-cli && chmod +x /usr/local/bin/database-cli
-
+#WORKDIR /app
 #COPY --from=base /node_modules /node_modules
 #COPY --from=build /node_modules/.prisma /node_modules/.prisma
 #COPY --from=build /build /build
@@ -37,7 +46,5 @@ RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-c
 #COPY --from=build /start.sh /start.sh
 #COPY --from=build /prisma /prisma
 
-#RUN yarn storybook
-
 #ENTRYPOINT [ "./start.sh" ]
-ENTRYPOINT [ "yarn", "run", "dev" ]
+ENTRYPOINT [ "npm", "run", "dev" ]
