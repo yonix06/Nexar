@@ -6,7 +6,6 @@ ENV NODE_ENV dev
 RUN apt-get update && apt-get install -y openssl sqlite3
 
 # Installation de tout les modules Node avec yarn, incluant les modules de dev
-FROM base as deps
 WORKDIR /app
 ADD package.json ./
 ADD yarn.lock ./
@@ -15,35 +14,36 @@ RUN yarn install --frozen-lockfile
 RUN yarn add prisma
 
 # Layer avec uniquement les dépendences dev
-FROM base as developement-deps
-WORKDIR /app
-COPY --from=deps ./node_modules ./node_modules
-ADD package.json ./ yarn.lock
-RUN npm prune --omit=dev
+#FROM base as developement-deps
+#WORKDIR /app
+#COPY --from=deps /node_modules /node_modules
+#ADD package.json ./
+#ADD yarn.lock ./
+#RUN npm prune --omit=dev
 
 # Layer sans les dépendences dev, proche du build de production
-FROM base as build
-WORKDIR /app
-COPY --from=deps ./node_modules ./node_modules
-# ADD prisma . (à corriger)
-RUN npx prisma generate
-RUN npm run build
+#FROM base as build
+#WORKDIR /app
+#COPY --from=deps /node_modules /node_modules
+## ADD prisma . (à corriger)
+#RUN npx prisma generate
+#RUN npm run build
 
 # Finnalement, on build l'environement de dev
-FROM base
+#FROM base
 ENV DATABASE_URL=file:/data/database.db
 ENV PORT="3000"
 ENV NODE_ENV="dev"
 # Raccourcis pour CLI SQLite3
 RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-cli && chmod +x /usr/local/bin/database-cli
-WORKDIR /app
-COPY --from=developement-deps /node_modules /node_modules
-COPY --from=build /node_modules/.prisma /node_modules/.prisma
-COPY --from=build /build /build
-COPY --from=build /public /public
-COPY --from=build /package.json /package.json
-COPY --from=build /start.sh /start.sh
-COPY --from=build /prisma /prisma
+#WORKDIR /app
+#COPY --from=base /node_modules /node_modules
+#COPY --from=build /node_modules/.prisma /node_modules/.prisma
+#COPY --from=build /build /build
+#COPY --from=build /public /public
+#COPY --from=build /package.json /package.json
+#COPY --from=build /start.sh /start.sh
+#COPY --from=build /prisma /prisma
 
 #ENTRYPOINT [ "./start.sh" ]
 ENTRYPOINT [ "npm", "run", "dev" ]
