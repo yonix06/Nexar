@@ -45,4 +45,5 @@ COPY --from=build /package.json /package.json
 COPY --from=build /start.sh /start.sh
 COPY --from=build /prisma /prisma
 
-ENTRYPOINT [ "./start.sh" ]
+#ENTRYPOINT [ "./start.sh" ]
+ENTRYPOINT [ "npm", "run", "dev" ]
