@@ -29,8 +29,9 @@ WORKDIR /app
 
 COPY --from=deps /node_modules /node_modules
 
-ADD prisma .
+# ADD prisma .
 RUN npx prisma generate
+ADD prisma .
 ADD . .
 RUN npm run build
 # Finally, build the dev environment image with minimal footprint
