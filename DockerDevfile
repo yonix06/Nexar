@@ -30,7 +30,7 @@ FROM base as build
 
 WORKDIR /app
 
-COPY ./node_modules ./node_modules
+COPY --from=deps /node_modules /node_modules
 
 ADD . .
 RUN yarn build
