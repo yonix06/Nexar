@@ -85,6 +85,7 @@
         "meganrogge.template-string-converter",
         "vscjava.vscode-java-test",
         "c0der-himel.vscode-wev-dev-extension-pack",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "tomoki1207.pdf"
     ]
 }
