@@ -33,7 +33,3 @@ yarn-error.log*
 /playwright/.cache/
 
 /.npm-only-allow
-
-#profiles vscode'
-.vscode/*.code-profile
-.vscode/settings.json
