@@ -86,6 +86,14 @@
         "vscjava.vscode-java-test",
         "c0der-himel.vscode-wev-dev-extension-pack",
         "redhat.vscode-yaml",
-        "tomoki1207.pdf"
+        "tomoki1207.pdf",
+        "donjayamanne.git-extension-pack",
+        "waderyan.gitblame",
+        "gydunhn.vsc-essentials",
+        "vivaxy.vscode-conventional-commits",
+        "alefragnani.bookmarks",
+        "labocho.chmod-command",
+        "ms-vscode-remote.remote-containers",
+        "inu1255.easy-snippet"
     ]
 }

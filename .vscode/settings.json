@@ -34,7 +34,7 @@
     "sqlite3-editor-database",
     "tailwindcss"
   ],
-  "cSpell.language": "en,lorem,en-US,fr,fr-FR",
+  "cSpell.language": "en,lorem,en-US,fr",
   "cmake.sourceDirectory": "/next-gestion-arretes/node_modules/bare-fs",
   "files.exclude": {
     "**/.git": true,
