@@ -35,5 +35,15 @@
     "tailwindcss"
   ],
   "cSpell.language": "en,lorem,en-US,fr,fr-FR",
-  "cmake.sourceDirectory": "C:/Users/admjm/Dev/next-enterprise/node_modules/bare-fs"
+  "cmake.sourceDirectory": "/next-gestion-arretes/node_modules/bare-fs",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.code-profile": true
+  },
+  "explorerExclude.backup": {}
 }
