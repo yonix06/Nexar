@@ -3,8 +3,9 @@ import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
   // TODO: Verifier la redirection, comment elle marche, et ou elle s'applique
-
-  return NextResponse.redirect(new URL("/", request.url))
+  if (request.headers?.get("host")?.includes("next-gestion-arretes")) {
+    return NextResponse.redirect("https://arretes.saintjeancapferrat.fr/", { status: 301 })
+  }
 }
 
 //TODO: Ajouter les paths ici aussi
