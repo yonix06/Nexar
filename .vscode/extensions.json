@@ -99,6 +99,7 @@
         "shyykoserhiy.git-autoconfig",
         "dzhavat.git-cheatsheet",
         "maciejdems.add-to-gitignore",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "ms-vscode.live-server"
     ]
 }
