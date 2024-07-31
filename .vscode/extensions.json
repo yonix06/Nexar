@@ -94,6 +94,7 @@
         "alefragnani.bookmarks",
         "labocho.chmod-command",
         "ms-vscode-remote.remote-containers",
-        "inu1255.easy-snippet"
+        "inu1255.easy-snippet",
+        "ms-playwright.playwright"
     ]
 }
