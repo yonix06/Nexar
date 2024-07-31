@@ -95,6 +95,10 @@
         "labocho.chmod-command",
         "ms-vscode-remote.remote-containers",
         "inu1255.easy-snippet",
-        "ms-playwright.playwright"
+        "ms-playwright.playwright",
+        "shyykoserhiy.git-autoconfig",
+        "dzhavat.git-cheatsheet",
+        "maciejdems.add-to-gitignore",
+        "eamodio.gitlens"
     ]
 }
