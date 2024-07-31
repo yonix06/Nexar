@@ -1,8 +1,40 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
-//import { DatabaseManager } from "data/databaseManager"
+import { LP_GRID_ITEMS } from "lp-items"
 
-export default function Web() {
+const DatabaseManager = require('data/databaseManager');
+
+// Créer une instance du gestionnaire de base de données
+const dbManager = new DatabaseManager();
+
+// Utiliser le gestionnaire de base de données pour effectuer des opérations
+dbManager.createUser('LDAPuser', 'pubkey') // TODO: add pubkey + a travailler
+  .then(() => {
+    console.log('Utilisateur créé avec succès !');
+  })
+  .catch((error: { message: any; }) => {
+    console.error(error.message);
+  });
+
+export const metadata: Metadata = {
+  title: "Admin Panel",
+  twitter: {
+    card: "summary_large_image",
+  },
+  openGraph: {
+    url: "https://arretes.saintjeancapferrat.fr/",
+    images: [
+      {
+        width: 1200,
+        height: 630,
+        url: "https://raw.githubusercontent.com/Blazity/next-enterprise/main/.github/assets/project-logo.png",
+      },
+    ],
+  },
+}
+
+
+export default function PanelAdmin() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
@@ -31,7 +63,15 @@ export default function Web() {
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
           <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            Coucou
+            {LP_GRID_ITEMS.map((singleItem) => (
+              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
+                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:size-12">
+                  {singleItem.icon}
+                </div>
+                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
+                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

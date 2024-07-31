@@ -100,6 +100,8 @@
         "dzhavat.git-cheatsheet",
         "maciejdems.add-to-gitignore",
         "eamodio.gitlens",
-        "ms-vscode.live-server"
+        "ms-vscode.live-server",
+        "davidanson.vscode-markdownlint",
+        "imgildev.vscode-nextjs-generator"
     ]
 }
