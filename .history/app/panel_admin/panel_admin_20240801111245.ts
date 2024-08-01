@@ -18,7 +18,7 @@ dbManager.createUser('LDAPuser', 'pubkey') // TODO: add pubkey + a travailler
 
 
 export default function Web() {
-  return (
+  return (<>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
@@ -48,5 +48,6 @@ export default function Web() {
           </div>
         </div>
       </section>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server"
 export function middleware(request: NextRequest) {
   // TODO: Verifier la redirection, mettre au propre le next.env.mjs en fonction de la forme de creation du lien
 
-  return NextResponse.redirect(new URL("/", request.url))
+  return NextResponse.redirect(new URL("localhost:3000/", request.url))
 }
 
 //TODO: Ajouter les paths exclusifs ici aussi, et les rediriger vers la page d'accueil
