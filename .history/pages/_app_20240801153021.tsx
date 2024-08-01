@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
-import MyDocument from './_document'
 import RootLayout from "../app/layout"
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import MyDocument from './_document'
 
 
 export default function MonAppli({ Component, pageProps }) {

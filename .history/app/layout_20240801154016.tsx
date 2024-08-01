@@ -5,11 +5,9 @@ import React from "react"
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import panel_admin from "../pages/panel_admin/panel_admin"
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (<html>
+  return (
     <div className="flex flex-col min-h-screen">
     <header className="bg-gray-800 text-white py-4">
       <nav className="container mx-auto flex justify-between">
@@ -40,6 +38,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </div>
     </footer>
   </div>
-  </html>
 )
 }
