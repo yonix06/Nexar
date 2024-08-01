@@ -8,7 +8,7 @@ export function middleware(request: NextRequest) {
   }
 }
 
-//TODO ..
+//TODO: Ajouter les paths exclusifs ici aussi, et les rediriger vers la page d'accueil
 export const config = {
   matcher: [
     /*

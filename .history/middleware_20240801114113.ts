@@ -6,6 +6,9 @@ export function middleware(request: NextRequest) {
   if (request.headers?.get("host")?.includes("next-enterprise.vercel.app")) {
     return NextResponse.redirect("https://blazity.com/open-source/nextjs-enterprise-boilerplate", { status: 301 })
   }
+  if (request.headers?.get("host") === "true") {
+    return NextResponse.rewrite("/", { status: 302, headers: { location: "/admin" } })
+  }
 }
 
 //TODO ..
