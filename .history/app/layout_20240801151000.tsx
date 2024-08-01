@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <div className="flex flex-col min-h-screen">
     <header className="bg-gray-800 text-white py-4">
       <nav className="container mx-auto flex justify-between">
-        <h1 className="text-2xl font-bold"><img src="/img/Logo-4.png" width={90} height={40} alt="Logo" className="mx-auto" /></h1>
+        <h1 className="text-2xl font-bold"><img src="/img/Logo-4.png" width={200} height={50} alt="Logo" className="mx-auto" /></h1>
         <ul className="flex space-x-4">
           <li>
             <Link href="/">

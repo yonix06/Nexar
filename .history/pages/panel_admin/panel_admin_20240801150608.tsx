@@ -1,8 +1,5 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
-import { Link } from "next/link"
-export interface Props {}
-import { LP_GRID_ITEMS } from "components/liste-outils"
 
 
 // const DatabaseManager = require('../../data/databaseManager');
