@@ -1,5 +1,4 @@
 import "styles/tailwind.css"
-import Link from 'next/link'
 import React from "react"
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
@@ -14,17 +13,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ul className="flex space-x-4">
           <li>
             <Link href="/">
-              <button className="text-white hover:underline">Accueil</button>
+              <a className="text-white hover:underline">Accueil</a>
             </Link>
           </li>
           <li>
             <Link href="/what">
-              <button className="text-white hover:underline">A propos</button>
+              <a className="text-white hover:underline">A propos</a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <button className="text-white hover:underline">Contact</button>
+              <a className="text-white hover:underline">Contact</a>
             </Link>
           </li>
         </ul>
