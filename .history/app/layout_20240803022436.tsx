@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from "react"
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
+import panel_admin from "../pages/panel_admin/panel_admin"
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

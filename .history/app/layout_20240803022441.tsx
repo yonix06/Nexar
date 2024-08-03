@@ -6,6 +6,7 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html>

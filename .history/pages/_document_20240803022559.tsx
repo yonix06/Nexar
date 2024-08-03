@@ -1,7 +1,6 @@
 // pages/_document.tsx
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import React from 'react'
-
+import RegisterUser from './gestion_utilisateur/register'
 class MyDocument extends Document {
   render() {
     return (
