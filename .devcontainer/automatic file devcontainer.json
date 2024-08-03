@@ -68,8 +68,8 @@
 		"ghcr.io/schlich/devcontainer-features/cypress:1": {},
 		"ghcr.io/audacioustux/devcontainers/common-utils-extras:1": {},
 		"ghcr.io/georgofenbeck/features/thefuck-pipx:1": {},
-		"ghcr.io/hspaans/devcontainer-features/sshpass:1": {},
-		"ghcr.io/nils-geistmann/devcontainers-features/create-remote-user:0": {}
+		"ghcr.io/hspaans/devcontainer-features/sshpass:1": {}
+		// "ghcr.io/nils-geistmann/devcontainers-features/create-remote-user:0": {}
 	},
 
 	"postCreateCommand": {
