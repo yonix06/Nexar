@@ -78,7 +78,15 @@
 		"pre-commit install -t commit-msg": {},
 		"yarn add madge graphviz gvprss": {},
 		"yarn postinstall": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"WillLuke.nextjs"
+			]
+		}
 	}
+	
 
 
 

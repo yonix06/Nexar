@@ -3,7 +3,7 @@
 {
 	"name": "Nexarr Dev Container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:20-bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {},
 		// "ghcr.io/devcontainers/features/desktop-lite:1": {},
@@ -78,7 +78,15 @@
 		"pre-commit install -t commit-msg": {},
 		"yarn add madge graphviz gvprss": {},
 		"yarn postinstall": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"WillLuke.nextjs"
+			]
+		}
 	}
+	
 
 
 
