@@ -3,9 +3,8 @@
 {
 	"name": "Nexarr",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/node:20-bulleye",
 	"features": {
-		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers-contrib/features/actionlint:1": {},
 		"ghcr.io/devcontainers-contrib/features/actions-runner:1": {},
@@ -15,7 +14,7 @@
 		"ghcr.io/devcontainers-contrib/features/prisma:2": {},
 		"ghcr.io/devcontainers-contrib/features/tailscale:1": {},
 		"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {},
-		"ghcr.io/r3dpoint/devcontainer-features/
+		"ghcr.io/r3dpoint/devcontainer-features/devcontainer-features-base:1": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
