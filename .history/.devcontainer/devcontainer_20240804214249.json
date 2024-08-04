@@ -24,7 +24,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install --frozen-lockfile"
+	"postCreateCommand": "yarn install --frozen-lockfile",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

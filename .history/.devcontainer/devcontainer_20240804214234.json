@@ -15,7 +15,7 @@
 		"ghcr.io/devcontainers-contrib/features/prisma:2": {},
 		"ghcr.io/devcontainers-contrib/features/tailscale:1": {},
 		"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {}
-	},
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -24,7 +24,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install --frozen-lockfile"
+	// "postCreateCommand": "yarn install --frozen-lockfile",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
