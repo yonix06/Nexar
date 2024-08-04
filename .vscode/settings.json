@@ -35,7 +35,7 @@
     "tailwindcss"
   ],
   "cSpell.language": "en,lorem,en-US,fr",
-  "cmake.sourceDirectory": "/next-gestion-arretes/node_modules/bare-fs",
+  "cmake.sourceDirectory": "C:/Users/frmay/Dev/Nexar/node_modules/bare-fs",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
