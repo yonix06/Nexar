@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: "Page d'administration de l'application",
 }
 
-export default function panel_admin() {
+export default function admin() {
   return (<>
     <section className="bg-blue-100 dark:bg-gray-900">
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
