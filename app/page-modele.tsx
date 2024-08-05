@@ -1,18 +1,14 @@
 import { Metadata } from "next"
 import Images from "next/image"
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "components/liste-outils"
+
 
 export const metadata: Metadata = {
   title: "Template de départ - Application de gestion pour les arrêtés municipaux pour la ville de Saint-Jean-Cap-Ferrat",
-  twitter: {
-    card: "summary_large_image",
-  },
   openGraph: {
     url: "https://localhost:3000/",
     images: [
       {
-        /* url: "https://raw.githubusercontent.com/yonix06/next-gestion-arretes/main/.github/assets/project-logo.png", */
         url: "/img/Logo-4.png",
       },
     ],
