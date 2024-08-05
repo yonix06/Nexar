@@ -2,6 +2,10 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 //import { DatabaseManager } from "data/databaseManager"
 
+export const metadata: Metadata = {
+  title: "Nexarr - Televersement",
+}
+
 export default function UploadDoc() {
   return (
     <>
