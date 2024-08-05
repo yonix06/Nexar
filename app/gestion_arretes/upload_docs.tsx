@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 //import { DatabaseManager } from "data/databaseManager"
 
-export default function Web() {
+export default function UploadDoc() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
