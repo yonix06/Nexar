@@ -3,26 +3,12 @@ import Image from "next/image"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "components/liste-outils"
 
-
-// const DatabaseManager = require('../../data/databaseManager');
-
-// Créer une instance du gestionnaire de base de données
-// const dbManager = new DatabaseManager();
-
-// Utiliser le gestionnaire de base de données pour effectuer des opérations
-// dbManager.createUser('LDAPuser', 'pubkey') // TODO: add pubkey + a travailler
-//  .then(() => {
-//    console.log('Utilisateur créé avec succès !');
-//  })
-//  .catch((error: { message: any; }) => {
-//    console.error(error.message);
-//  });
 export const metadata: Metadata = {
   title: "Panel d'administration",
   description: "Page d'administration de l'application",
 }
 
-export default function admin() {
+export default function AdminPanel() {
   return (<>
     <section className="bg-blue-100 dark:bg-gray-900">
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
