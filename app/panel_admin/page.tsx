@@ -1,8 +1,7 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import ReactMarkdown from 'react-markdown'
-import MarkdownRenderer from '../../components/MarkdownRenderer'
 import { Button } from "components/Button/Button"
+import MarkdownRenderer from '../../components/MarkdownRenderer'
 
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export default function AdminPanel() {
           <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
             🔑PANEL ADMIN💻
           </h1>
-          <br /> 
+          <br />
           <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN?utm_source=generator" width="70%" height="200" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           <br />
           <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
