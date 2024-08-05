@@ -5,7 +5,7 @@ import { Button } from "components/Button/Button"
 
 
 
-export default function Web() {
+export default function profil_user() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
