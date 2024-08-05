@@ -1,9 +1,9 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
-
-
-
+export const metadata: Metadata = {
+  title: "Nexarr - Edition du Profil",
+}
 
 export default function user_edit() {
   return (
