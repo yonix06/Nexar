@@ -1,9 +1,9 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
-
-
-
+export const metadata: Metadata = {
+  title: "Nexarr - Enregistrement",
+}
 
 export default function RegisterUser() {
   return (
