@@ -150,7 +150,17 @@ Pour installer le module, executer dans le dossier, via powershell, sans privilÃ
 
 ```bash
 yarn add prisma
-yarn prisma generate
+yarn add @prisma/client
+npx prisma init --datasource-provider sqlite
+  (Set the DATABASE_URL in the .env file to point to your existing database.)
+npx prisma migrate dev --name init
+```
+
+Seeding:
+
+```bash
+yarn add tsx
+npx tsx .\data\databaseManager.tsx
 ```
 
 ## ðŸ§ª Linting

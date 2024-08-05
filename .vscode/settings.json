@@ -44,5 +44,7 @@
     "**/Thumbs.db": true,
     "**/*.code-profile": true
   },
-  "explorerExclude.backup": {}
+  "explorerExclude.backup": {},
+  "WillLuke.nextjs.addTypesOnSave": true,
+  "WillLuke.nextjs.hasPrompted": true
 }

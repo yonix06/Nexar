@@ -20,10 +20,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "preinstall": "npx npm-only-allow@latest --PM yarn",
     "postinstall": "npx patch-package -y",
-    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.mjs|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg"
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.mjs|next-env.d.ts|instrumentation.ts|.eslintrc.js' --image graph.svg"
   },
   "dependencies": {
     "@next/bundle-analyzer": "14.2.5",
+    "@prisma/client": "^5.17.0",
     "@radix-ui/react-accordion": "1.2.0",
     "@radix-ui/react-checkbox": "1.1.1",
     "@radix-ui/react-dialog": "1.1.1",
@@ -61,6 +62,7 @@
     "react-dom": "^18.3.1",
     "sqlite3": "^5.1.7",
     "tailwind-merge": "2.4.0",
+    "ts-node": "^10.9.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
