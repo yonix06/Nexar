@@ -5,7 +5,7 @@ import { Button } from "components/Button/Button"
 
 
 
-export default function diffusion() {
+export default function Diffusion() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
