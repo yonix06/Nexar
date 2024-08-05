@@ -1,24 +1,10 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "components/liste-outils"
 
 
-// const DatabaseManager = require('../../data/databaseManager');
-
-// Créer une instance du gestionnaire de base de données
-// const dbManager = new DatabaseManager();
-
-// Utiliser le gestionnaire de base de données pour effectuer des opérations
-// dbManager.createUser('LDAPuser', 'pubkey') // TODO: add pubkey + a travailler
-//  .then(() => {
-//    console.log('Utilisateur créé avec succès !');
-//  })
-//  .catch((error: { message: any; }) => {
-//    console.error(error.message);
-//  });
 export const metadata: Metadata = {
   title: "Login",
-  description: "Page d'administration de l'application",
+  description: "Login OAuth Microsoft",
 }
 
 export default function login() {
@@ -31,18 +17,7 @@ export default function login() {
           WIP: <br /> Application de gestion des Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
           </h1>
           <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-            - Faire les TODO dans le code avec slash slash TODO<br />
-            - Refaire le ReadMe <br />
-            - Uploader les logo pour le projet <br />
-            - Mettre des raccourcis pour les interface de gestion dans un panel admin <br />
-            - FAUT DEJA POUVOIR FAIRE LE DIT PANEL ADMIN <br />
-               exemple: Prisma / Prettier / Tailwindcss etc ... <br />
-            - Verifier les routes et les fichiers correspondants <br />
-            - Travailler sur les composants react et les composants Next <br />
-            - Structurer et build la base de données  <br />
-            - Ajouter des tests unitaires <br />
-            - Definir toutes les fonctions backend et frontend <br />
-            - Travailler sur le design à partir du fichier layout <br />
+            -NextAuth ?
           </p>
           <Button href="https://github.com/yonix06/next-gestion-arretes" className="mr-3">
             On démarre ici
