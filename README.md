@@ -126,13 +126,18 @@ Script de dev disponibles: `package.json`: (à executer avec yarn, exemple "yarn
 - `yarn format`: Formats the code with Prettier
 - `yarn postinstall`: Applies patches to external dependencies
 - `yarn preinstall`: Ensures the project is installed with Yarn
+
+## 🔗 Coupling Graph
+
 - Pour installer coupling-graph:
+- `winget install graphviz` ou `apt install graphviz`
 - `yarn add madge`
 - `yarn add graphviz`
 - `yarn add gvprss`
-- `npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg` ou `yarn coupling-graph`: **Generates a coupling and cohesion graph for the components**
+- ---
+- `npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg`
+- ou `yarn coupling-graph` pour run sans les exceptions: **Generates a coupling and cohesion graph for the components**
 
-## 🔗 Coupling Graph
 
 Le script `coupling-graph` est un outil pratique qui permet de visualiser les liens et les connexions entre les modules internes de votre projet. Il est construit à l'aide de la bibliothèque [Madge](https://github.com/pahen/madge). Pour générer le graphique, exécutez la commande suivante :
 
