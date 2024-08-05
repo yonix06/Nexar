@@ -16,7 +16,7 @@ export default function AdminPanel() {
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
         <div className="mx-auto place-self-center">
           <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-            <span role="img" aria-label="panel-admin">🚀💻🔑</span> PANEL ADMIN
+            🔑PANEL ADMIN💻
           </h1>
           <br /> 
           <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN?utm_source=generator" width="70%" height="200" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -38,14 +38,14 @@ export default function AdminPanel() {
           <Button  href="https://github.com/yonix06/next-gestion-arretes" className="mr-3 bg-gray-800 text-white hover:bg-gray-700">
             Github Yoyo
           </Button>
-          <Button href="/panel_admin/panel_admin" className="mr-3">
-            Panel Admin
+          <Button href="/" className="mr-3 bg-red-400">
+            Accueil
           </Button>
           <Button
-            href="https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-gestion-arretes"
+            href="/about"
             intent="secondary"
           >
-            Test Déploiement avec Vercel
+            Ouat About ?!
           </Button>
         </div>
           <Image type="image/svg+xml" data="../../graph.svg" width="100%" height="100" />
@@ -54,7 +54,7 @@ export default function AdminPanel() {
     <section className="bg-blue-100 dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 text-center sm:py-16 lg:px-6">
         <div className="justify-center">
-                      <h1 className="mx-auto text-xl font-bold dark:text-white">ReadMe</h1>
+              <h1 className="mx-auto text-xl font-bold dark:text-white">ReadMe</h1>
               <br />
               <p className="mx-auto max-w-screen-xl px-4 py-8 text-left sm:py-16 lg:px-6">
               <MarkdownRenderer filePath="../../README.md" />
