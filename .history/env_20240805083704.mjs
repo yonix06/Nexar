@@ -12,5 +12,4 @@ export const env = createEnv({
   runtimeEnv: {
     ANALYZE: process.env.ANALYZE,
   },
-  pagesDir: ["app"],
 })

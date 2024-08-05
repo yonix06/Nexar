@@ -38,7 +38,6 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       { source: "/admin", destination: "/panel_admin/" },
     ]
   },
-
 })
 
 export default config

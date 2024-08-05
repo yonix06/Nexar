@@ -38,7 +38,15 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       { source: "/admin", destination: "/panel_admin/" },
     ]
   },
-
+  module.exports = {
+    // ...
+    // other Next.js configuration options
+  
+    // Update the pages directory to point to the app folder
+    pagesDirectory: "app",
+  
+    // ...
+  }
 })
 
 export default config

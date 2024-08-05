@@ -12,6 +12,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       fullUrl: true,
     },
   },
+  module.exports: { pagesDirectory: "app" },
   experimental: { instrumentationHook: true },
   rewrites() {
     return [ //TODO: creer les pages dans les dossiers correspondant déjà créés.

@@ -13,6 +13,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
     },
   },
   experimental: { instrumentationHook: true },
+  pagesDirectory: "./app",
   rewrites() {
     return [ //TODO: creer les pages dans les dossiers correspondant déjà créés.
       { source: "/healthz", destination: "/api/health" },
@@ -38,7 +39,6 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       { source: "/admin", destination: "/panel_admin/" },
     ]
   },
-
 })
 
 export default config
