@@ -2,7 +2,6 @@ import { Metadata } from "next"
 import Images from "next/image"
 import { Button } from "components/Button/Button"
 
-
 export const metadata: Metadata = {
   title: "Template de départ - Application de gestion pour les arrêtés municipaux pour la ville de Saint-Jean-Cap-Ferrat",
   openGraph: {
@@ -15,8 +14,8 @@ export const metadata: Metadata = {
   },
 }
 
-
-export default function Web() {
+//TODO : 
+export default function RENOMMER() {
   return (
     <>
       <section className="bg-blue-100 dark:bg-gray-900">
@@ -48,7 +47,9 @@ export default function Web() {
         </div>
       </section>
       <section className="bg-blue-100 dark:bg-gray-900">
-        Bouh
+        <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+              - Section 2 Bouh -
+        </p>
       </section>
     </>
   )
