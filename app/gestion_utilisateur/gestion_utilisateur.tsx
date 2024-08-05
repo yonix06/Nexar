@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Nexarr - Edition du Profil",
 }
 
-export default function user_edit() {
+export default function UserEdit() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
