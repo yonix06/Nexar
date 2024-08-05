@@ -2,7 +2,7 @@
 
 import RootLayout from "../app/layout"
 
-export default function MyApp({ Component, pageProps } : any) {
+export default function Squelette({ Component, pageProps } : any) {
   return (
     <RootLayout>
       <Component {...pageProps} />
