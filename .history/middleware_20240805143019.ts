@@ -22,7 +22,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/redirected", request.url));
   }
   if (request.nextUrl.pathname === "/admin") {
-    return NextResponse.rewrite(new URL("/panel_admin", request.url));
+    return NextResponse.rewrite(new URL("/admin", request.url));
   }
 
   return NextResponse.next();

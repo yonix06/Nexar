@@ -46,7 +46,7 @@ export default function Home() {
             <Button href="https://github.com/yonix06/next-gestion-arretes" className="mr-3">
               On démarre ici
             </Button>
-            <Button href="/admin" className="mr-3">
+            <Button href="/panel_admin" className="mr-3">
               Panel Admin
             </Button>
             <Button
