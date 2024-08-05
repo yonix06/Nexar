@@ -5,7 +5,7 @@ import { Button } from "components/Button/Button"
 
 
 
-export default function edit_document() {
+export default function EditDocument() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
