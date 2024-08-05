@@ -110,22 +110,22 @@ pre-commit install -t commit-msg
 
 Script de dev disponibles: `package.json`: (à executer avec yarn, exemple "yarn dev")
 
-- `dev`: Starts the development server with colorized output
-- `build`: Builds the app for production
-- `start`: Starts the production server
-- `lint`: Lints the code using ESLint
-- `lint:fix`: Automatically fixes linting errors
-- `prettier`: Checks the code for proper formatting
-- `prettier:fix`: Automatically fixes formatting issues
-- `analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
-- `storybook`: Starts the Storybook server
-- `build-storybook`: Builds the Storybook for deployment
-- `test`: Runs unit and integration tests
-- `e2e:headless`: Runs end-to-end tests in headless mode
-- `e2e:ui`: Runs end-to-end tests with UI
-- `format`: Formats the code with Prettier
-- `postinstall`: Applies patches to external dependencies
-- `preinstall`: Ensures the project is installed with Yarn
+- `yarn dev`: Starts the development server with colorized output
+- `yarn build`: Builds the app for production
+- `yarn start`: Starts the production server
+- `yarn lint`: Lints the code using ESLint
+- `yarn lint:fix`: Automatically fixes linting errors
+- `yarn prettier`: Checks the code for proper formatting
+- `yarn prettier:fix`: Automatically fixes formatting issues
+- `yarn analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
+- `yarn storybook`: Starts the Storybook server
+- `yarn build-storybook`: Builds the Storybook for deployment
+- `yarn test`: Runs unit and integration tests
+- `yarn e2e:headless`: Runs end-to-end tests in headless mode
+- `yarn e2e:ui`: Runs end-to-end tests with UI
+- `yarn format`: Formats the code with Prettier
+- `yarn postinstall`: Applies patches to external dependencies
+- `yarn preinstall`: Ensures the project is installed with Yarn
 - Pour installer coupling-graph:
 - `yarn add madge`
 - `yarn add graphviz`
