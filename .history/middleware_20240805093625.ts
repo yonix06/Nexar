@@ -6,6 +6,8 @@ import type { NextRequest } from "next/server"
  * It allows you to define custom logic for handling requests before they are processed by
  * the Next.js router.
  *
+ * //@param {NextRequest} request - The incoming request object.
+ * //@returns {NextResponse} - The response object to be sent back to the client.
  */
 
   // The first if statement checks if the "host" header of the request contains the string "next-enterprise.vercel.app".
@@ -18,14 +20,10 @@ import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
   // TODO: a remplir
-  if (request.nextUrl.pathname === "/about") {
-    return NextResponse.redirect(new URL("/redirected", request.url));
+  if (request.headers?.get("host")?.includes("admin")) {
+    return NextResponse.rewrite("/", { status: 0, headers: { location: "/panel_admin/panel_admin" } })
   }
-  if (request.nextUrl.pathname === "/another") {
-    return NextResponse.rewrite(new URL("/rewrite", request.url));
-  }
-  
-  return NextResponse.next();
+  if request == null {}
 }
 
 
@@ -47,6 +45,8 @@ export function middleware(request: NextRequest) {
  * This configuration is useful for defining custom behavior for specific request paths,
  * such as redirecting requests or rewriting URLs.
  *
+ * //@type {Object}
+ * //@property {Array} matcher - An array of regular expressions that define the request paths to match.
  */
 export const config = {
   matcher: [

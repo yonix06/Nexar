@@ -6,6 +6,8 @@ import type { NextRequest } from "next/server"
  * It allows you to define custom logic for handling requests before they are processed by
  * the Next.js router.
  *
+ * //@param {NextRequest} request - The incoming request object.
+ * //@returns {NextResponse} - The response object to be sent back to the client.
  */
 
   // The first if statement checks if the "host" header of the request contains the string "next-enterprise.vercel.app".
@@ -17,15 +19,22 @@ import type { NextRequest } from "next/server"
   // The "location" header is set to "/panel_admin/panel_admin" to indicate the new URL of the request.
 
 export function middleware(request: NextRequest) {
-  // TODO: a remplir
-  if (request.nextUrl.pathname === "/about") {
-    return NextResponse.redirect(new URL("/redirected", request.url));
+  // TODO: Feel free to remove this block
+  if (request.headers?.get("host")?.includes("next-gestion-arretes.app")) {
+    return NextResponse.rewrite("/home", { status: 0, headers: { location: "/accueil" } })
   }
-  if (request.nextUrl.pathname === "/another") {
-    return NextResponse.rewrite(new URL("/rewrite", request.url));
+  if (request.headers?.get("host")?.includes("admin")) {
+    return NextResponse.rewrite("/", { status: 0, headers: { location: "/panel_admin/panel_admin" } })
   }
-  
-  return NextResponse.next();
+  if (!request.nextUrl.pathname.startsWith("/")) {
+    return NextResponse.rewrite("/accueil", { status: 0, headers: { location: "/accueil" } })
+  }
+  if (request.nextUrl.pathname === "/") {
+    return NextResponse.rewrite("/accueil", { status: 0, headers: { location: "/accueil" } })
+  }
+  else {
+    return NextResponse.next()
+  }
 }
 
 
@@ -47,6 +56,8 @@ export function middleware(request: NextRequest) {
  * This configuration is useful for defining custom behavior for specific request paths,
  * such as redirecting requests or rewriting URLs.
  *
+ * //@type {Object}
+ * //@property {Array} matcher - An array of regular expressions that define the request paths to match.
  */
 export const config = {
   matcher: [

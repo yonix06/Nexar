@@ -35,7 +35,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       { source: "/404", destination: "/errpages/404" },
       { source: "/500", destination: "/errpages/500" },
       { source: "/_error", destination: "/errpages/_error" },
-      { source: "/admin", destination: "/panel_admin/" },
+      { source: "/admin", destination: "/panel_admin/panel_admin" },
     ]
   },
 })

@@ -18,14 +18,13 @@ import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
   // TODO: a remplir
-  if (request.nextUrl.pathname === "/about") {
-    return NextResponse.redirect(new URL("/redirected", request.url));
+  if (request.headers?.get("host")?.includes("admin")) {
+    return NextResponse.rewrite("/admin", { status: 0, headers: { location: "/panel_admin/panel_admin" } })
   }
-  if (request.nextUrl.pathname === "/another") {
-    return NextResponse.rewrite(new URL("/rewrite", request.url));
-  }
-  
-  return NextResponse.next();
+  if (request.headers?.get("host")?.includes("accueil")) {
+    return NextResponse.rewrite("/", { status: 0, headers: { location: "/gestion_utilisateur/login" } })
+}
+
 }
 
 
