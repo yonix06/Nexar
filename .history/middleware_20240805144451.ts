@@ -17,16 +17,14 @@ import type { NextRequest } from "next/server"
   // The "location" header is set to "/panel_admin/panel_admin" to indicate the new URL of the request.
 
 export function middleware(request: NextRequest) {
-  // TODO: a remplir ici pour faire des liens de pages
+  // TODO: a remplir
   if (request.nextUrl.pathname === "/about") {
-    return NextResponse.redirect(new URL("/basic/about", request.url));
+    return NextResponse.redirect(new URL("/about", request.url));
   }
   if (request.nextUrl.pathname === "/admin") {
     return NextResponse.rewrite(new URL("/panel_admin", request.url));
   }
-  if (request.nextUrl.pathname === "/contact") {
-    return NextResponse.redirect(new URL("/basic/contact", request.url));
-  }
+
   return NextResponse.next();
 }
 
