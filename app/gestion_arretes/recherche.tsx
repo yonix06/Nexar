@@ -1,6 +1,10 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
+export const metadata: Metadata = {
+  title: "Nexarr - Recherche",
+}
+
 export default function BigSearch() {
   return (
     <>
