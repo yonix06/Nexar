@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 import Images from "next/image"
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "components/liste-outils"
 
 export const metadata: Metadata = {
   title: "Nexarr - Contact",
