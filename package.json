@@ -48,6 +48,7 @@
     "@t3-oss/env-nextjs": "^0.11.0",
     "@vercel/otel": "1.9.1",
     "class-variance-authority": "^0.7.0",
+    "e2e": "^0.0.8",
     "graphql": "16.9.0",
     "graphviz": "^0.0.9",
     "gvprss": "^0.1.0",

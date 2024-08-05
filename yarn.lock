@@ -7918,6 +7918,11 @@ duplexify@^3.5.0, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+e2e@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/e2e/-/e2e-0.0.8.tgz#61d805463f30666be43bf94ffe7fcaceb1fc5133"
+  integrity sha512-5owKgnbgTmh+dpnnCRinX7gui3eGVP6T8k2LGFp217cYfba0sMWEo3uD9lUZ9SpntXM2ESWOTEc+Lk03UJ3sCA==
+
 eastasianwidth@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
