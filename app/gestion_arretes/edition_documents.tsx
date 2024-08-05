@@ -1,6 +1,10 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
+export const metadata: Metadata = {
+  title: "Nexarr - Edition de documents",
+}
+
 export default function EditDocument() {
   return (
     <>
