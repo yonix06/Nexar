@@ -4,10 +4,10 @@ import { Button } from "components/Button/Button"
 
 export const metadata: Metadata = {
   title: "Login",
-  description: "Login OAuth Microsoft",
+  description: "Nexarr - Login",
 }
 
-export default function login() {
+export default function Login() {
   return (<>
     <section className="bg-blue-100 dark:bg-gray-900">
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
