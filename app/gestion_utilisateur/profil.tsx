@@ -1,11 +1,11 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
+export const metadata: Metadata = {
+  title: "Nexarr - Profil",
+}
 
-
-
-
-export default function profil_user() {
+export default function ProfilUtilisateur() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
