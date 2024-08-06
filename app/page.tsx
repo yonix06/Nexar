@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className="mx-auto bg-blue-300 dark:bg-gray-900 h-screen w-screen flex justify-items-center justify-center text-center">
+      <div className="mx-auto bg-gradient-to-tl from-blue-500 via-blue-300 to-blue-100 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 h-screen w-screen flex justify-items-center justify-center text-center">
           <div className="mx-auto flex flex-col items-center">
             <Image
               src="/logo/nexar.svg"
