@@ -73,6 +73,7 @@
     "@opentelemetry/sdk-trace-node": "1.25.1",
     "@opentelemetry/semantic-conventions": "1.25.1",
     "@playwright/test": "1.45.3",
+    "@react-native-windows/fs": "0.74.0",
     "@storybook/addon-essentials": "7.6.20",
     "@storybook/addon-interactions": "7.6.20",
     "@storybook/addon-links": "7.6.20",

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import fs from 'fs/promises';
+import fs from 'react-native-windows/fs';
 import path from 'path';
 
 
