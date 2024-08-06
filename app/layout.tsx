@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" />
         <title>Nexarr</title>
       </head>
-      <body className="bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 h-screen w-screen justify-items-center justify-center">
+      <body className="bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 h-screen w-screen justify-items-center justify-center bg-fixed">
         <header className=" sticky top-0 bg-gradient-to-b from-grey-700 to-transparent text-white w-full">
           <nav className="container mx-auto flex justify-between bg-inherit">
             <h1 className="text-2xl font-bold flex">

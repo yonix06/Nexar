@@ -50,6 +50,7 @@
   "conventionalCommits.scopes": [
     "app/",
     "component/",
-    "app/ component/"
+    "app/ component/",
+    "/rootdir"
   ]
 }
