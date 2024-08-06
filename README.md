@@ -1,4 +1,4 @@
-<img align="right" width="360px" height="410px" src="./.github/assets/project-logo-vertical.png">
+<img align="right" width="360px" height="210px" src="./public/img/Logo-SITEINTERNET-1.png">
 
 # Next.js Enterprise Boilerplate </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
@@ -6,7 +6,6 @@ Bienvenue sur le modèle _Next.js Enterprise Boilerplate_, un modèle open-sourc
 
 > [!NOTE]
 > **Blazity** est un groupe d'experts Next.js/Headless. Contactez-nous à [contact@blazity.com](https://blazity.com) si vous souhaitez en discuter de votre projet ou simplement pour discuter.
-
 
 ## Fonctionnalités
 
@@ -36,28 +35,30 @@ With this template, you get all the awesomeness you need:
 
 ## Sommaire
 
-- [Next.js Enterprise Boilerplate](#nextjs-enterprise-boilerplate)
-  - [Features](#features)
-  - [Table of Contents](#table-of-contents)
-  - [Getting Started](#-getting-started)
-  - [Deployment](#-deployment)
-  - [Scripts Overview](#-scripts-overview)
-  - [Coupling Graph](#-coupling-graph)
-  - [Testing](#-testing)
+- [Next.js Enterprise Boilerplate       ](#nextjs-enterprise-boilerplate-------)
+  - [Fonctionnalités](#fonctionnalités)
+  - [Sommaire](#sommaire)
+  - [🎯 Getting Started](#-getting-started)
+  - [🚀 Deployment](#-deployment)
+  - [📃 Scripts](#-scripts)
+  - [🔗 Coupling Graph](#-coupling-graph)
+  - [🔗 Prisma (bdd)](#-prisma-bdd)
+  - [🧪 Linting](#-linting)
+  - [🧪 Testing](#-testing)
     - [Running Tests](#running-tests)
     - [Acceptance Tests](#acceptance-tests)
     - [Smoke Testing](#smoke-testing)
-  - [Styling and Design System](#-styling-and-design-system)
+  - [🎨 Styling and Design System](#-styling-and-design-system)
     - [CVA - A New Approach to Variants](#cva---a-new-approach-to-variants)
-  - [State Management](#-state-management)
+  - [💾 State Management](#-state-management)
     - [Zustand](#zustand)
     - [Jotai](#jotai)
     - [Recoil](#recoil)
-  - [ChatGPT Code Review](#-chatgpt-code-review)
-  - [Environment Variables handling](#-environment-variables-handling)
-  - [Contribution](#-contribution)
+  - [🤖 ChatGPT Code Review](#-chatgpt-code-review)
+  - [💻 Environment Variables handling](#-environment-variables-handling)
+  - [🤝 Contribution](#-contribution)
   - [Support](#support)
-  - [License](#-license)
+  - [📜 License](#-license)
   - [Contributors](#contributors)
 
 ## 🎯 Getting Started
@@ -91,6 +92,7 @@ yarn dev
 brew install pre-commit
 pre-commit install -t commit-msg
 ```
+
 ou
 
 ```sh
@@ -102,31 +104,40 @@ pre-commit install -t commit-msg
 
 "One-click" déploiement avec [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js) en cliquant sur le bouton ci-dessous:
 
-[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-gestion-arretes)
+[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-gestion-arretes) [Nopenopenopenope]
 
 ## 📃 Scripts
 
 Script de dev disponibles: `package.json`: (à executer avec yarn, exemple "yarn dev")
 
-- `dev`: Starts the development server with colorized output
-- `build`: Builds the app for production
-- `start`: Starts the production server
-- `lint`: Lints the code using ESLint
-- `lint:fix`: Automatically fixes linting errors
-- `prettier`: Checks the code for proper formatting
-- `prettier:fix`: Automatically fixes formatting issues
-- `analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
-- `storybook`: Starts the Storybook server
-- `build-storybook`: Builds the Storybook for deployment
-- `test`: Runs unit and integration tests
-- `e2e:headless`: Runs end-to-end tests in headless mode
-- `e2e:ui`: Runs end-to-end tests with UI
-- `format`: Formats the code with Prettier
-- `postinstall`: Applies patches to external dependencies
-- `preinstall`: Ensures the project is installed with Yarn
-- `coupling-graph`: **Generates a coupling and cohesion graph for the components**
+- `yarn dev`: Starts the development server with colorized output
+- `yarn build`: Builds the app for production
+- `yarn start`: Starts the production server
+- `yarn lint`: Lints the code using ESLint
+- `yarn lint:fix`: Automatically fixes linting errors
+- `yarn prettier`: Checks the code for proper formatting
+- `yarn prettier:fix`: Automatically fixes formatting issues
+- `yarn analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
+- `yarn storybook`: Starts the Storybook server
+- `yarn build-storybook`: Builds the Storybook for deployment
+- `yarn test`: Runs unit and integration tests
+- `yarn e2e:headless`: Runs end-to-end tests in headless mode
+- `yarn e2e:ui`: Runs end-to-end tests with UI
+- `yarn format`: Formats the code with Prettier
+- `yarn postinstall`: Applies patches to external dependencies
+- `yarn preinstall`: Ensures the project is installed with Yarn
 
 ## 🔗 Coupling Graph
+
+- Pour installer coupling-graph:
+- `winget install graphviz` ou `apt install graphviz`
+- `yarn add madge`
+- `yarn add graphviz`
+- `yarn add gvprss`
+- ---
+- `npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg`
+- ou `yarn coupling-graph` pour run sans les exceptions: **Generates a coupling and cohesion graph for the components**
+
 
 Le script `coupling-graph` est un outil pratique qui permet de visualiser les liens et les connexions entre les modules internes de votre projet. Il est construit à l'aide de la bibliothèque [Madge](https://github.com/pahen/madge). Pour générer le graphique, exécutez la commande suivante :
 
@@ -137,6 +148,30 @@ yarn coupling-graph
 Cela créera un fichier `graph.svg` qui contient une représentation graphique des connexions entre vos composants. Vous pouvez ouvrir le fichier avec n'importe quel visualiseur de fichiers SVG.
 
 ![graph](https://user-images.githubusercontent.com/28964599/233662744-3ba89713-8466-49cd-9be7-e6fb38191f58.png)
+
+## 🔗 Prisma (bdd)
+
+Pour installer le module, executer dans le dossier, via powershell, sans privilèges d'admin. Ne pas lancer via le terminal VSCode car certains fichiers ouverts doivent être modifiés.
+
+```bash
+yarn add prisma
+yarn add @prisma/client
+npx prisma init --datasource-provider sqlite
+  (Set the DATABASE_URL in the .env file to point to your existing database.)
+npx prisma migrate dev --name init
+```
+
+Seeding:
+
+```bash
+yarn add tsx
+npx tsx .\data\databaseManager.tsx
+```
+
+## 🧪 Linting
+
+- **ESLint**: Run `yarn lint` to lint the code
+- **Prettier**: Run `yarn prettier` to format the code
 
 ## 🧪 Testing
 
@@ -279,7 +314,6 @@ If you're looking for help or simply want to share your thoughts about the proje
   <img src="https://discordapp.com/api/guilds/1111676875782234175/widget.png?style=banner2" alt="Blazity Discord Banner"/>
 </a>
 <br />
-
 
 ## 📜 License
 
