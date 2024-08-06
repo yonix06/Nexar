@@ -1,23 +1,20 @@
-"use client"
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import fs from 'react-native-windows/fs';
 import path from 'path';
 
 
-export function MarkdownRenderer({ filePath }: MarkdownRendererProps) {
-  const [markdown, setMarkdown] = React.useState("");
+export async function getStaticProps() {
+  const root = process.cwd();
+  const readmePath = path.join(root, 'README.md');
+  const readmeContent = await fs.promises.readFile(readmePath, "utf-8");
+  return {
+    props: {
+      readmeContent,
+    },
+  };
+}
 
-  React.useEffect(() => {
-    const fetchMarkdown = async () => {
-      const rootDir = process.cwd();
-      const markdownFilePath = path.join(rootDir, filePath);
-      const markdownContent = await fs.readFile(markdownFilePath, "utf-8");
-      setMarkdown(markdownContent);
-    };
-
-    fetchMarkdown();
-  }, [filePath]);
-
+export default function MarkdownRenderer({ readmeContent }: { readmeContent: string }) {
+  const markdown = readmeContent;
   return <ReactMarkdown>{markdown}</ReactMarkdown>;
 }
