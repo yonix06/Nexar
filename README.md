@@ -2,7 +2,7 @@
 
 # Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
-Bienvenue sur le modèle _Next.js Enterprise Boilerplate_, un modèle open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. Nous avons fait tout le travail lourd pour vous, donc asseyez-vous, relaxez-vous et préparez-vous à dominer le monde avec votre incroyable app ! 🌍
+Bienvenue sur le modèle _Nexar basé sur le modèle de Blazity_, un modèle open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. 🌍
 
 > [!NOTE]
 > **Blazity** est un groupe d'experts Next.js/Headless. Contactez-nous à [contact@blazity.com](https://blazity.com) si vous souhaitez en discuter de votre projet ou simplement pour discuter.
@@ -26,10 +26,10 @@ With this template, you get all the awesomeness you need:
 - **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
 - **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile
 - **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
-- **[Vérifications de santé](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatibles pour des déploiements robustes
+- **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatibles pour des déploiements robustes
 - **[Composants UI en tête](https://www.radix-ui.com/)** - Components UI pour une personnalisation illimitée
 - **Création d'un système de design cohérent, réutilisable et atomique** - Outil pour gérer les relations entre les composants
-- **[Révisions de code automatisées par ChatGPT](https://openai.com/chatgpt/)** - Restez à jour avec des révisions de code basées sur l'IA !
+- **[Révisions de code automatisées](https://openai.com/chatgpt/)** - Restez à jour avec des révisions de code basées sur les outils Github !
 - **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
 - **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement de manière facile
 
@@ -54,12 +54,12 @@ With this template, you get all the awesomeness you need:
     - [Zustand](#zustand)
     - [Jotai](#jotai)
     - [Recoil](#recoil)
-  - [🤖 ChatGPT Code Review](#-chatgpt-code-review)
+  - [🤖 Code Review](#-code-review)
   - [💻 Environment Variables handling](#-environment-variables-handling)
   - [🤝 Contribution](#-contribution)
   - [Support](#support)
   - [📜 License](#-license)
-  - [Contributors](#contributors)
+  - [Contributeurs](#contributeurs)
 
 ## 🎯 Getting Started
 
