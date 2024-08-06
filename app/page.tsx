@@ -23,11 +23,16 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <section className="bg-blue-100 dark:bg-gray-900">
+      <div className="bg-blue-200 dark:bg-gray-900 h-screen w-screen flex items-center justify-center text-center">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
+            <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+              Nexar
+            </h1>
+            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+              Application de gestion des Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
+            </p>
             <div className="flex flex-row justify-center">
-              <a href="/login">
                 <Button className="mr-3" href="/login">
                   <Images
                     src="/img/Logo-Login.png"
@@ -36,9 +41,14 @@ export default function Home() {
                     height={200}
                   />
                 </Button>
-              </a>
-              &nbsp;
-              <a href="/consultation">
+                <Button className="mr-3" href="/register">
+                  <Images
+                    src="/img/Logo-Register.png"
+                    alt="Logo Register"
+                    width={200}
+                    height={200}
+                  />
+                </Button>
                 <Button className="ml-3" href="/consultation">
                   <Images
                     src="/img/Logo-Consultation.png"
@@ -47,11 +57,10 @@ export default function Home() {
                     height={200}
                   />
                 </Button>
-              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }
