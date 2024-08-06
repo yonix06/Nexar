@@ -30,7 +30,7 @@ export default function Home() {
         <h1 className="mx-auto justify-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-normal dark:text-white md:text-5xl xl:text-6xl">
           Nexar
         </h1>
-        <br />
+        &#8203;
         <p className="mx-auto text-center justify-center mb-6 max-w-2xl border-b border-gray-700 text-gray-800 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl p-2 bg-gray-300/30 dark:bg-gray-800 bg-blend-normal rounded-3xl">
           Application de gestion des Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat <br/>
           //TODO: remplacer p et /p par <Cadre>Cadre</Cadre>

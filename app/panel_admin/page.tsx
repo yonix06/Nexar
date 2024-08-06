@@ -47,19 +47,11 @@ export default function AdminPanel() {
             Ouat About ?!
           </Button>
         </div>
-          <Image type="image/svg+xml" data="../../graph.svg" width="200" height="100" />
+          <Image src="../../graph.svg" width="200" height="100" alt="graph"/>
       </div>
     </section>
     <section className="bg-blue-100 dark:bg-gray-900">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 text-center sm:py-16 lg:px-6">
-        <div className="justify-center">
-              <h1 className="mx-auto text-xl font-bold dark:text-white">ReadMe</h1>
-              <br />
-              <p className="mx-auto max-w-screen-xl px-4 py-8 text-left sm:py-16 lg:px-6">
-              <MarkdownRenderer filePath="../../README.md" />
-              </p>
-        </div>
-      </div>
+      nope
     </section>
   </>
   )

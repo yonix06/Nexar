@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import fs from 'fs';
 import path from 'path';
 
 
 export async function getStaticProps() {
   const root = process.cwd();
   const readmePath = path.join(root, 'README.md');
-  const readmeContent = await fs.promises.readFile(readmePath, "utf-8");
   return {
     props: {
-      readmeContent,
+      readmeContent: fs.readFileSync(readmePath, 'utf8'),
     },
   };
 }
