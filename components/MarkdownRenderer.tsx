@@ -1,9 +1,23 @@
+"use client"
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import fs from 'fs/promises';
+import path from 'path';
 
-const MarkdownRenderer = async ({ filePath }: { filePath: string }) => {
-  const markdownContent = await fs.readFile(filePath, 'utf-8');
-  return <ReactMarkdown>{markdownContent}</ReactMarkdown>;
-};
 
-export default MarkdownRenderer;
+export function MarkdownRenderer({ filePath }: MarkdownRendererProps) {
+  const [markdown, setMarkdown] = React.useState("");
+
+  React.useEffect(() => {
+    const fetchMarkdown = async () => {
+      const rootDir = process.cwd();
+      const markdownFilePath = path.join(rootDir, filePath);
+      const markdownContent = await fs.readFile(markdownFilePath, "utf-8");
+      setMarkdown(markdownContent);
+    };
+
+    fetchMarkdown();
+  }, [filePath]);
+
+  return <ReactMarkdown>{markdown}</ReactMarkdown>;
+}

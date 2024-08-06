@@ -257,7 +257,7 @@ While this boilerplate doesn't include a specific state management library, we b
 
 Choose the library that best fits your requirements and project structure to ensure an efficient state management solution for your application.
 
-## 🤖 ChatGPT Code Review
+## 🤖 Revue de Code Automatisée
 
 We've integrated the innovative [ChatGPT Code Review](https://github.com/anc95/ChatGPT-CodeReview) for AI-powered, automated code reviews. This feature provides real-time feedback on your code, helping improve code quality and catch potential issues.
 
