@@ -1,8 +1,8 @@
 <img align="right" width="360px" height="210px" src="./public/img/Logo-SITEINTERNET-1.png">
 
-# Next.js Enterprise Boilerplate </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
+# Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
-Bienvenue sur le modèle _Next.js Enterprise Boilerplate_, un modèle open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. Nous avons fait tout le travail lourd pour vous, donc asseyez-vous, relaxez-vous et préparez-vous à dominer le monde avec votre incroyable app ! 🌍
+Bienvenue sur le modèle _Nexar basé sur le modèle de Blazity_, un modèle open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. 🌍
 
 > [!NOTE]
 > **Blazity** est un groupe d'experts Next.js/Headless. Contactez-nous à [contact@blazity.com](https://blazity.com) si vous souhaitez en discuter de votre projet ou simplement pour discuter.
@@ -26,10 +26,10 @@ With this template, you get all the awesomeness you need:
 - **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
 - **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile
 - **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
-- **[Vérifications de santé](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatibles pour des déploiements robustes
+- **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatibles pour des déploiements robustes
 - **[Composants UI en tête](https://www.radix-ui.com/)** - Components UI pour une personnalisation illimitée
 - **Création d'un système de design cohérent, réutilisable et atomique** - Outil pour gérer les relations entre les composants
-- **[Révisions de code automatisées par ChatGPT](https://openai.com/chatgpt/)** - Restez à jour avec des révisions de code basées sur l'IA !
+- **[Révisions de code automatisées](https://openai.com/chatgpt/)** - Restez à jour avec des révisions de code basées sur les outils Github !
 - **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
 - **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement de manière facile
 
@@ -54,12 +54,12 @@ With this template, you get all the awesomeness you need:
     - [Zustand](#zustand)
     - [Jotai](#jotai)
     - [Recoil](#recoil)
-  - [🤖 ChatGPT Code Review](#-chatgpt-code-review)
+  - [🤖 Code Review](#-code-review)
   - [💻 Environment Variables handling](#-environment-variables-handling)
   - [🤝 Contribution](#-contribution)
   - [Support](#support)
   - [📜 License](#-license)
-  - [Contributors](#contributors)
+  - [Contributeurs](#contributeurs)
 
 ## 🎯 Getting Started
 
@@ -257,7 +257,7 @@ While this boilerplate doesn't include a specific state management library, we b
 
 Choose the library that best fits your requirements and project structure to ensure an efficient state management solution for your application.
 
-## 🤖 ChatGPT Code Review
+## 🤖 Revue de Code Automatisée
 
 We've integrated the innovative [ChatGPT Code Review](https://github.com/anc95/ChatGPT-CodeReview) for AI-powered, automated code reviews. This feature provides real-time feedback on your code, helping improve code quality and catch potential issues.
 
@@ -295,15 +295,15 @@ If the required environment variables are not set, you'll get an error message:
   ❌ Invalid environment variables: { SECRET_KEY: [ 'Required' ] }
 ```
 
-## 🤝 Contribution
+## 🤝 Participation au projet
 
 Contributions are always welcome! To contribute, please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch with a descriptive name.
-3. Make your changes, and commit them using the [Conventional Commits](https://www.conventionalcommits.org/) format.
-4. Push your changes to the forked repository.
-5. Create a pull request, and we'll review your changes.
+1. Cloner le repertoire
+2. Creer sa propre branche ed dev intitulée: "dev-_'votrenom'_
+3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/).
+4. Push dans la branche créer ci-dessus.
+5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI depuis main.
 
 ## Support
 
@@ -317,7 +317,7 @@ If you're looking for help or simply want to share your thoughts about the proje
 
 ## 📜 License
 
-This project is licensed under the MIT License. For more information, see the [LICENSE](./LICENSE) file.
+Creative Commons 2 License. Plus d'info:  [LICENSE](./LICENSE).
 
 ## Contributors
 
@@ -327,7 +327,7 @@ This project is licensed under the MIT License. For more information, see the [L
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://bstefanski.com/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Bart Stefanski"/><br /><sub><b>Bart Stefanski</b></sub></a><br /><a href="https://github.com/Blazity/next-enterprise/commits?author=bmstefanski" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.saintjeancapferrat.fr.com/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Yonix06"/><br /><sub><b>Yonix06</b></sub></a><br /><a href="https://github.com/yonix06/next-gestion-arretes/commits?author=yonix06" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jjablonski-it"><img src="https://avatars.githubusercontent.com/u/51968772?v=4?s=100" width="100px;" alt="Jakub Jabłoński"/><br /><sub><b>Jakub Jabłoński</b></sub></a><br /><a href="#infra-jjablonski-it" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://neg4n.dev/"><img src="https://avatars.githubusercontent.com/u/57688858?v=4?s=100" width="100px;" alt="Igor Klepacki"/><br /><sub><b>Igor Klepacki</b></sub></a><br /><a href="https://github.com/Blazity/next-enterprise/commits?author=neg4n" title="Documentation">📖</a></td>
     </tr>

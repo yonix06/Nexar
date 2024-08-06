@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <section className="bg-blue-100 dark:bg-gray-900">
+      <section className="bg-blue-300 dark:bg-gray-900">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />

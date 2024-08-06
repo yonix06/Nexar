@@ -35,7 +35,7 @@ export default function About() {
               Enregistrement
             </Button>
           </div>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/04XLTXre1tdjaCaa67lBR6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe src="https://open.spotify.com/embed/track/04XLTXre1tdjaCaa67lBR6?utm_source=generator" width="170" height="152" allow="autoplay; encrypted-media"></iframe>
         </div>
       </section>
       <section className="bg-blue-100 dark:bg-gray-900">

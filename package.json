@@ -20,7 +20,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "preinstall": "npx npm-only-allow@latest --PM yarn",
     "postinstall": "npx patch-package -y",
-    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --image graph.svg"
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --image ./public/graph.svg"
   },
   "dependencies": {
     "@next/bundle-analyzer": "14.2.5",
@@ -49,10 +49,13 @@
     "@vercel/otel": "1.10.0-4d33ae0d-20240628232504",
     "class-variance-authority": "^0.7.0",
     "e2e": "^0.0.8",
+    "fs": "^0.0.1-security",
+    "fs.realpath": "1.0.0",
     "lodash": "^4.17.21",
     "next": "^14.2.5",
     "next-compose-plugins": "^2.2.1",
     "pre-commit": "^1.2.2",
+    "promises": "^0.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
@@ -71,6 +74,7 @@
     "@opentelemetry/sdk-trace-node": "1.25.1",
     "@opentelemetry/semantic-conventions": "1.25.1",
     "@playwright/test": "1.45.3",
+    "@react-native-windows/fs": "0.74.0",
     "@storybook/addon-essentials": "7.6.20",
     "@storybook/addon-interactions": "7.6.20",
     "@storybook/addon-links": "7.6.20",

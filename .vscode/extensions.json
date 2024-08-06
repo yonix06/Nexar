@@ -102,6 +102,7 @@
         "eamodio.gitlens",
         "ms-vscode.live-server",
         "davidanson.vscode-markdownlint",
-        "imgildev.vscode-nextjs-generator"
+        "imgildev.vscode-nextjs-generator",
+        "kalimahapps.tailwind-config-viewer"
     ]
 }

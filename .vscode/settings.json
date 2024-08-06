@@ -46,5 +46,11 @@
   },
   "explorerExclude.backup": {},
   "WillLuke.nextjs.addTypesOnSave": true,
-  "WillLuke.nextjs.hasPrompted": true
+  "WillLuke.nextjs.hasPrompted": true,
+  "conventionalCommits.scopes": [
+    "app/",
+    "component/",
+    "app/ component/",
+    "/rootdir"
+  ]
 }

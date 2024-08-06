@@ -40,7 +40,6 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       { source: "/contact", destination: "/basic/contact" },
     ]
   },
-
 })
 
 export default config
