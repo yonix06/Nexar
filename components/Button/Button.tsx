@@ -9,15 +9,15 @@ const button = cva(
     "items-center",
     "rounded-xl",
     "text-center",
-    "border",
-    "border-blue-600",
+    "border-2",
+    "border-blue-900",
     "transition-colors",
     "delay-50",
   ],
   {
     variants: {
       intent: {
-        primary: ["bg-gradient-to-tl","bg-blue-300","bg-blend-hue", "text-black", "hover:enabled:bg-blue-400", "bg-opacity-70"],
+        primary: ["bg-blend-difference","bg-gradient-to-bl","from-blue-400","to-grey-800","via-blue-700",, "text-white", "bg-opacity-10"],
         secondary: ["bg-transparent", "text-blue-400", "hover:enabled:bg-blue-400", "hover:enabled:text-white"],
       },
       size: {

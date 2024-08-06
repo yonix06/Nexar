@@ -13,9 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" />
         <title>Nexarr</title>
       </head>
-      <body>
-        <header className="bg-gradient-to-b from-grey-700 to-blue-300 text-white py-1 w-full">
-          <nav className="container mx-auto flex justify-between">
+      <body className="bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 h-screen w-screen justify-items-center justify-center">
+        <header className=" sticky top-0 bg-gradient-to-b from-grey-700 to-transparent text-white w-full">
+          <nav className="container mx-auto flex justify-between bg-inherit">
             <h1 className="text-2xl font-bold flex">
             <Link href="https://github.com/Yonix06/">
                 <Image src="/logo/nexar.svg" width={40} height={40} alt="Nexar" className="mx-auto" />
@@ -47,9 +47,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
 
-        <footer className="bg-blue-600 text-white py-1 fixed bottom-0 w-full">
+        <footer className="w-full py-1 fixed -bottom-0.5 border-t-inherit">
           <div className="container mx-auto text-center">
-            <p>&copy;Nexar -- <a href="https://github.com/yonix06">Johann May @Github</a></p>
+            <p>&copy;Nexar - <a href="https://github.com/yonix06">Johann May @Github</a></p>
           </div>
         </footer>
       </body>

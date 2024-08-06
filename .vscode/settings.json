@@ -49,6 +49,7 @@
   "WillLuke.nextjs.hasPrompted": true,
   "conventionalCommits.scopes": [
     "app/",
-    "component/"
+    "component/",
+    "app/ component/"
   ]
 }
