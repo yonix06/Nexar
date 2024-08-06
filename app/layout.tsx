@@ -32,6 +32,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
+              <li>
+                <Link href="/admin">Administration</Link>
+              </li>
             </ul>
           </nav>
         </header>
