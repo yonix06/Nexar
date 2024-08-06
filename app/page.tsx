@@ -24,16 +24,16 @@ export default function Home() {
             <h1 className="mx-auto justify-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-normal dark:text-white md:text-5xl xl:text-6xl">
               Nexar
             </h1>
-            <p className="mx-auto justify-center mb-6 max-w-2xl font-light text-gray-800 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="mx-auto justify-center mb-6 max-w-2xl font-light border border-gray-500 text-gray-800 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl p-2">
               Application de gestion des Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
             </p>
-            <div className="flex flow-row justify-center">
+            <div className="flex flow-row justify-center space-x-3">
                 <Button className="mr-3 mx-auto flex flex-col" href="/login">
                   <Image
                     src="/logo/login.svg"
                     alt="Logo Login"
-                    width={200}
-                    height={200}
+                    width={170}
+                    height={170}
                   />
                   <span className="mx-auto block text-center text-gray-800 dark:text-gray-400 md:text-base lg:text-lg font-bold">Login</span>
                 </Button>
@@ -41,8 +41,8 @@ export default function Home() {
                   <Image
                     src="/logo/user.svg"
                     alt="Logo Register"
-                    width={200}
-                    height={200}
+                    width={170}
+                    height={170}
                   />
                   <span className="mx-auto block text-center text-gray-800 dark:text-gray-400 md:text-base lg:text-lg font-bold">Nouvel Utilisateur</span>
                 </Button>
@@ -50,8 +50,8 @@ export default function Home() {
                   <Image
                     src="/logo/loupe.svg"
                     alt="Logo Consultation"
-                    width={200}
-                    height={200}
+                    width={170}
+                    height={170}
                   />
                   <span className="mx-auto block text-center text-gray-800 dark:text-gray-400 md:text-base lg:text-lg font-bold">Consultation</span>
                 </Button>

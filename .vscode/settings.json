@@ -48,6 +48,7 @@
   "WillLuke.nextjs.addTypesOnSave": true,
   "WillLuke.nextjs.hasPrompted": true,
   "conventionalCommits.scopes": [
-    "app/"
+    "app/",
+    "component/"
   ]
 }

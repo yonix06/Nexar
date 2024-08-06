@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </Link>
             </h1>
             <ul className="flex space-x-4 space-y-2 text-black font-bold text-lg">
-              <li></li> {/* Non c'est pas une coquille ne pas toucher SVP */}
+              <li></li> {/* Non c'est pas une coquille ne pas toucher cette ligne SVP, merci */}
               <li>
                 <Link href="/">Accueil</Link>
               </li>
@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="bg-blue-600 text-white py-1 fixed bottom-0 w-full">
           <div className="container mx-auto text-center">
-            <p>&copy; @Yonix06 sur Github</p>
+            <p>&copy;Nexar -- <a href="https://github.com/yonix06">Johann May @Github</a></p>
           </div>
         </footer>
       </body>
