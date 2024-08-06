@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Nexarr</title>
       </head>
       <body>
-        <header className="bg-blue-600 text-white py-4">
+        <header className="bg-gradient-to-b from-grey-800 to-blue-300 text-white py-4">
           <nav className="container mx-auto flex justify-between">
             <h1 className="text-2xl font-bold">
               <Link href="/">
