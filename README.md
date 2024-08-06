@@ -295,15 +295,15 @@ If the required environment variables are not set, you'll get an error message:
   ❌ Invalid environment variables: { SECRET_KEY: [ 'Required' ] }
 ```
 
-## 🤝 Contribution
+## 🤝 Participation au projet
 
 Contributions are always welcome! To contribute, please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch with a descriptive name.
-3. Make your changes, and commit them using the [Conventional Commits](https://www.conventionalcommits.org/) format.
-4. Push your changes to the forked repository.
-5. Create a pull request, and we'll review your changes.
+1. Cloner le repertoire
+2. Creer sa propre branche ed dev intitulée: "dev-_'votrenom'_
+3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/).
+4. Push dans la branche créer ci-dessus.
+5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI depuis main.
 
 ## Support
 
@@ -317,7 +317,7 @@ If you're looking for help or simply want to share your thoughts about the proje
 
 ## 📜 License
 
-This project is licensed under the MIT License. For more information, see the [LICENSE](./LICENSE) file.
+Creative Commons 2 License. Plus d'info:  [LICENSE](./LICENSE).
 
 ## Contributors
 
@@ -327,6 +327,7 @@ This project is licensed under the MIT License. For more information, see the [L
 <table>
   <tbody>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.saintjeancapferrat.fr.com/"><img src="[https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Yonix06"/><br /><sub><b>Bart Stefanski</b></sub></a><br /><a href="https://github.com/yonix06/next-gestion-arretes/commits?author=yonix06" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://bstefanski.com/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Bart Stefanski"/><br /><sub><b>Bart Stefanski</b></sub></a><br /><a href="https://github.com/Blazity/next-enterprise/commits?author=bmstefanski" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jjablonski-it"><img src="https://avatars.githubusercontent.com/u/51968772?v=4?s=100" width="100px;" alt="Jakub Jabłoński"/><br /><sub><b>Jakub Jabłoński</b></sub></a><br /><a href="#infra-jjablonski-it" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://neg4n.dev/"><img src="https://avatars.githubusercontent.com/u/57688858?v=4?s=100" width="100px;" alt="Igor Klepacki"/><br /><sub><b>Igor Klepacki</b></sub></a><br /><a href="https://github.com/Blazity/next-enterprise/commits?author=neg4n" title="Documentation">📖</a></td>
