@@ -1,4 +1,4 @@
-<img align="right" width="360px" height="210px" src="./public/img/Logo-SITEINTERNET-1.png">
+<img align="right" width="360px" height="210px" src="./public/logo/nexar.svg">
 
 # Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
