@@ -1,78 +1,70 @@
 import { Metadata } from "next"
-import Images from "next/image"
+import Image from "next/image"
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "components/liste-outils"
+import { Cadre } from "components/Cadre/Cadre" 
 
 export const metadata: Metadata = {
-  title: "Template de départ - Application de gestion pour les arrêtés municipaux pour la ville de Saint-Jean-Cap-Ferrat",
-  twitter: {
-    card: "summary_large_image",
-  },
-  openGraph: {
-    url: "https://localhost:3000/",
-    images: [
-      {
-        /* url: "https://raw.githubusercontent.com/yonix06/next-gestion-arretes/main/.github/assets/project-logo.png", */
-        url: "/img/Logo-4.png",
-      },
-    ],
-  },
-}
+  title: "Nexar - Home",
+  }
+
 
 
 export default function Home() {
   return (
     <>
-      <section className="bg-blue-100 dark:bg-gray-900">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />
-            <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-            WIP: <br /> Application de gestion des Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat
-            </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              - Faire les TODO dans le code avec slash slash TODO<br />
-              - Refaire le ReadMe <br />
-              - Uploader les logo pour le projet <br />
-              - Mettre des raccourcis pour les interface de gestion dans un panel admin <br />
-                 exemple: Prisma / Prettier / Tailwindcss etc ... <br />
-              - Verifier les routes et les fichiers correspondants <br />
-              - Travailler sur les composants react et les composants Next <br />
-              - Structurer et build la base de données  <br />
-              - Ajouter des tests unitaires <br />
-              - Definir toutes les fonctions backend et frontend <br />
-              - Travailler sur le design à partir du fichier layout <br />
-            </p>
-            <Button href="https://github.com/yonix06/next-gestion-arretes" className="mr-3">
-              On démarre ici
+      <div className="mx-auto flex flex-col items-center">
+        <br />
+        <Image
+          src="/logo/nexar.svg"
+          alt="Logo Nexar"
+          width={250}
+          height={250}
+          priority
+          quality={100}
+          placeholder="blur"
+          blurDataURL="/logo/nexar.svg"
+          style={{ objectFit: "fill" }}
+          className="mx-auto"
+        />
+        <br />
+        <h1 className="mx-auto justify-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-normal dark:text-white md:text-5xl xl:text-6xl">
+          Nexar
+        </h1>
+        &#8203;
+        <p className="mx-auto text-center justify-center mb-6 max-w-2xl border-b border-gray-700 text-gray-800 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl p-2 bg-gray-300/30 dark:bg-gray-800 bg-blend-normal rounded-3xl">
+          Application de gestion des Arrêtés Municipaux pour la ville de Saint-Jean-Cap-Ferrat <br/>
+          //TODO: remplacer p et /p par <Cadre>Cadre</Cadre>
+        </p>
+        <div className="flex flow-row justify-center space-x-3">
+            <Button className="mr-3 mx-auto flex flex-col" href="/login">
+              <Image
+                src="/logo/login.svg"
+                alt="Logo Login"
+                width={170}
+                height={170}
+              />
+              <span className="mx-auto block text-center dark:text-gray-400 md:text-base lg:text-lg font-bold">Login</span>
             </Button>
-            <Button href="/admin" className="mr-3">
-              Panel Admin
+            <Button className="mr-3 mx-auto flex flex-col" href="/register">
+              <Image
+                src="/logo/user.svg"
+                alt="Logo Register"
+                width={170}
+                height={170}
+              />
+              <span className="mx-auto block text-center dark:text-gray-400 md:text-base lg:text-lg font-bold">Nouvel Utilisateur</span>
             </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-gestion-arretes"
-              intent="secondary"
-            >
-              Test Déploiement avec Vercel
+            <Button className="mr-3 mx-auto flex flex-col" href="/consultation">
+              <Image
+                src="/logo/loupe.svg"
+                alt="Logo Consultation"
+                width={170}
+                height={170}
+              />
+              <span className="mx-auto block text-center dark:text-gray-400 md:text-base lg:text-lg font-bold">Consultation</span>
             </Button>
-          </div>
         </div>
-      </section>
-      <section className="bg-blue-100 dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:size-12">
-                  {singleItem.icon}
-                </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      </div>
     </>
   )
 }
