@@ -3644,9 +3644,9 @@
     rehype-slug "^6.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-essentials@8.2.8":
+"@storybook/addon-essentials@^8.2.8":
   version "8.2.8"
-  resolved "https://registry.npmjs.org/@storybook/addon-essentials/-/addon-essentials-8.2.8.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-8.2.8.tgz#d843f662bb14489e054b365bccfd5193f4defdb0"
   integrity sha512-NRbFv2ociM1l/Oi/1go/ZC5bUU41n9aKD1DzIbguEKBhUs/TGAES+f5x+7DvYnt3Hvd925/FyTXuMU+vNUeiUA==
   dependencies:
     "@storybook/addon-actions" "8.2.8"
@@ -3667,9 +3667,9 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/addon-interactions@8.2.8":
+"@storybook/addon-interactions@^8.2.8":
   version "8.2.8"
-  resolved "https://registry.npmjs.org/@storybook/addon-interactions/-/addon-interactions-8.2.8.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-8.2.8.tgz#80c19ac5b797a04702fcc37458d3c59bbd3031e4"
   integrity sha512-ggctlrSlK72xMfhviHHRslZF5tr9aHr1VFwCG/tjF7s1lM3S7OGqgHLJpcja/wNREvq9GMEvX95ZSu5NMh5CtA==
   dependencies:
     "@storybook/global" "^5.0.0"
@@ -3678,9 +3678,9 @@
     polished "^4.2.2"
     ts-dedent "^2.2.0"
 
-"@storybook/addon-links@8.2.8":
+"@storybook/addon-links@^8.2.8":
   version "8.2.8"
-  resolved "https://registry.npmjs.org/@storybook/addon-links/-/addon-links-8.2.8.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-8.2.8.tgz#6a74e55d32e58d0396bdb92b6243007d94fe7673"
   integrity sha512-2igEaSdKAFjKjioT6LGdBxZulpbVCzmlmV//sTu3sQiVnnxRjjGFt77sEeLMajrsSvg9DB1RMbDsvJ4FJTzXfQ==
   dependencies:
     "@storybook/csf" "0.1.11"
@@ -3710,7 +3710,7 @@
     "@storybook/global" "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-themes@8.2.8":
+"@storybook/addon-themes@^8.2.8":
   version "8.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-themes/-/addon-themes-8.2.8.tgz#1e11c90ca5641ac81f5d6dba5c637e42d10a5c4e"
   integrity sha512-lJzLAAs2gPm0fbE+NB7oQSbetQoENe3jrlb+vUemUpGBJuhiiz+Aue47DEiFtWCzeNze6dhigMJKFlFacvLz+A==
@@ -3729,7 +3729,7 @@
   dependencies:
     memoizerific "^1.11.3"
 
-"@storybook/blocks@8.2.8":
+"@storybook/blocks@8.2.8", "@storybook/blocks@^8.2.8":
   version "8.2.8"
   resolved "https://registry.npmjs.org/@storybook/blocks/-/blocks-8.2.8.tgz"
   integrity sha512-AHBXu9s73Xv9r1JageIL7C4eGf5XYEByai4Y6NYQsE+jF7b7e8oaSUoLW6fWSyLGuqvjRx+5P7GMNI2K1EngBA==
@@ -3886,9 +3886,9 @@
   resolved "https://registry.npmjs.org/@storybook/manager-api/-/manager-api-8.2.8.tgz"
   integrity sha512-wzfRu3vrD9a99pN3W/RJXVtgNGNsy9PyvetjUfgQVtUZ9eXXDuA+tM7ITTu3xvONtV/rT2YEBwzOpowa+r1GNQ==
 
-"@storybook/nextjs@8.2.8":
+"@storybook/nextjs@^8.2.8":
   version "8.2.8"
-  resolved "https://registry.npmjs.org/@storybook/nextjs/-/nextjs-8.2.8.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/nextjs/-/nextjs-8.2.8.tgz#d97ff617b67eb9659aa11312257d0286fde4982d"
   integrity sha512-j7ip8JzLGuw1AzRkPZC/dCymYUAj4kVyS3CNmlGEms7h4pAaPr3oTuIRO0AMzRfR3DId4DRho3P4eTLHF5QdIA==
   dependencies:
     "@babel/core" "^7.24.4"
@@ -3975,7 +3975,7 @@
   resolved "https://registry.npmjs.org/@storybook/react-dom-shim/-/react-dom-shim-8.2.8.tgz"
   integrity sha512-2my3dGBOpBe30+FsSdQOIYCfxMyT68+SEq0qcXxfuax0BkhhJnZLpwvpqOna6EOVTgBD+Tk1TKmjpGwxuwp4rg==
 
-"@storybook/react@8.2.8":
+"@storybook/react@8.2.8", "@storybook/react@^8.2.8":
   version "8.2.8"
   resolved "https://registry.npmjs.org/@storybook/react/-/react-8.2.8.tgz"
   integrity sha512-Nln0DDTQ930P4J+SEkWbLSgaDe8eDd5gP6h3l4b5RwT7sRuSyHtTtYHPCnU9U7sLQ3AbMsclgtJukHXDitlccg==
@@ -11807,7 +11807,7 @@ next-compose-plugins@^2.2.1:
     lodash "^4.17.21"
     next "^14.2.5"
     next-compose-plugins "^2.2.1"
-    next-gestion-arretes "file:../../AppData/Local/Yarn/Cache/v6/npm-next-gestion-arretes-0.0.1-e0741ebd-1d70-453a-92b6-b3f328688e16-1723126477353/node_modules/next-gestion-arretes"
+    next-gestion-arretes "file:../../AppData/Local/Yarn/Cache/v6/npm-next-gestion-arretes-0.0.1-e55d583e-b41e-4c9d-8c74-7bd797752ff3-1723147898190/node_modules/next-gestion-arretes"
     pre-commit "^1.2.2"
     react "^18.3.1"
     react-dom "^18.3.1"
