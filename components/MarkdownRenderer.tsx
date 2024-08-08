@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import fs from 'fs';
 import path from 'path';
 
-
 export async function getStaticProps() {
   const root = process.cwd();
   const readmePath = path.join(root, 'README.md');
