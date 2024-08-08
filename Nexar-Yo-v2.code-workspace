@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"conventionalCommits.scopes": [
+			"app/",
+			"component/",
+			"app/ component/",
+			"/rootdir"
+		],
+		"WillLuke.nextjs.addTypesOnSave": true,
+		"WillLuke.nextjs.hasPrompted": true
+	}
+}
