@@ -63,7 +63,9 @@ With this template, you get all the awesomeness you need:
 
 ## 🎯 Getting Started
 
-To get started with this boilerplate, follow these steps:
+Pour commencer: 
+
+0. Faire ce step-by-step: https://github.com/microsoft/vscode/wiki/Commit-Signing
 
 1. Fork & clone repository:
 
