@@ -1,8 +1,8 @@
-<img align="right" width="360px" height="210px" src="./public/img/Logo-SITEINTERNET-1.png">
+<img align="right" width="360px" height="210px" src="./public/logo/nexar.svg">
 
 # Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
-Bienvenue sur le modèle _Nexar basé sur le modèle de Blazity_, un modèle open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. 🌍
+Bienvenue _Nexar, application basé sur le stack complet de developpement de Blazity_, un stack open-source pour les projets d'entreprise ! Il est chargé de fonctionnalités qui vous aideront à construire des applications de haute performance, facilement maintainable et incroyablement passionnantes. 🌍
 
 > [!NOTE]
 > **Blazity** est un groupe d'experts Next.js/Headless. Contactez-nous à [contact@blazity.com](https://blazity.com) si vous souhaitez en discuter de votre projet ou simplement pour discuter.
