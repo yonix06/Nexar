@@ -4044,15 +4044,6 @@
     "@vitest/spy" "1.6.0"
     util "^0.12.4"
 
-"@storybook/testing-library@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.npmjs.org/@storybook/testing-library/-/testing-library-0.2.2.tgz"
-  integrity sha512-L8sXFJUHmrlyU2BsWWZGuAjv39Jl1uAqUHdxmN42JY15M4+XCMjGlArdCCjDe1wpTSW6USYISA9axjZojgtvnw==
-  dependencies:
-    "@testing-library/dom" "^9.0.0"
-    "@testing-library/user-event" "^14.4.0"
-    ts-dedent "^2.2.0"
-
 "@storybook/theming@^8.2.8":
   version "8.2.8"
   resolved "https://registry.npmjs.org/@storybook/theming/-/theming-8.2.8.tgz"
@@ -4247,7 +4238,7 @@
     "@testing-library/dom" "^9.0.0"
     "@types/react-dom" "^18.0.0"
 
-"@testing-library/user-event@14.5.2", "@testing-library/user-event@^14.4.0":
+"@testing-library/user-event@14.5.2":
   version "14.5.2"
   resolved "https://registry.npmjs.org/@testing-library/user-event/-/user-event-14.5.2.tgz"
   integrity sha512-YAh82Wh4TIrxYLmfGcixwD18oIjyC1pFQC2Y01F2lzV2HTMiYrI0nze0FD0ocB//CKS/7jIUgae+adPqxK5yCQ==
@@ -4837,7 +4828,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/utils@5.62.0", "@typescript-eslint/utils@^5.45.0", "@typescript-eslint/utils@^5.58.0":
+"@typescript-eslint/utils@5.62.0", "@typescript-eslint/utils@^5.58.0", "@typescript-eslint/utils@^5.62.0":
   version "5.62.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-5.62.0.tgz"
   integrity sha512-n8oxjeb5aIbPFEtmQxQYOLI0i9n5ySBEY/ZEHHZqKQSFnxio1rv6dthascc9dLuwrL0RC5mPCxB7vnAVGAYWAQ==
@@ -7843,14 +7834,14 @@ eslint-plugin-react@^7.27.1, eslint-plugin-react@^7.33.2:
     string.prototype.matchall "^4.0.11"
     string.prototype.repeat "^1.0.0"
 
-eslint-plugin-storybook@^0.6.15:
-  version "0.6.15"
-  resolved "https://registry.npmjs.org/eslint-plugin-storybook/-/eslint-plugin-storybook-0.6.15.tgz"
-  integrity sha512-lAGqVAJGob47Griu29KXYowI4G7KwMoJDOkEip8ujikuDLxU+oWJ1l0WL6F2oDO4QiyUFXvtDkEkISMOPzo+7w==
+eslint-plugin-storybook@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.8.0.tgz#23185ecabdc289cae55248c090f0c1d8fbae6c41"
+  integrity sha512-CZeVO5EzmPY7qghO2t64oaFM+8FTaD4uzOEjHKp516exyTKo+skKAL9GI3QALS2BXhyALJjNtwbmr1XinGE8bA==
   dependencies:
     "@storybook/csf" "^0.0.1"
-    "@typescript-eslint/utils" "^5.45.0"
-    requireindex "^1.1.0"
+    "@typescript-eslint/utils" "^5.62.0"
+    requireindex "^1.2.0"
     ts-dedent "^2.2.0"
 
 eslint-plugin-tailwindcss@3.17.4:
@@ -11807,7 +11798,7 @@ next-compose-plugins@^2.2.1:
     lodash "^4.17.21"
     next "^14.2.5"
     next-compose-plugins "^2.2.1"
-    next-gestion-arretes "file:../../AppData/Local/Yarn/Cache/v6/npm-next-gestion-arretes-0.0.1-e55d583e-b41e-4c9d-8c74-7bd797752ff3-1723147898190/node_modules/next-gestion-arretes"
+    next-gestion-arretes "file:../../.cache/yarn/v6/npm-next-gestion-arretes-0.0.1-40f84082-6044-4376-afd0-c924ad5670c9-1723158031494/node_modules/next-gestion-arretes"
     pre-commit "^1.2.2"
     react "^18.3.1"
     react-dom "^18.3.1"
@@ -13807,9 +13798,9 @@ require-main-filename@^2.0.0:
   resolved "https://registry.npmjs.org/require-main-filename/-/require-main-filename-2.0.0.tgz"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
 
-requireindex@^1.1.0:
+requireindex@^1.2.0:
   version "1.2.0"
-  resolved "https://registry.npmjs.org/requireindex/-/requireindex-1.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
   integrity sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==
 
 requires-port@^1.0.0:

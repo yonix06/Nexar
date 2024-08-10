@@ -5,19 +5,7 @@
 		}
 	],
 	"settings": {
-		"conventionalCommits.scopes": [
-			"app/",
-			"component/",
-			"app/ component/",
-			"/rootdir",
-			"Config VSCode"
-		],
 		"WillLuke.nextjs.addTypesOnSave": true,
 		"WillLuke.nextjs.hasPrompted": true
-	},
-	"extensions": {
-		"recommendations": [
-			"tintinweb.graphviz-interactive-preview"
-		]
 	}
 }
