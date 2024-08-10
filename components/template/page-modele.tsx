@@ -14,18 +14,18 @@ export const metadata: Metadata = {
   },
 }
 
-//TODO : 
+//TODO :
 export default function RENOMMER() {
   return (
     <>
       <section className="bg-blue-100 dark:bg-gray-900">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
+        <div className="grid max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16">
           <div className="mx-auto place-self-center">
-            <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />
-            <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+            <Images src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight place-self-center dark:text-white md:text-5xl xl:text-6xl">
             WIP: <br /> Titre PAGE
             </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="max-w-2xl mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               - A FAIRE -
             </p>
             <Button href="/admin" className="mr-3">
@@ -47,7 +47,7 @@ export default function RENOMMER() {
         </div>
       </section>
       <section className="bg-blue-100 dark:bg-gray-900">
-        <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+        <p className="max-w-2xl mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               - Section 2 Bouh -
         </p>
       </section>
