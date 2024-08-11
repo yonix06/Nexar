@@ -2084,7 +2084,7 @@
     "@react-types/button" "3.9.4"
     "@react-types/shared" "3.23.1"
 
-"@nextui-org/calendar@2.0.11":
+"@nextui-org/calendar@2.0.11", "@nextui-org/calendar@^2.0.11":
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/@nextui-org/calendar/-/calendar-2.0.11.tgz#0117c071f8e79cd49261fc43d8675f84ee85ca55"
   integrity sha512-pgCEekJHSr5QKxpJaABIFS2ItqgK8qZ7pKrCOJjmRHBh4Y9WGfndrIW6z3IkHZiO01CKJbpjb9ytTjufsU6kIA==
@@ -2167,7 +2167,7 @@
     "@nextui-org/shared-utils" "2.0.7"
     "@nextui-org/system-rsc" "2.1.5"
 
-"@nextui-org/date-input@2.1.3":
+"@nextui-org/date-input@2.1.3", "@nextui-org/date-input@^2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nextui-org/date-input/-/date-input-2.1.3.tgz#2698f90ef867bdfa40800e18f46ec4a646bb4e7d"
   integrity sha512-Y6d+AVPnM7uYy7boSHrk+cW/pft1fKbpXh/ed5omTgFx6rKRZ/agQmP5erMcmNzpv3Bis4wCc89WNnBtCjEZMw==
@@ -2182,7 +2182,7 @@
     "@react-types/datepicker" "3.7.4"
     "@react-types/shared" "3.23.1"
 
-"@nextui-org/date-picker@2.1.6":
+"@nextui-org/date-picker@2.1.6", "@nextui-org/date-picker@^2.1.6":
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/@nextui-org/date-picker/-/date-picker-2.1.6.tgz#ce0c081068f7fd202831a5cfc23dadae5faea40d"
   integrity sha512-PycYKAm1tmew64aQWQtZfTbV73S4GPGYJnK6hr9W0iXUCOQQH5UbzLwdWGXnVXvtrJzczFQllaXaQccwWCeTzg==
@@ -2291,7 +2291,7 @@
     "@react-aria/utils" "3.24.1"
     "@react-types/link" "3.5.5"
 
-"@nextui-org/listbox@2.1.25":
+"@nextui-org/listbox@2.1.25", "@nextui-org/listbox@^2.1.25":
   version "2.1.25"
   resolved "https://registry.yarnpkg.com/@nextui-org/listbox/-/listbox-2.1.25.tgz#f48413997b93fc69271fdcf28002efce39314a3b"
   integrity sha512-WJqxhzPxADLIsenREaaoQ44bs3gQx5yqOvK86Jkiv/m9nXr0YuxZOJEsVa5GenkmyJBrEd6LkBV5cZ1TGNzbJw==
@@ -2349,7 +2349,7 @@
     "@react-stately/overlays" "3.6.7"
     "@react-types/overlays" "3.8.7"
 
-"@nextui-org/navbar@2.0.36":
+"@nextui-org/navbar@2.0.36", "@nextui-org/navbar@^2.0.36":
   version "2.0.36"
   resolved "https://registry.yarnpkg.com/@nextui-org/navbar/-/navbar-2.0.36.tgz#aaef53a407f84ebb50e1fd8adf53a5e9ea281634"
   integrity sha512-uobdPsh4TSPm2Us74/Vey43z0/oRqWb6x4+eHIJf9VhYP9pY733N2n17v2mvU7SvcNhkold/PWfXPYiA8kMlug==
@@ -2659,7 +2659,7 @@
     "@react-types/grid" "3.2.6"
     "@react-types/table" "3.9.5"
 
-"@nextui-org/tabs@2.0.35":
+"@nextui-org/tabs@2.0.35", "@nextui-org/tabs@^2.0.35":
   version "2.0.35"
   resolved "https://registry.yarnpkg.com/@nextui-org/tabs/-/tabs-2.0.35.tgz#bcedbef91f9289e7f87efb77771726c4ca8e7eda"
   integrity sha512-K6uDZbJwn1qLRw8XeBS2TwGQl9zKXg3Q1ShLzVG2IjTGHGNAn9lwkUzn0FNUNaU1GK2o8wOyKhX7K02J3Ev5fw==
@@ -8479,14 +8479,9 @@ chownr@^2.0.0:
   resolved "https://registry.npmjs.org/chownr/-/chownr-2.0.0.tgz"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@^11.4.0:
+chromatic@^11.4.0, chromatic@^11.7.0:
   version "11.7.0"
   resolved "https://registry.npmjs.org/chromatic/-/chromatic-11.7.0.tgz"
-  integrity sha512-Afblm4MWK6GXutxHPJVWKoY1PxCD98Uw0S3/f1a2wu4VTQy97g4+G8vPVqutSMpZFGzG5NjH9QdzKPFMmZczpw==
-
-chromatic@^11.7.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.7.0.tgz#83521674f8bd9b8da86ff32d46b7088b462b78e2"
   integrity sha512-Afblm4MWK6GXutxHPJVWKoY1PxCD98Uw0S3/f1a2wu4VTQy97g4+G8vPVqutSMpZFGzG5NjH9QdzKPFMmZczpw==
 
 chrome-trace-event@^1.0.2:
