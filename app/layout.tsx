@@ -2,6 +2,7 @@ import "../styles/tailwind.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
+import EditorWYSIWYG from '../components/EditorWYSIWYG'
 import { Button } from "components/Button/Button"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -13,10 +14,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" />
         <title>Nexarr</title>
       </head>
-      <body className="bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 h-screen w-screen justify-items-center justify-center bg-fixed">
-        <header className=" sticky top-0 bg-gradient-to-b from-grey-700 to-transparent text-white w-full">
-          <nav className="container mx-auto flex justify-between bg-inherit">
-            <h1 className="text-2xl font-bold flex">
+      <body className="justify-center w-screen h-screen bg-fixed bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 justify-items-center">
+        <header className="sticky top-0 w-full text-white bg-gradient-to-b from-grey-700 to-transparent">
+          <nav className="container flex justify-between mx-auto bg-inherit">
+            <h1 className="flex text-2xl font-bold">
             <Link href="https://github.com/Yonix06/">
                 <Image src="/logo/nexar.svg" width={40} height={40} alt="Nexar" className="mx-auto" />
               </Link>
@@ -25,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Image src="/img/Logo-4.png" width={90} height={40} alt="Logo" className="mx-auto" />
               </Link>
             </h1>
-            <ul className="flex space-x-4 space-y-2 text-black font-bold text-lg">
+            <ul className="flex space-x-4 space-y-2 text-lg font-bold text-black">
               <li></li> {/* Non c'est pas une coquille ne pas toucher cette ligne SVP, merci */}
               <li>
                 <Link href="/">Accueil</Link>
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
 
         <main>
+          <EditorWYSIWYG />
           {children}
         </main>
 
