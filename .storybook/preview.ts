@@ -4,6 +4,7 @@ import "../styles/tailwind.css"
 
 import { withThemeByClassName } from "@storybook/addon-themes";
 
+
 const preview: Preview = {
   parameters: {
     actions: { fn: "^on[A-Z].*" },
@@ -22,9 +23,23 @@ const preview: Preview = {
           dark: 'dark',
       },
       defaultTheme: 'light',
+  }), withThemeByClassName({
+      themes: {
+          // nameOfTheme: 'classNameForTheme',
+          light: '',
+          dark: 'dark',
+      },
+      defaultTheme: 'light',
+  }), withThemeByClassName({
+      themes: {
+          // nameOfTheme: 'classNameForTheme',
+          light: '',
+          dark: 'dark',
+      },
+      defaultTheme: 'light',
   })],
 
-  tags: ["autodocs", "autodocs"]
+  tags: ["autodocs", 'autodocs']
 }
 
 export default preview
