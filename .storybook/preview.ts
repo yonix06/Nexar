@@ -6,7 +6,7 @@ import { withThemeByClassName } from "@storybook/addon-themes";
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { fn: "^on[A-Z].*" },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -24,7 +24,7 @@ const preview: Preview = {
       defaultTheme: 'light',
   })],
 
-  tags: ["autodocs"]
+  tags: ["autodocs", "autodocs"]
 }
 
 export default preview

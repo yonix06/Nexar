@@ -107,7 +107,6 @@ module.exports = {
       },
     },
   },
-  darkMode: "class",
   plugins: [nextui()],
   future: {
     hoverOnlyWhenSupported: true,
