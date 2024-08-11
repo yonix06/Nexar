@@ -25,6 +25,8 @@
     "chromatic": "npx chromatic --project-token=chpt_5ab2b1093975376"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
     "@next/bundle-analyzer": "14.2.5",
     "@nextui-org/avatar": "^2.0.32",
     "@nextui-org/badge": "^2.0.31",
@@ -68,6 +70,7 @@
     "class-variance-authority": "^0.7.0",
     "framer-motion": "^11.3.24",
     "lodash": "^4.17.21",
+    "mui": "^0.0.1",
     "next": "^14.2.5",
     "next-compose-plugins": "^2.2.1",
     "nextui-cli": "^0.3.4",
