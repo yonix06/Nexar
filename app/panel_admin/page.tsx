@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 
 export default function AdminPanel() {
   return (<>
-      <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-        <div className="mx-auto place-self-center flex-col flex">
-          <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16">
+        <div className="flex flex-col mx-auto place-self-center">
+          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight place-self-center dark:text-white md:text-5xl xl:text-6xl">
             🔑PANEL ADMIN💻
           </h1>
           <br />
           <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN?utm_source=generator" width="70%" height="200" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
           <br />
-          <Cadre className="mb-6 max-w-2xl font-large text-black dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl flex flex-col">
+          <Cadre className="flex flex-col max-w-2xl mb-6 text-black font-large dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
             - Faire les TODO dans le code avec //TODO <br />
             - Refaire le ReadMe <br />
             - <span style={{textDecoration: "line-through"}}>Uploader les logo pour le projet</span> <br />
@@ -32,9 +32,11 @@ export default function AdminPanel() {
             - Structurer et build la base de données  <br />
             - Ajouter des tests unitaires <br />
             - Definir toutes les fonctions backend et frontend <br />
+            - https://storybook.nextui.org/?path=/story/foundations-colors--common-colors
+            <br />
             - Travailler sur le design à partir du fichier layout <br />
           </Cadre>
-          <Button  href="https://github.com/yonix06/next-gestion-arretes" className="mr-3 bg-gray-800 text-white hover:bg-gray-700">
+          <Button  href="https://github.com/yonix06/next-gestion-arretes" className="mr-3 text-white bg-gray-800 hover:bg-gray-700">
             Github Yoyo
           </Button>
           <Button href="/" className="mr-3 bg-red-400">
@@ -43,7 +45,7 @@ export default function AdminPanel() {
           <Button
             href="/about"
             intent="secondary"
-            className="mr-3 bg-gray-800 text-white hover:bg-gray-700"
+            className="mr-3 text-white bg-gray-800 hover:bg-gray-700"
           >
             Ouat About ?!
           </Button>
