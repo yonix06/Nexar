@@ -6,7 +6,7 @@
 
 # Want to help us make this template better? Share your feedback here: https://forms.gle/ybq9Krt8jtBL3iCk7
 
-ARG NODE_VERSION=21.7.3
+ARG NODE_VERSION=22
 
 FROM node:${NODE_VERSION}-alpine
 
@@ -32,7 +32,7 @@ USER node
 COPY . .
 
 # Expose the port that the application listens on.
-EXPOSE 3000
+EXPOSE 4000
 
 # Run the application.
-CMD yarn dev
+CMD yarn dev --port 4000

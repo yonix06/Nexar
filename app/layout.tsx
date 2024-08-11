@@ -1,8 +1,9 @@
+import "../styles/nextui.css"
 import "../styles/tailwind.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
-import EditorWYSIWYG from '../components/EditorWYSIWYG'
+import { NextUIProvider } from '@nextui-org/react'
 import { Button } from "components/Button/Button"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -43,12 +44,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ul>
           </nav>
         </header>
-
+<NextUIProvider>
         <main>
-          <EditorWYSIWYG />
+        
           {children}
+        
         </main>
-
+</NextUIProvider>
         <footer className="w-full py-1 fixed -bottom-0.5 border-t-inherit">
           <div className="container mx-auto text-center">
             <p>&copy;Nexar - <a href="https://github.com/yonix06">Johann May @Github</a></p>

@@ -13,4 +13,7 @@ export const env = createEnv({
     ANALYZE: process.env.ANALYZE,
   },
   pagesDir: ["app"],
+  images: {
+    formats: ['image/avif', 'image/webp', 'image/jpeg', 'image/png'],
+  },
 })
