@@ -2,12 +2,11 @@ import { Button } from "components/Button/Button"
 import { Metadata } from "next"
 import Image from "next/image"
 import { Cadre } from "components/Cadre/Cadre"
+import { ColorSchemeToggle } from "@/components/ColorSchemeToggle/ColorSchemeToogle"
 
 export const metadata: Metadata = {
   title: "Nexar - Home",
   }
-
-
 
 export default function Home() {
   return (
