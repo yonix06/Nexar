@@ -32,8 +32,10 @@ export default function AdminPanel() {
             - Structurer et build la base de données  <br />
             - Ajouter des tests unitaires <br />
             - Definir toutes les fonctions backend et frontend <br />
-            - https://storybook.nextui.org/?path=/story/foundations-colors--common-colors
-            <br />
+            - https://storybook.nextui.org/?path=/story/foundations-colors--common-colors <br />
+            - https://mantine.dev/guides/storybook/ <br />
+            - https://stackdiary.com/react-component-libraries/ <br />
+            
             - Travailler sur le design à partir du fichier layout <br />
           </Cadre>
           <Button  href="https://github.com/yonix06/next-gestion-arretes" className="mr-3 text-white bg-gray-800 hover:bg-gray-700">

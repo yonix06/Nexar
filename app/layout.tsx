@@ -1,10 +1,10 @@
 import "../styles/nextui.css"
 import "../styles/tailwind.css"
+import { NextUIProvider } from '@nextui-org/react'
+import { Button } from "@nextui-org/react"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
-import { NextUIProvider } from '@nextui-org/react'
-import { Button } from "components/Button/Button"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -46,9 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
 <NextUIProvider>
         <main>
-        
           {children}
-        
         </main>
 </NextUIProvider>
         <footer className="w-full py-1 fixed -bottom-0.5 border-t-inherit">

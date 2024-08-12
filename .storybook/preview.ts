@@ -2,6 +2,7 @@ import React from "react";
 import {themes} from "@storybook/theming";
 import type { Preview } from "@storybook/react"
 import "../styles/tailwind.css"
+import "../styles/nextui.css"
 import { withThemeByClassName } from "@storybook/addon-themes";
 
 
@@ -22,7 +23,7 @@ const preview: Preview = {
           light: '',
           dark: 'dark',
       },
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
   })],
 
   tags: ['autodocs']

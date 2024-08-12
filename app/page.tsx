@@ -1,6 +1,6 @@
+import { Button } from "@nextui-org/react"
 import { Metadata } from "next"
 import Image from "next/image"
-import { Button } from "components/Button/Button"
 import { Cadre } from "components/Cadre/Cadre"
 
 export const metadata: Metadata = {
