@@ -2,7 +2,7 @@ import { Button } from "@nextui-org/react"
 import { Metadata } from "next"
 import Image from "next/image"
 import { Cadre } from "components/Cadre/Cadre"
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { ColorSchemeToggle } from "components/ColorSchemeToggle/ColorSchemeToogle"
 
 export const metadata: Metadata = {
   title: "Nexar - Home",

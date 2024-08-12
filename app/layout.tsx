@@ -1,4 +1,3 @@
-import "../styles/nextui.css"
 import "../styles/tailwind.css"
 import '@mantine/core/styles.css';
 import { NextUIProvider } from '@nextui-org/react'
