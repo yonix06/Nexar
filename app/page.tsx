@@ -6,6 +6,7 @@ import { ColorSchemeToggle } from "@/components/ColorSchemeToggle/ColorSchemeToo
 
 export const metadata: Metadata = {
   title: "Nexar - Home",
+  description: "Application de gestion des Arrés Municipaux pour la ville de Saint-Jean-Cap-Ferrat"
   }
 
 export default function Home() {
@@ -35,7 +36,6 @@ export default function Home() {
           //TODO: remplacer p et /p par <Cadre>Cadre</Cadre>
         </p>
         <div className="flex justify-center space-x-3 flow-row">
-        <ColorSchemeToggle />
             <Button className="flex flex-col mx-auto mr-3" href="/login">
               <Image
                 src="/logo/login.svg"

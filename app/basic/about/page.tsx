@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <section className="bg-blue-100 dark:bg-gray-900">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
+      <section>
+        <div className="grid max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />
-            <h1 className="place-self-center mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight place-self-center dark:text-white md:text-5xl xl:text-6xl">
             WIP: <br /> Titre PAGE
             </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="max-w-2xl mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               - A FAIRE -
             </p>
             <Button href="/admin" className="mr-3">
@@ -38,7 +38,7 @@ export default function About() {
           <iframe src="https://open.spotify.com/embed/track/04XLTXre1tdjaCaa67lBR6?utm_source=generator" width="170" height="152" allow="autoplay; encrypted-media"></iframe>
         </div>
       </section>
-      <section className="bg-blue-100 dark:bg-gray-900">
+      <section>
         Bouh
       </section>
     </>

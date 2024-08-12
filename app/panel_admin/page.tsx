@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "components/Button/Button"
 import MarkdownRenderer from '../../components/MarkdownRenderer'
 import { Cadre } from "components/Cadre/Cadre"
+ import { NavLink } from "@mantine/core"
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function AdminPanel() {
             🔑PANEL ADMIN💻
           </h1>
           <br />
-          <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN?utm_source=generator" width="70%" height="200" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN?utm_source=generator" width="200" height="200" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
           <br />
           <Cadre className="flex flex-col max-w-2xl mb-6 text-black font-large dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
             - Faire les TODO dans le code avec //TODO <br />
@@ -34,8 +35,7 @@ export default function AdminPanel() {
             - Definir toutes les fonctions backend et frontend <br />
             - https://storybook.nextui.org/?path=/story/foundations-colors--common-colors <br />
             - https://mantine.dev/guides/storybook/ <br />
-            - https://stackdiary.com/react-component-libraries/ <br />
-            
+            - <NavLink>https://stackdiary.com/react-component-libraries/</NavLink> <br />
             - Travailler sur le design à partir du fichier layout <br />
           </Cadre>
           <Button  href="https://github.com/yonix06/next-gestion-arretes" className="mr-3 text-white bg-gray-800 hover:bg-gray-700">
