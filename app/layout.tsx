@@ -6,6 +6,7 @@ import { theme } from '../theme';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
+import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { ColorSchemeToggle } from "components/ColorSchemeToggle/ColorSchemeToogle"
 
 export const metadata = {
