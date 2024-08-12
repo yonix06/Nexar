@@ -78,6 +78,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
+    "storybook-dark-mode": "^4.0.2",
     "tailwind-merge": "2.4.0"
   },
   "devDependencies": {
@@ -100,7 +101,7 @@
     "@storybook/addon-essentials": "^8.2.8",
     "@storybook/addon-interactions": "^8.2.8",
     "@storybook/addon-links": "^8.2.8",
-    "@storybook/addon-mdx-gfm": "8.2.8",
+    "@storybook/addon-mdx-gfm": "^8.2.8",
     "@storybook/addon-onboarding": "^8.2.8",
     "@storybook/addon-styling-webpack": "^1.0.0",
     "@storybook/addon-themes": "8.2.8",

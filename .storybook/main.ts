@@ -1,11 +1,12 @@
 import type { StorybookConfig } from '@storybook/nextjs';
+import { dirname, join } from "path";
 
 const config: StorybookConfig = {
   "stories": [
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
     "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-    "../components/template/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../../components/**/stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
 
   "addons": [
@@ -19,7 +20,12 @@ const config: StorybookConfig = {
     "@storybook/addon-designs",
     "@storybook/addon-styling-webpack",
     "@storybook/addon-themes",
-    "@storybook/addon-mdx-gfm"
+    "@storybook/addon-mdx-gfm",
+    getAbsolutePath("@storybook/addon-a11y"),
+    getAbsolutePath("@storybook/addon-essentials"),
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("storybook-dark-mode"),
+    getAbsolutePath("@storybook/addon-mdx-gfm")
   ],
 
   "framework": {
@@ -38,3 +44,7 @@ const config: StorybookConfig = {
   }
 };
 export default config;
+
+function getAbsolutePath(value) {
+  return dirname(require.resolve(join(value, "package.json")));
+}

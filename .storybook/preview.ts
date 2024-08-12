@@ -1,7 +1,7 @@
+import React from "react";
+import {themes} from "@storybook/theming";
 import type { Preview } from "@storybook/react"
-
 import "../styles/tailwind.css"
-
 import { withThemeByClassName } from "@storybook/addon-themes";
 
 
@@ -23,23 +23,9 @@ const preview: Preview = {
           dark: 'dark',
       },
       defaultTheme: 'light',
-  }), withThemeByClassName({
-      themes: {
-          // nameOfTheme: 'classNameForTheme',
-          light: '',
-          dark: 'dark',
-      },
-      defaultTheme: 'light',
-  }), withThemeByClassName({
-      themes: {
-          // nameOfTheme: 'classNameForTheme',
-          light: '',
-          dark: 'dark',
-      },
-      defaultTheme: 'light',
   })],
 
-  tags: ["autodocs", 'autodocs']
+  tags: ['autodocs']
 }
 
 export default preview
