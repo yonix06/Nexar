@@ -46,7 +46,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.0.0, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.16.0, @babel/core@npm:^7.18.9, @babel/core@npm:^7.22.5, @babel/core@npm:^7.23.0, @babel/core@npm:^7.23.9, @babel/core@npm:^7.24.4, @babel/core@npm:^7.24.7, @babel/core@npm:^7.7.5":
+"@babel/core@npm:^7.0.0, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.16.0, @babel/core@npm:^7.18.9, @babel/core@npm:^7.22.5, @babel/core@npm:^7.23.0, @babel/core@npm:^7.23.9, @babel/core@npm:^7.24.4, @babel/core@npm:^7.25.2, @babel/core@npm:^7.7.5":
   version: 7.25.2
   resolution: "@babel/core@npm:7.25.2"
   dependencies:
@@ -2998,7 +2998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^14.2.4":
+"@next/eslint-plugin-next@npm:^14.2.5":
   version: 14.2.5
   resolution: "@next/eslint-plugin-next@npm:14.2.5"
   dependencies:
@@ -5246,7 +5246,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:^5.17.0":
+"@prisma/client@npm:^5.18.0":
   version: 5.18.0
   resolution: "@prisma/client@npm:5.18.0"
   peerDependencies:
@@ -9585,7 +9585,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test-runner@npm:^0.19.1-next.0":
+"@storybook/test-runner@npm:^0.19.1":
   version: 0.19.1
   resolution: "@storybook/test-runner@npm:0.19.1"
   dependencies:
@@ -9836,7 +9836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^3.6.0":
+"@tabler/icons-react@npm:3.12.0":
   version: 3.12.0
   resolution: "@tabler/icons-react@npm:3.12.0"
   dependencies:
@@ -11181,7 +11181,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "Nexar@workspace:."
   dependencies:
-    "@babel/core": "npm:^7.24.7"
+    "@babel/core": "npm:^7.25.2"
     "@babel/plugin-syntax-flow": "npm:7.24.7"
     "@babel/plugin-transform-optional-chaining": "npm:7.24.8"
     "@babel/plugin-transform-react-jsx": "npm:7.25.2"
@@ -11192,7 +11192,7 @@ __metadata:
     "@mui/icons-material": "npm:^5.16.7"
     "@mui/material": "npm:^5.16.7"
     "@next/bundle-analyzer": "npm:14.2.5"
-    "@next/eslint-plugin-next": "npm:^14.2.4"
+    "@next/eslint-plugin-next": "npm:^14.2.5"
     "@nextui-org/avatar": "npm:^2.0.32"
     "@nextui-org/badge": "npm:^2.0.31"
     "@nextui-org/calendar": "npm:^2.0.11"
@@ -11210,12 +11210,13 @@ __metadata:
     "@nextui-org/tooltip": "npm:^2.0.39"
     "@nextui-org/user": "npm:^2.0.33"
     "@opentelemetry/api": "npm:1.9.0"
+    "@opentelemetry/core": "npm:1.25.1"
     "@opentelemetry/resources": "npm:1.25.1"
     "@opentelemetry/sdk-node": "npm:0.52.1"
     "@opentelemetry/sdk-trace-node": "npm:1.25.1"
     "@opentelemetry/semantic-conventions": "npm:1.25.1"
     "@playwright/test": "npm:1.46.0"
-    "@prisma/client": "npm:^5.17.0"
+    "@prisma/client": "npm:^5.18.0"
     "@radix-ui/react-accordion": "npm:1.2.0"
     "@radix-ui/react-checkbox": "npm:1.1.1"
     "@radix-ui/react-dialog": "npm:1.1.1"
@@ -11252,9 +11253,9 @@ __metadata:
     "@storybook/nextjs": "npm:^8.2.8"
     "@storybook/react": "npm:^8.2.8"
     "@storybook/test": "npm:^8.2.8"
-    "@storybook/test-runner": "npm:^0.19.1-next.0"
+    "@storybook/test-runner": "npm:^0.19.1"
     "@t3-oss/env-nextjs": "npm:^0.11.0"
-    "@tabler/icons-react": "npm:^3.6.0"
+    "@tabler/icons-react": "npm:3.12.0"
     "@testing-library/dom": "npm:10.4.0"
     "@testing-library/jest-dom": "npm:6.4.8"
     "@testing-library/react": "npm:14.3.1"
@@ -11283,13 +11284,13 @@ __metadata:
     eslint-config-prettier: "npm:9.1.0"
     eslint-config-react-app: "npm:^7.0.1"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:^28.6.0"
+    eslint-plugin-jest: "npm:^28.8.0"
     eslint-plugin-jsx-a11y: "npm:^6.9.0"
     eslint-plugin-react: "npm:7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.2"
     eslint-plugin-storybook: "npm:^0.8.0"
     eslint-plugin-tailwindcss: "npm:3.17.4"
-    eslint-plugin-testing-library: "npm:^6.2.2"
+    eslint-plugin-testing-library: "npm:^6.3.0"
     fetch-mock: "npm:^9.11.0"
     framer-motion: "npm:^11.3.24"
     graphql: "npm:16.9.0"
@@ -11315,14 +11316,14 @@ __metadata:
     pre-commit: "npm:^1.2.2"
     prettier: "npm:3.0.3"
     prettier-plugin-tailwindcss: "npm:0.5.14"
-    prisma: "npm:^5.17.0"
+    prisma: "npm:^5.18.0"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
     react-markdown: "npm:^9.0.1"
     semantic-release: "npm:22.0.12"
     storybook: "npm:^8.2.8"
     storybook-dark-mode: "npm:^4.0.2"
-    stylelint: "npm:^16.6.1"
+    stylelint: "npm:^16.8.1"
     stylelint-config-standard-scss: "npm:^13.1.0"
     tailwind-merge: "npm:2.4.0"
     tailwindcss: "npm:3.4.7"
@@ -15023,7 +15024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^28.6.0":
+"eslint-plugin-jest@npm:^28.8.0":
   version: 28.8.0
   resolution: "eslint-plugin-jest@npm:28.8.0"
   dependencies:
@@ -15167,7 +15168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^6.2.2":
+"eslint-plugin-testing-library@npm:^6.3.0":
   version: 6.3.0
   resolution: "eslint-plugin-testing-library@npm:6.3.0"
   dependencies:
@@ -22422,7 +22423,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prisma@npm:^5.17.0":
+"prisma@npm:^5.18.0":
   version: 5.18.0
   resolution: "prisma@npm:5.18.0"
   dependencies:
@@ -24867,7 +24868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^16.6.1":
+"stylelint@npm:^16.8.1":
   version: 16.8.1
   resolution: "stylelint@npm:16.8.1"
   dependencies:
