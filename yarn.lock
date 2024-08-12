@@ -2780,7 +2780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.12.1":
+"@mantine/core@npm:^7.12.1":
   version: 7.12.1
   resolution: "@mantine/core@npm:7.12.1"
   dependencies:
@@ -11187,7 +11187,7 @@ __metadata:
     "@babel/plugin-transform-react-jsx": "npm:7.25.2"
     "@chromatic-com/storybook": "npm:1.6.1"
     "@jest/globals": "npm:^29.7.0"
-    "@mantine/core": "npm:7.12.1"
+    "@mantine/core": "npm:^7.12.1"
     "@mantine/hooks": "npm:7.12.1"
     "@mui/icons-material": "npm:^5.16.7"
     "@mui/material": "npm:^5.16.7"

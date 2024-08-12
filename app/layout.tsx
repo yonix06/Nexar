@@ -2,11 +2,11 @@ import "../styles/tailwind.css"
 import '@mantine/core/styles.css';
 import { NextUIProvider } from '@nextui-org/react'
 import { Button } from "@nextui-org/react"
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
+import { ColorSchemeToggle } from "components/ColorSchemeToggle/ColorSchemeToogle"
 
 export const metadata = {
   title: 'page template',
@@ -33,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/">
                 <Image src="/img/Logo-4.png" width={90} height={40} alt="Logo" className="mx-auto" />
               </Link>
+              <ColorSchemeToggle />
             </h1>
             <ul className="flex space-x-4 space-y-2 text-lg font-bold text-black">
               <li></li> {/* Non c'est pas une coquille ne pas toucher cette ligne SVP, merci */}
