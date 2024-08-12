@@ -1,17 +1,25 @@
 import "../styles/nextui.css"
 import "../styles/tailwind.css"
+import '@mantine/core/styles.css';
 import { NextUIProvider } from '@nextui-org/react'
 import { Button } from "@nextui-org/react"
+import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import { theme } from '../theme';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
+
+export const metadata = {
+  title: 'page template',
+  description: 'Nexar',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" />
         <title>Nexarr</title>
       </head>
@@ -44,11 +52,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ul>
           </nav>
         </header>
-<NextUIProvider>
+
         <main>
+        <MantineProvider theme={theme}>
           {children}
+        </MantineProvider>
         </main>
-</NextUIProvider>
+
         <footer className="w-full py-1 fixed -bottom-0.5 border-t-inherit">
           <div className="container mx-auto text-center">
             <p>&copy;Nexar - <a href="https://github.com/yonix06">Johann May @Github</a></p>

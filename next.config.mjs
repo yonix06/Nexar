@@ -6,13 +6,19 @@ import { env } from "./env.mjs"
  * @type {import('next').NextConfig}
  */
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { // TODO: Verifier la correcte utilisation du plug in expérimental en dessous.
-  reactStrictMode: true,
+  reactStrictMode: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   logging: {
     fetches: {
       fullUrl: true,
     },
   },
-  experimental: { instrumentationHook: true },
+  experimental: { 
+    instrumentationHook: true,
+    optimizePackageImports: ['@mantine/core', '@mantine/hooks']
+   },
   rewrites() {
     return [ //TODO:: pour obfusquer les liens et/ou rediriger correctement
       { source: "/healthz", destination: "/api/health" },

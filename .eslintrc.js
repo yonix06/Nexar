@@ -9,8 +9,19 @@ module.exports = {
     "react-app/jest",
     "plugin:storybook/recommended",
     "plugin:tailwindcss/recommended",
+    'mantine',
+    'plugin:@next/next/recommended',
+    'plugin:jest/recommended'
+  ],
+  plugins: ['testing-library', 'jest'],
+  overrides: [
+    {
+      files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
+    },
   ],
   parserOptions: {
+    project: './tsconfig.json',
     babelOptions: {
       presets: [require.resolve("next/babel")],
     },
@@ -34,6 +45,8 @@ module.exports = {
       },
     ],
     "tailwindcss/classnames-order": "off",
+    'react/react-in-jsx-scope': 'off',
+    'import/extensions': 'off',
     "import/order": [
       1,
       {

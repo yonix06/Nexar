@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/react"
 import { Metadata } from "next"
 import Image from "next/image"
 import { Cadre } from "components/Cadre/Cadre"
+import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
 export const metadata: Metadata = {
   title: "Nexar - Home",
@@ -36,6 +37,7 @@ export default function Home() {
           //TODO: remplacer p et /p par <Cadre>Cadre</Cadre>
         </p>
         <div className="flex justify-center space-x-3 flow-row">
+        <ColorSchemeToggle /> <br /> <br /> <br />
             <Button className="flex flex-col mx-auto mr-3" href="/login">
               <Image
                 src="/logo/login.svg"
