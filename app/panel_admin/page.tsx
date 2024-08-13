@@ -3,13 +3,43 @@ import Image from "next/image"
 import { Button } from "components/Button/Button"
 import MarkdownRenderer from '../../components/MarkdownRenderer'
 import { Cadre } from "components/Cadre/Cadre"
- import { NavLink } from "@mantine/core"
-
+import { NavLink } from "@mantine/core"
+import ButtonGridContainer from '../../components/ButtonGrid/ButtonGrid';
 
 export const metadata: Metadata = {
   title: "Panel d'administration",
   description: "Page d'administration de l'application",
 }
+
+const PathnameLinks = () => {
+  const pathnames = [
+    { pathname: '/about', label: 'À propos' },
+    { pathname: '/admin', label: 'Administration' },
+    { pathname: '/contact', label: 'Contact' },
+    { pathname: '/404', label: 'Erreur 404' },
+    { pathname: '/500', label: 'Erreur 500' },
+    { pathname: '/_error', label: 'Erreur' },
+    { pathname: '/api/healthz', label: 'Santé de l\'API' },
+    { pathname: '/archivage', label: 'Archivage' },
+    { pathname: '/consultation', label: 'Consultation' },
+    { pathname: '/diffusion', label: 'Diffusion' },
+    { pathname: '/edition_documents', label: 'Édition de documents' },
+  ];
+
+  return (
+    <ul>
+      {pathnames.map((pathname) => (
+        <li key={pathname.pathname}>
+          <Link href={pathname.pathname}>
+            <a>{pathname.label}</a>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export PathnameLinks;
 
 export default function AdminPanel() {
   return (<>
@@ -51,7 +81,14 @@ export default function AdminPanel() {
           >
             Ouat About ?!
           </Button>
-          <br />
+           <br />
+           const Page: React.FC = () => {
+              return (
+                <div>
+                 <ButtonGridContainer />
+                </div>
+                );
+              };
         </div>
           <Image src="/graph.svg" width="200" height="100" alt="graph" className="mx-auto place-self-center"/>
       </div>
