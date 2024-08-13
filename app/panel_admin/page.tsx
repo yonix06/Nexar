@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description: "Page d'administration de l'application",
 }
 
+//TODO: atomatiser la constante pathnames et la transformer en fonction pour fetch le contenu du fichier middleware
 const PathnameLinks = () => {
   const pathnames = [
     { pathname: '/about', label: 'À propos' },
@@ -27,27 +28,28 @@ const PathnameLinks = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
-    <ul>
+    <div className="flex grid flex-col grid-cols-3 mx-auto text-black">
       {pathnames.map((pathname) => (
-        <NavLink key={pathname.pathname} variant="outline" className="m-2" href={pathname.pathname}>
+        <Button key={pathname.pathname}  className="m-2" href={pathname.pathname}>
           {pathname.label}
-        </NavLink>
+        </Button>
       ))}
-    </ul>
     </div>
   )
 }
 
 export default function AdminPanel() {
   return (<>
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16">
+      <div className="grid items-center max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16">
         <div className="flex flex-col mx-auto place-self-center">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight place-self-center dark:text-white md:text-5xl xl:text-6xl">
             🔑PANEL ADMIN💻
           </h1>
           <br />
-          <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN?utm_source=generator" width="200" height="200" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <div className="flex grid flex-auto grid-cols-2 mx-auto ">
+              <iframe className="mx-auto" src="https://open.spotify.com/embed/track/6ACGFCYTDYE9qNAEy2T9zN" width="300" height="200" allow="encrypted-media; fullscreen; picture-in-picture"></iframe>
+              <PathnameLinks />
+            </div>
           <br />
           <Cadre className="flex flex-col max-w-2xl mb-6 text-black font-large dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
             - Faire les TODO dans le code avec //TODO <br />
@@ -80,9 +82,6 @@ export default function AdminPanel() {
             Ouat About ?!
           </Button>
           <br />
-          <div>
-            <PathnameLinks />
-          </div>
         </div>
         <Image src="/graph.svg" width="200" height="100" alt="graph" className="mx-auto place-self-center"/>
       </div>
