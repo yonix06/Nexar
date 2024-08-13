@@ -26,15 +26,17 @@
     "pip-requirements",
     "postgres",
     "powershell",
+    "prisma",
     "properties",
     "query-editor",
     "search-result",
     "shellscript",
     "sqlite",
     "sqlite3-editor-database",
+    "styled-css",
     "tailwindcss"
   ],
-  "cSpell.language": "en,lorem,en-US",
+  "cSpell.language": "en,lorem,en-US,en-GB,fr,fr-FR",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -51,6 +53,7 @@
     "app/",
     "component/",
     "app/ component/",
-    "/rootdir"
+    "/rootdir",
+    "extensions"
   ]
 }
