@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <section>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <img src="/img/Logo-4.png" width={200} height={200} alt="Logo" className="mx-auto" /> <br />
@@ -37,10 +36,6 @@ export default function About() {
           </div>
           <iframe src="https://open.spotify.com/embed/track/04XLTXre1tdjaCaa67lBR6?utm_source=generator" width="170" height="152" allow="autoplay; encrypted-media"></iframe>
         </div>
-      </section>
-      <section>
-        Bouh
-      </section>
     </>
   )
 }
