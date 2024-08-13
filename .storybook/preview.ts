@@ -35,7 +35,7 @@ const preview: Preview = {
 
 const channel = addons.getChannel();
 
-function ColorSchemeWrapper({ children }: { children: React.ReactNode }) {
+const ColorSchemeWrapper({ children }: { children: React.ReactNode }) {
   const { setColorScheme } = useMantineColorScheme();
   const handleColorScheme = (value: boolean) => setColorScheme(value ? 'dark' : 'light');
 
@@ -46,11 +46,5 @@ function ColorSchemeWrapper({ children }: { children: React.ReactNode }) {
 
   return {children};
 }
-
-export const decorators = [
-  (renderStory: any) => <ColorSchemeWrapper>{renderStory()}</ColorSchemeWrapper>,
-  (renderStory: any) => <MantineProvider theme={theme}>{renderStory()}</MantineProvider>
-];
-
 
 export default preview

@@ -15,7 +15,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
       fullUrl: true,
     },
   },
-  experimental: { 
+  experimental: {
     instrumentationHook: true,
     optimizePackageImports: ['@mantine/core', '@mantine/hooks']
    },

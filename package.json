@@ -182,6 +182,7 @@
     "prettier": "3.0.3",
     "prettier-plugin-tailwindcss": "0.5.14",
     "prisma": "^5.18.0",
+    "react-dropzone": "^14.2.3",
     "semantic-release": "22.0.12",
     "storybook": "^8.2.8",
     "storybook-dark-mode": "^4.0.2",
