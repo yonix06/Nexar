@@ -30,9 +30,11 @@ const PathnameLinks = () => {
   return (
     <div className="flex flex-col grid-cols-3 mx-auto text-black">
       {pathnames.map((pathname) => (
-        <Button key={pathname.pathname}  className="m-2" href={pathname.pathname}>
+        <NavLink key={pathname.label} href={pathname.pathname}>
+        <Button key={pathname.pathname}  className="m-2">
           {pathname.label}
         </Button>
+        </NavLink>
       ))}
     </div>
   )

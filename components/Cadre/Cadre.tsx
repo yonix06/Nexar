@@ -35,8 +35,8 @@ const cadre = cva(
 
 export function Cadre({ className, intent, size, underline, ...props } : any) {
   return (
-    <p className={twMerge(cadre({ intent, size, className, underline }))} {...props}>
-      {props.children}
-    </p>
+    <span className={twMerge(cadre({ intent, size, className, underline }))} {...props}>
+          {props.children}
+    </span>
   )
 }

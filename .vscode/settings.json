@@ -56,7 +56,8 @@
     "/rootdir",
     "extensions",
     "modules config",
-    "admin"
+    "admin",
+    "layout"
   ],
   "cSpell.words": [
     "Mantine"
