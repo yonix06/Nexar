@@ -55,7 +55,8 @@
     "app/ component/",
     "/rootdir",
     "extensions",
-    "modules config"
+    "modules config",
+    "admin"
   ],
   "cSpell.words": [
     "Mantine"
