@@ -27,6 +27,48 @@ export function middleware(request: NextRequest) {
   if (request.nextUrl.pathname === "/contact") {
     return NextResponse.redirect(new URL("/basic/contact", request.url));
   }
+  if (request.nextUrl.pathname === "/404") {
+    return NextResponse.rewrite(new URL("/errpages/404", request.url));
+  }
+  if (request.nextUrl.pathname === "/500") {
+    return NextResponse.rewrite(new URL("/errpages/500", request.url));
+  }
+  if (request.nextUrl.pathname === "/_error") {
+    return NextResponse.rewrite(new URL("/errpages/_error", request.url));
+  }
+  if (request.nextUrl.pathname === "/about") {
+    return NextResponse.rewrite(new URL("/basic/about", request.url));
+  }
+  if (request.nextUrl.pathname === "/admin") {
+    return NextResponse.rewrite(new URL("/panel_admin", request.url));
+  }
+  if (request.nextUrl.pathname === "/api/healthz") {
+    return NextResponse.rewrite(new URL("/api/health", request.url));
+  }
+  if (request.nextUrl.pathname === "/archivage") {
+    return NextResponse.rewrite(new URL("/gestion_arretes/archivage", request.url));
+  }
+  if (request.nextUrl.pathname === "/contact") {
+    return NextResponse.rewrite(new URL("/basic/contact", request.url));
+  }
+  if (request.nextUrl.pathname === "/consultation") {
+    return NextResponse.rewrite(new URL("/gestion_arretes/consultation", request.url));
+  }
+  if (request.nextUrl.pathname === "/diffusion") {
+    return NextResponse.rewrite(new URL("/gestion_arretes/diffusion", request.url));
+  }
+  if (request.nextUrl.pathname === "/edition_documents") {
+    return NextResponse.rewrite(new URL("/gestion_arretes/edition_documents", request.url));
+  }
+  if (request.nextUrl.pathname === "/health") {
+    return NextResponse.rewrite(new URL("/api/health", request.url));
+  }
+  if (request.nextUrl.pathname === "/healthz") {
+    return NextResponse.rewrite(new URL("/api/health", request.url));
+  }
+  if (request.nextUrl.pathname === "/ping") {
+    return NextResponse.rewrite(new URL("/api/health", request.url));
+  }
   return NextResponse.next();
 }
 
