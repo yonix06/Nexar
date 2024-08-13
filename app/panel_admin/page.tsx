@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Page d'administration de l'application",
 }
 
-//TODO: atomatiser la constante pathnames et la transformer en fonction pour fetch le contenu du fichier middleware
+//TODO: automatiser la constante 'pathnames' et la transformer en fonction pour fetch le contenu du fichier middleware
 const PathnameLinks = () => {
   const pathnames = [
     { pathname: '/about', label: 'À propos' },
@@ -28,7 +28,7 @@ const PathnameLinks = () => {
   ];
 
   return (
-    <div className="flex grid flex-col grid-cols-3 mx-auto text-black">
+    <div className="flex flex-col grid-cols-3 mx-auto text-black">
       {pathnames.map((pathname) => (
         <Button key={pathname.pathname}  className="m-2" href={pathname.pathname}>
           {pathname.label}
