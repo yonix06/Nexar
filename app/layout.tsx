@@ -2,7 +2,7 @@ import "../styles/tailwind.css"
 import '@mantine/core/styles.css';
 import { NextUIProvider } from '@nextui-org/react'
 import { Button } from "@nextui-org/react"
-import { theme } from '../theme';
+import { theme } from '../theme/theme';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from "react"
@@ -11,8 +11,6 @@ import { ColorSchemeToggle } from "components/ColorSchemeToggle/ColorSchemeToogl
 import { Metadata } from "next"
 
 export const metadata = {
-  title: 'page template',
-  description: 'Nexar',
   style: 'auto',
 };
 
@@ -26,8 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Nexar</title>
       </head>
       <body>
-        <div className="w-screen h-screen overflow-scroll bg-fixed bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 dark:bg-gradient-to-tl dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
-      <MantineProvider theme={theme}>
+        <MantineProvider theme={theme}>
+        <div className="fixed top-0 left-0 w-screen h-screen bg-fixed bg-center bg-no-repeat bg-cover bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-400 bg-clip-content">
             <header className="sticky top-0 w-full text-white bg-gradient-to-b from-grey-700 to-transparent">
               <nav className="container flex justify-between mx-auto bg-inherit">
                 <h1 className="flex text-2xl font-bold">
@@ -67,8 +65,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p>&copy;Nexar - <a href="https://github.com/yonix06">Johann May @Github</a></p>
           </div>
         </footer>
-      </MantineProvider>
       </div>
+      </MantineProvider>
       </body>
     </html>
   )
