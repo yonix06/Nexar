@@ -73,5 +73,18 @@
     "Nexarr",
     "Stefanski",
     "yonix"
-  ]
+  ],
+  "local-history.daysLimit": 10,
+  "local-history.exclude": [
+    "**/old/**",
+    "**/.history/**",
+    "**/.vscode/**",
+    "**/node_modules/**",
+    "**/typings/**",
+    "**/out/**",
+    "**/Code/User/**"
+  ],
+  "local-history.maxDisplay": 5,
+  "local-history.saveDelay": 5,
+  "local-history.treeLocation": "localHistory"
 }
