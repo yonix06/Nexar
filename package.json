@@ -23,6 +23,7 @@
     "apexcharts": "^3.49.1",
     "classnames": "^2.5.1",
     "next": "^14.2.3",
+    "pre-commit": "^1.2.2",
     "react": "^18.3.1",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18.3.1",
