@@ -21,6 +21,9 @@ export function middleware(request: NextRequest) {
   if (request.nextUrl.pathname === "/about") {
     return NextResponse.redirect(new URL("/basic/about", request.url));
   }
+  if (request.nextUrl.pathname === "/") {
+    return NextResponse.redirect(new URL("/authentication/login", request.url));
+  }
   if (request.nextUrl.pathname === "/admin") {
     return NextResponse.rewrite(new URL("/panel_admin", request.url));
   }

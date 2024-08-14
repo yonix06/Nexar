@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 
-import CustomTextField from "@/app/(DashboardLayout)/components/forms/theme-elements/CustomTextField";
+import CustomTextField from "components/forms/theme-elements/CustomTextField";
 
 interface loginType {
   title?: string;
@@ -37,7 +37,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
           htmlFor="username"
           mb="5px"
         >
-          Username
+          Nom d'utilisateur (sans le @)
         </Typography>
         <CustomTextField variant="outlined" fullWidth />
       </Box>
@@ -49,7 +49,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
           htmlFor="password"
           mb="5px"
         >
-          Password
+          Mot de passe
         </Typography>
         <CustomTextField type="password" variant="outlined" fullWidth />
       </Box>
@@ -62,7 +62,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
         <FormGroup>
           <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="Remeber this Device"
+            label="Ne m'oublie pas"
           />
         </FormGroup>
         <Typography
@@ -74,7 +74,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
             color: "primary.main",
           }}
         >
-          Forgot Password ?
+          Mot de passe oublié ?
         </Typography>
       </Stack>
     </Stack>

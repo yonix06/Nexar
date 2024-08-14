@@ -2,13 +2,13 @@
 import Link from "next/link";
 import { Grid, Box, Card, Stack, Typography } from "@mui/material";
 // components
-import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
-import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
+import PageContainer from "components/container/PageContainer";
+import Logo from "../../layout/shared/logo/Logo";
 import AuthLogin from "../auth/AuthLogin";
 
 const Login2 = () => {
   return (
-    <PageContainer title="Login" description="this is Login page">
+    <PageContainer title="Nexar Accueil" description="Bienvenue">
       <Box
         sx={{
           position: "relative",
@@ -55,7 +55,7 @@ const Login2 = () => {
                     color="textSecondary"
                     mb={1}
                   >
-                    Your Social Campaigns
+                    Gestion des arrêtés municipaux
                   </Typography>
                 }
                 subtitle={
@@ -70,7 +70,7 @@ const Login2 = () => {
                       variant="h6"
                       fontWeight="500"
                     >
-                      New to Modernize?
+                      Nouveau sur Nexar ?
                     </Typography>
                     <Typography
                       component={Link}
@@ -81,7 +81,7 @@ const Login2 = () => {
                         color: "primary.main",
                       }}
                     >
-                      Create an account
+                      On s'enregistre avec son mail professionnel ici
                     </Typography>
                   </Stack>
                 }

@@ -6,7 +6,7 @@ import { env } from "./env.mjs"
  * @type {import('next').NextConfig}
  */
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { // TODO: Verifier la correcte utilisation du plug in expérimental en dessous.
-  reactStrictMode: false,
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -23,7 +23,6 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], { /
     return [
       { source: "/404", destination: "/errpages/404" },
       { source: "/500", destination: "/errpages/500" },
-      { source: "/_error", destination: "/errpages/_error" },
       { source: "/about", destination: "/basic/about" },
       { source: "/admin", destination: "/panel_admin" },
       { source: "/api/healthz", destination: "/api/health" },
