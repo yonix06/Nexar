@@ -2,7 +2,7 @@
 
 # Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
-Bienvenue _Nexar, application fullstack personnalisé basé sur Next.JS 14. 🌍
+Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. 🌍
 
 > [!NOTE]
 > **Documentation** [https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview]
