@@ -11,6 +11,7 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 > - [Material UI](https://mui.com/material-ui/getting-started/)
 > - [Theme de Matérial UI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview)
 > - [Storybook](https://storybook.js.org/docs)
+> - [Prisma](https://www.prisma.io/docs)
 > - [Playwright](https://playwright.dev/docs/intro)
 
 ## Fonctionnalités
