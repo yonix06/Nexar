@@ -1,79 +1,128 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const fs = require("fs")
-
 module.exports = {
-  extends: [
-    "next",
-    "prettier",
-    "react-app",
-    "react-app/jest",
-    "plugin:storybook/recommended",
-    "plugin:tailwindcss/recommended",
-  ],
-  parserOptions: {
-    babelOptions: {
-      presets: [require.resolve("next/babel")],
-    },
-  },
+  extends: ['next/core-web-vitals', 'plugin:@typescript-eslint/recommended', 'plugin:import/recommended', 'prettier'],
   rules: {
-    "tailwindcss/no-custom-classname": "off",
-    "testing-library/prefer-screen-queries": "off",
-    "@next/next/no-html-link-for-pages": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
+    'jsx-a11y/alt-text': 'off',
+    'react/display-name': 'off',
+    'react/no-children-prop': 'off',
+    '@next/next/no-img-element': 'off',
+    '@next/next/no-page-custom-font': 'off',
+    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    'lines-around-comment': [
+      'error',
       {
-        argsIgnorePattern: "^_",
-        varsIgnorePattern: "^_",
-      },
+        beforeBlockComment: true,
+        beforeLineComment: true,
+        allowBlockStart: true,
+        allowObjectStart: true,
+        allowArrayStart: true
+      }
     ],
-    "sort-imports": [
-      "error",
+    'padding-line-between-statements': [
+      'error',
       {
-        ignoreCase: true,
-        ignoreDeclarationSort: true,
+        blankLine: 'any',
+        prev: 'export',
+        next: 'export'
       },
-    ],
-    "tailwindcss/classnames-order": "off",
-    "import/order": [
-      1,
       {
-        groups: ["external", "builtin", "internal", "sibling", "parent", "index"],
+        blankLine: 'always',
+        prev: ['const', 'let', 'var'],
+        next: '*'
+      },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var']
+      },
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: ['function', 'multiline-const', 'multiline-block-like']
+      },
+      {
+        blankLine: 'always',
+        prev: ['function', 'multiline-const', 'multiline-block-like'],
+        next: '*'
+      }
+    ],
+    'newline-before-return': 'error',
+    'import/newline-after-import': [
+      'error',
+      {
+        count: 1
+      }
+    ],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', ['internal', 'parent', 'sibling', 'index'], ['object', 'unknown']],
         pathGroups: [
-          ...getDirectoriesToSort().map((singleDir) => ({
-            pattern: `${singleDir}/**`,
-            group: "internal",
-          })),
           {
-            pattern: "env",
-            group: "internal",
+            pattern: 'react',
+            group: 'external',
+            position: 'before'
           },
           {
-            pattern: "theme",
-            group: "internal",
+            pattern: 'next/**',
+            group: 'external',
+            position: 'before'
           },
           {
-            pattern: "public/**",
-            group: "internal",
-            position: "after",
+            pattern: '~/**',
+            group: 'external',
+            position: 'before'
           },
+          {
+            pattern: '@/**',
+            group: 'internal'
+          }
         ],
-        pathGroupsExcludedImportTypes: ["internal"],
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-      },
+        pathGroupsExcludedImportTypes: ['react', 'type'],
+        'newlines-between': 'always-and-inside-groups'
+      }
     ],
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        extendDefaults: true,
+        types: {
+          Function: 'Use a specific function type instead',
+          Object: 'Use object instead',
+          Boolean: 'Use boolean instead',
+          Number: 'Use number instead',
+          String: 'Use string instead',
+          Symbol: 'Use symbol instead',
+          any: false,
+          '{}': false
+        }
+      }
+    ]
   },
-}
-
-function getDirectoriesToSort() {
-  const ignoredSortingDirectories = [".git", ".next", ".vscode", "node_modules"]
-  return getDirectories(process.cwd()).filter((f) => !ignoredSortingDirectories.includes(f))
-}
-
-function getDirectories(path) {
-  return fs.readdirSync(path).filter(function (file) {
-    return fs.statSync(path + "/" + file).isDirectory()
-  })
+  settings: {
+    react: {
+      version: 'detect'
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
+    },
+    'import/resolver': {
+      node: {},
+      typescript: {
+        project: './tsconfig.json'
+      }
+    }
+  },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', 'src/iconify-bundle/*'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-var-requires': 'off'
+      }
+    }
+  ]
 }

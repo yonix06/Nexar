@@ -1,1 +1,0 @@
-import RootLayout from "../app/layout"

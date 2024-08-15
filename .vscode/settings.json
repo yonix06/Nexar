@@ -26,15 +26,17 @@
     "pip-requirements",
     "postgres",
     "powershell",
+    "prisma",
     "properties",
     "query-editor",
     "search-result",
     "shellscript",
     "sqlite",
     "sqlite3-editor-database",
+    "styled-css",
     "tailwindcss"
   ],
-  "cSpell.language": "en,lorem,en-US,fr",
+  "cSpell.language": "en,lorem,en-US,en-GB,fr,fr-FR",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -51,6 +53,38 @@
     "app/",
     "component/",
     "app/ component/",
-    "/rootdir"
-  ]
+    "/rootdir",
+    "extensions",
+    "modules config",
+    "admin",
+    "layout"
+  ],
+  "cSpell.words": [
+    "arretes",
+    "bmstefanski",
+    "errpages",
+    "healthz",
+    "Jabłoński",
+    "Jakub",
+    "jjablonski",
+    "Klepacki",
+    "Mantine",
+    "Nexar",
+    "Nexarr",
+    "Stefanski",
+    "yonix"
+  ],
+  "local-history.daysLimit": 10,
+  "local-history.exclude": [
+    "**/old/**",
+    "**/.history/**",
+    "**/.vscode/**",
+    "**/node_modules/**",
+    "**/typings/**",
+    "**/out/**",
+    "**/Code/User/**"
+  ],
+  "local-history.maxDisplay": 5,
+  "local-history.saveDelay": 5,
+  "local-history.treeLocation": "localHistory"
 }
