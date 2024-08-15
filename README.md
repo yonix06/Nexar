@@ -330,7 +330,7 @@ Creative Commons License. Plus d'info:  [LICENSE](./LICENSE).
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.saintjeancapferrat.fr/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Yonix06"/><br /><sub><b>Yonix06</b></sub></a><br /><a href="https://github.com/yonix06/Nexar--Private/commits?author=yonix06" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.saintjeancapferrat.fr/"><img src="https://avatars.githubusercontent.com/u/15114126?v=4?s=100" width="100px;" alt="Yonix06"/><br /><sub><b>Yonix06</b></sub></a><br /><a href="https://github.com/yonix06/Nexar--Private/commits?author=yonix06" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
