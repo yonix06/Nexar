@@ -82,27 +82,28 @@ Pour commencer:
 
 1. Faire ce step-by-step: <https://github.com/microsoft/vscode/wiki/Commit-Signing> - Impératif si volonté de commit.
 
-2. Fork & clone le repertoire avec Github Desktop ou GitKraken:
+2. Fork & clone le repertoire avec Github Desktop ou GitKraken dans WSL:
 
 ```bash
 git clone https://github.com/yonix06/nexar--private.git
 ```
 
-3. Installez les dépendances :
+3. Installez les dépendances dans le dossier avec bash ou powershell (de préférence hors VS Code) :
 
 ```bash
 yarn install --frozen-lockfile
 ```
+4. Lancer VS Code et installer les extentions recommandés par l'espace de travail (et faire le tri de celles qu'on ne veut eventuellement pas)
 
-4. Exécuter le serveur de développement :
+5. Exécuter le serveur de développement :
 
 ```bash
 yarn dev
 ```
 
-5. Ouvrez [http://localhost:4000](http://localhost:4000) avec votre navigateur pour voir le résultat.
+6. Ouvrez [http://localhost:4000](http://localhost:4000) avec votre navigateur pour voir le résultat.
 
-6. Ce projet utilise un hook git pour appliquer les [commits conventionnels](https://github.com/qoomon/git-conventional-commits). Pour installer le hook git, exécutez la commande suivante dans le répertoire racine du projet :
+7. Ce projet utilise un hook git pour appliquer les [commits conventionnels](https://github.com/qoomon/git-conventional-commits). Pour installer le hook git, exécutez la commande suivante dans le répertoire racine du projet :
 
 ```sh
 yarn add pre-commit
@@ -115,21 +116,21 @@ Contributions are always welcome! To contribute, please follow these steps:
 
 1. Cloner le repertoire
 2. Creer sa propre branche ed dev intitulée: "dev-_'votrenom'_
-3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/).
-4. Push dans la branche créer ci-dessus.
-5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI depuis main.
+3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/) et de l'extension proposée pour automatiser les messages.
+4. Commit dans votre branche, pas celle des autres !
+5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI qui sera fait depuis main.
 
 ## 🚀 Deployment
 
 "One-click" déploiement avec [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js) en cliquant sur le bouton ci-dessous:
 
-[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/Nexar--Private) [Nécessite un compte, peut engendrer des frais]
+[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/Nexar--Private/) [Nécessite un compte, peut engendrer des frais]
 
 ## 📃 Scripts
 
 Script de dev disponibles: `package.json`: (à executer avec yarn, exemple "yarn dev")
 
-- `yarn dev`: Starts the development server with colorized output
+- `yarn dev`: Starts the development server
 - `yarn build`: Builds the app for production
 - `yarn start`: Starts the production server
 - `yarn lint`: Lints the code using ESLint
