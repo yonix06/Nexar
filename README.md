@@ -64,6 +64,7 @@ Avant toute chose: La machine doit être paramétrée correctement, l'outil "Dev
 
 Configuration minimale obligatoire:
 
+- Windows 11 Pro 21H1 au minimum, 23H2 conseillée. [Pour forcer l'install des Features Updates de Ms, executer l'outil "Assistant d'installation de Windows 11".](https://go.microsoft.com/fwlink/?linkid=2171764)
 - Windows WSL 2: Ubuntu ou Debian.
 - Git configuré dans WSL et Windows: <https://dev.to/stephanlamoureux/configuring-git-in-wsl-5e3m>.
 - VS Code dans WSL 2.
