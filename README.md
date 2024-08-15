@@ -64,11 +64,12 @@ Dans ce Stack, nous avons:
 
 Avant toute chose: La machine doit être paramétrée correctement, l'outil "Dev Home" de Microsoft permet une configuration rapide et facile de l'environnement.
 
-Configuration type conseillée:
+Configuration minimale obligatoire:
 
 - Windows WSL 2: Ubuntu ou Debian
+- Git configuré dans WSL et Windows <https://dev.to/stephanlamoureux/configuring-git-in-wsl-5e3m>
 - VS Code dans WSL 2
-- Docker Desktop ou Podman
+- Docker Desktop ou Podman (en option)
 
 Les utilitaires suivants sont conseillés:
 
