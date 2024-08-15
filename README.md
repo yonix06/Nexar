@@ -5,7 +5,13 @@
 Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. 🌍
 
 > [!NOTE]
-> **Documentation** [https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview]
+> **Documentation pertinente**
+> - [Next.JS](https://nextjs.org/docs)
+> - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
+> - [Material UI](https://mui.com/material-ui/getting-started/)
+> - [Theme de Matérial UI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview)
+> - [Storybook](https://storybook.js.org/docs)
+> - [Playwright](https://playwright.dev/docs/intro)
 
 ## Fonctionnalités
 
@@ -72,11 +78,11 @@ Configuration minimale obligatoire:
 
 Les utilitaires suivants sont conseillés:
 
-- Dev Home: Disponible sur le MS-Store.
-- UniGetUI: Manager de paquets multi-sources pour Windows (npm, scoop, pip).
-- NodeVersionManager: pour changer de version Node sans tout casser.
-- Yarn 4: Parce que c'est bien mieux avec un package-manager à jour.
-- WinUtil: Multi-tool pour optimiser rapidement le système, et installer en masse des programmes.
+- [Dev Home](https://github.com/microsoft/devhome): Disponible sur le MS-Store ou sur [Github](https://github.com/microsoft/devhome).
+- [UniGetUI](https://github.com/marticliment/UnigetUI): Manager de paquets multi-sources pour Windows (npm, scoop, pip).
+- [NodeVersionManager](https://github.com/coreybutler/nvm-windows/releases): pour changer de version Node sans tout casser.
+- [Yarn 4](https://yarnpkg.com/blog/release/4.0#installing-yarn): Parce que c'est bien mieux avec un package-manager à jour. (Et en plus la maj est inclue dans le projet, ça évite de se taper l'étape galère)
+- [WinUtil](https://github.com/ChrisTitusTech/winutil): Multi-tool pour optimiser rapidement le système, et installer en masse des programmes.
 
 Pour commencer:
 
