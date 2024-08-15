@@ -17,20 +17,20 @@ Dans ce Stack, nous avons:
 - 🛠️ **[TypeScript très strict](https://www.typescriptlang.org/)** - Avec la bibliothèque [`ts-reset`](https://github.com/total-typescript/ts-reset) pour une type safety ultime
 - 🚀 **[GitHub Actions](https://github.com/features/actions)** - Actions préconfigurées pour des workflows fluides, comprenant des statistiques de taille de paquet et des scores de performance
 - 💯 **Score de Lighthouse parfait** - Parce que la performance compte
-- **[Plugin de l'analyseur de taille de paquet](https://www.npmjs.com/package/@next/bundle-analyzer)** - Suivez votre taille de paquet
-- **[Jest](https://jestjs.io/)** et **[React Testing Library](https://testing-library.com/react)** - Pour des tests unitaires et d'intégration solides
-- **[Playwright](https://playwright.dev/)** - Écrivez des tests end-to-end comme un pro
-- **[Storybook](https://storybook.js.org/)** - Créez, testez et montrez vos composants
-- **[Jest - Tests de cohérence et de test d'acceptation](https://jestjs.io/fr/docs/getting-started)** - Pour une confiance dans vos déploiements
-- **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
-- **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile et report vers Grafana
-- **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
-- **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes/Docker-compatibles pour des déploiements robustes
-- **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
-- **[N8n - Création d'un système de design/relation cohérent, réutilisable et atomique](https://docs.n8n.io/)** - Outil pour gérer les relations entre les composants et le flow de travail.
-- **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
-- **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
-- **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement efficacement.
+- 📖 **[Plugin de l'analyseur de taille de paquet](https://www.npmjs.com/package/@next/bundle-analyzer)** - Suivez votre taille de paquet
+- 🧪 **[Jest](https://jestjs.io/)** et **[React Testing Library](https://testing-library.com/react)** - Pour des tests unitaires et d'intégration solides
+- 🧪 **[Playwright](https://playwright.dev/)** - Écrivez des tests end-to-end comme un pro
+- 📖 **[Storybook](https://storybook.js.org/)** - Créez, testez et montrez vos composants
+- 🧪 **[Jest - Tests de cohérence et de test d'acceptation](https://jestjs.io/fr/docs/getting-started)** - Pour une confiance dans vos déploiements
+- 🚀 **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
+- 🛠️ **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile et report vers Grafana
+- 📖 **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
+- 🛠️ **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes/Docker-compatibles pour des déploiements robustes
+- 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
+- 🛠️ **[N8n - Création d'un système de design/relation cohérent, réutilisable et atomique](https://docs.n8n.io/)** - Outil pour gérer les relations entre les composants et le flow de travail.
+- 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
+- 📖 **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
+- ✨ **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement efficacement.
 
 ## Sommaire
 
@@ -57,7 +57,7 @@ Dans ce Stack, nous avons:
   - [🤖 Assistance au code avec Codeium](#-assistance-au-code-avec-codeium)
   - [💻 Gestion des variables d'environnement](#-gestion-des-variables-denvironnement)
   - [📜 License](#-license)
-  - [Contributors](#contributors)
+  - [🐧 Contributors](#contributors)
 
 ## 🎯 Getting Started
 
@@ -322,7 +322,7 @@ Si les variables d'environnement requises ne sont pas définies, vous obtiendrez
 
 Creative Commons License. Plus d'info:  [LICENSE](./LICENSE).
 
-## Contributors
+## 🐧 Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
