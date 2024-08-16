@@ -48,13 +48,13 @@ const Navigation = () => {
     container = isBreakpointReached || !isPerfectScrollbar ? container.target : container
 
     if (shadowRef && container.scrollTop > 0) {
-      // @ts-ignore
+      // @ts-expect-error
       if (!shadowRef.current.classList.contains('scrolled')) {
-        // @ts-ignore
+        // @ts-expect-error
         shadowRef.current.classList.add('scrolled')
       }
     } else {
-      // @ts-ignore
+      // @ts-expect-error
       shadowRef.current.classList.remove('scrolled')
     }
   }

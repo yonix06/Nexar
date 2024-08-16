@@ -36,7 +36,7 @@ export const confirmUrlInChildren = (children: ChildrenType['children'], url: st
   if (isValidElement(children)) {
     const { component, href, exactMatch, activeUrl, children: subChildren } = children.props
 
-    if (component && component.props.href) {
+    if (component?.props.href) {
       return exactMatch === true || exactMatch === undefined
         ? component.props.href === url
         : activeUrl && url.includes(activeUrl)

@@ -50,6 +50,7 @@
         "vitaliymaz.vscode-svg-previewer",
         "bourhaouta.tailwindshades",
         "ms-vscode.test-adapter-converter",
-        "e2e-test-quest.uuv-vscode-extension"
+        "e2e-test-quest.uuv-vscode-extension",
+        "nitayneeman.playwright-snippets"
     ]
 }
