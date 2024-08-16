@@ -4,16 +4,17 @@
   "license": "CC@0.1.0",
   "private": true,
   "scripts": {
-    "update": "yarn install --immutable",
+    "upgrade": "upgrade-interactive",
+    "dependences": "install --immutable",
     "dev": "nx next:dev --port 4000",
     "build": "nx next:build",
     "start": "nx next:start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "build:icons": "tsx src/assets/iconify-icons/bundle-icons-css.ts",
-    "postinstall": "npm run build:icons",
+    "postinstall": "run build:icons",
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
     "build-storybook": "storybook build",
@@ -28,7 +29,7 @@
     "@emotion/cache": "^11.13.1",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
-    "@mui/lab": "5.0.0-alpha.170",
+    "@mui/lab": "5.0.0-alpha.173",
     "@mui/material": "^5.16.7",
     "@mui/material-nextjs": "^5.16.6",
     "apexcharts": "^3.52.0",
@@ -37,6 +38,7 @@
     "react": "^18.3.1",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18.3.1",
+    "react-native": "0.74.1",
     "react-perfect-scrollbar": "^1.5.8",
     "react-use": "^17.5.1",
     "webpack": "^5.93.0"
@@ -48,6 +50,7 @@
     "@iconify/tools": "^4.0.5",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^2.1.30",
+    "@nrwl/workspace": "^19.6.0",
     "@nx/cypress": "19.6.0",
     "@nx/devkit": "19.6.0",
     "@nx/esbuild": "19.6.0",
@@ -57,9 +60,11 @@
     "@nx/next": "19.6.0",
     "@nx/node": "19.6.0",
     "@nx/playwright": "19.6.0",
-    "@nx/react": "19.6.0",
+    "@nx/react": "^19.6.0",
+    "@nx/react-native": "19.6.0",
     "@nx/storybook": "19.6.0",
     "@nx/web": "19.6.0",
+    "@nx/webpack": "19.6.0",
     "@nx/workspace": "19.6.0",
     "@opentelemetry/api": "^1.9.0",
     "@opentelemetry/core": "^1.25.1",
@@ -75,30 +80,30 @@
     "@storybook/addon-links": "^8.2.9",
     "@storybook/addon-onboarding": "^8.2.9",
     "@storybook/blocks": "^8.2.9",
-    "@storybook/core-server": "^8.2.8",
+    "@storybook/core-server": "^8.2.9",
     "@storybook/jest": "^0.2.3",
     "@storybook/nextjs": "^8.2.9",
     "@storybook/react": "^8.2.9",
     "@storybook/test": "^8.2.9",
-    "@storybook/test-runner": "^0.13.0",
+    "@storybook/test-runner": "^0.19.1",
     "@storybook/testing-library": "^0.2.2",
-    "@swc-node/register": "~1.9.1",
-    "@swc/core": "~1.5.7",
-    "@swc/helpers": "~0.5.11",
+    "@swc-node/register": "~1.10.9",
+    "@swc/core": "~1.7.11",
+    "@swc/helpers": "~0.5.12",
     "@t3-oss/env-nextjs": "^0.11.0",
     "@testing-library/jest-dom": "^6.4.8",
-    "@types/node": "^22.3.0",
+    "@types/node": "^22.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
-    "@typescript-eslint/parser": "8.0.0",
+    "@typescript-eslint/parser": "8.1.0",
     "@typescript-eslint/typescript-estree": "^8.1.0",
     "@typescript-eslint/utils": "^8.1.0",
     "autoprefixer": "^10.4.20",
-    "cypress": "^13.13.0",
-    "esbuild": "^0.19.2",
+    "cypress": "^13.13.3",
+    "esbuild": "^0.23.0",
     "eslint": "8.57.0",
-    "eslint-config-next": "^15.0.0-rc.0",
+    "eslint-config-next": "^14.2.5",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
@@ -122,11 +127,12 @@
     "stylelint-use-logical-spec": "^5.0.1",
     "tailwindcss": "^3.4.10",
     "tailwindcss-logical": "^3.0.1",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "ts-reset": "^0.0.1",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.1.0",
+    "webpack-cli": "^5.1.4",
     "zod": "^3.23.8"
   },
   "resolutions": {
@@ -141,35 +147,5 @@
       "plugin:storybook/recommended"
     ]
   },
-  "nx": {
-    "targets": {
-      "build": {
-        "executor": "@nx/esbuild:esbuild",
-        "outputs": [
-          "{options.outputPath}"
-        ],
-        "defaultConfiguration": "production",
-        "options": {
-          "outputPath": "dist/Nexar",
-          "outputFileName": "main.js",
-          "assets": [
-            {
-              "glob": "./README.md",
-              "input": ".",
-              "output": "."
-            }
-          ],
-          "platform": "node"
-        },
-        "configurations": {
-          "development": {
-            "minify": false
-          },
-          "production": {
-            "minify": true
-          }
-        }
-      }
-    }
-  }
+  "nx": {}
 }
