@@ -20,7 +20,7 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 Dans ce Stack, nous avons:
 
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
-- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument énorme)
+- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
 - 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
 - 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI

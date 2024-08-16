@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  
   "targetDefaults": {
     "build": {
       "cache": true
@@ -9,9 +10,14 @@
     },
     "test": {
       "cache": true
+    },
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     }
   },
-  "defaultBase": "main",
+  "defaultBase": "dev-yo",
   "plugins": [
     {
       "plugin": "@nx/eslint/plugin",
@@ -50,5 +56,5 @@
       }
     }
   ],
-  "nxCloudAccessToken": "MjA5MmJlZWItMDc4ZC00NTUzLTlkMGYtMTE0ZTE5MWFiNDY5fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MzRjYTQ2NDMtNjEyZi00MDg2LWFkODMtMGY4NjM3ZGFmZTk5fHJlYWQtd3JpdGU="
 }

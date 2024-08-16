@@ -47,8 +47,11 @@
     "@iconify/tools": "^4.0.5",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^2.1.30",
+    "@nx/devkit": "19.6.0",
+    "@nx/esbuild": "19.6.0",
     "@nx/eslint": "19.6.0",
     "@nx/jest": "19.6.0",
+    "@nx/js": "19.6.0",
     "@nx/next": "19.6.0",
     "@nx/playwright": "19.6.0",
     "@nx/react": "^19.6.0",
@@ -68,9 +71,16 @@
     "@storybook/addon-links": "^8.2.9",
     "@storybook/addon-onboarding": "^8.2.9",
     "@storybook/blocks": "^8.2.9",
+    "@storybook/core-server": "^8.2.8",
+    "@storybook/jest": "^0.2.3",
     "@storybook/nextjs": "^8.2.9",
     "@storybook/react": "^8.2.9",
     "@storybook/test": "^8.2.9",
+    "@storybook/test-runner": "^0.13.0",
+    "@storybook/testing-library": "^0.2.2",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
     "@t3-oss/env-nextjs": "^0.11.0",
     "@testing-library/jest-dom": "^6.4.8",
     "@types/node": "^22.3.0",
@@ -81,6 +91,7 @@
     "@typescript-eslint/typescript-estree": "^8.1.0",
     "@typescript-eslint/utils": "^8.1.0",
     "autoprefixer": "^10.4.20",
+    "esbuild": "^0.19.2",
     "eslint": "^9.9.0",
     "eslint-config-next": "^15.0.0-rc.0",
     "eslint-config-prettier": "^9.1.0",
@@ -106,6 +117,7 @@
     "stylelint-use-logical-spec": "^5.0.1",
     "tailwindcss": "^3.4.10",
     "tailwindcss-logical": "^3.0.1",
+    "ts-node": "10.9.1",
     "ts-reset": "^0.0.1",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4",
@@ -124,5 +136,35 @@
       "plugin:storybook/recommended"
     ]
   },
-  "nx": {}
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/esbuild:esbuild",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "defaultConfiguration": "production",
+        "options": {
+          "outputPath": "dist/Nexar",
+          "outputFileName": "main.js",
+          "assets": [
+            {
+              "glob": "./README.md",
+              "input": ".",
+              "output": "."
+            }
+          ],
+          "platform": "node"
+        },
+        "configurations": {
+          "development": {
+            "minify": false
+          },
+          "production": {
+            "minify": true
+          }
+        }
+      }
+    }
+  }
 }
