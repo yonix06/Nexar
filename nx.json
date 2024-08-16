@@ -32,6 +32,9 @@
     },
     "e2e:ui": {
       "cache": true
+    },
+    "storybook": {
+      "cache": true
     }
   },
   "defaultBase": "dev-yo",
@@ -104,5 +107,5 @@
       }
     }
   ],
-  "nxCloudAccessToken": "NmJjMjU4M2QtMWQzNi00OGY4LWE1OGEtNTRiN2Y5YTBlZTJhfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZjYyZDA0OGUtYmVkNy00ZjQyLWFmNTEtMDA2MzE4Y2VhZDk2fHJlYWQtd3JpdGU="
 }
