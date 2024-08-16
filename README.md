@@ -2,10 +2,17 @@
 
 # Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
-Bienvenue _Nexar, application fullstack personnalisé basé sur Next.JS 14. 🌍
+Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. 🌍
 
 > [!NOTE]
-> **Documentation** [https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview]
+> **Documentation pertinente**
+> - [Next.JS](https://nextjs.org/docs)
+> - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
+> - [Material UI](https://mui.com/material-ui/getting-started/)
+> - [Theme de Matérial UI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview)
+> - [Storybook](https://storybook.js.org/docs)
+> - [Prisma](https://www.prisma.io/docs)
+> - [Playwright](https://playwright.dev/docs/intro)
 
 ## Fonctionnalités
 
@@ -13,24 +20,23 @@ Dans ce Stack, nous avons:
 
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
+- 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
+- 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
 - ✨ **[ESlint](https://eslint.org/)** et **[Prettier](https://prettier.io/)** - Pour du code propre, cohérent et sans erreurs
-- 🛠️ **[TypeScript très strict](https://www.typescriptlang.org/)** - Avec la bibliothèque [`ts-reset`](https://github.com/total-typescript/ts-reset) pour une type safety ultime
+- ✨ **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement efficacement.
 - 🚀 **[GitHub Actions](https://github.com/features/actions)** - Actions préconfigurées pour des workflows fluides, comprenant des statistiques de taille de paquet et des scores de performance
-- 💯 **Score de Lighthouse parfait** - Parce que la performance compte
-- **[Plugin de l'analyseur de taille de paquet](https://www.npmjs.com/package/@next/bundle-analyzer)** - Suivez votre taille de paquet
-- **[Jest](https://jestjs.io/)** et **[React Testing Library](https://testing-library.com/react)** - Pour des tests unitaires et d'intégration solides
-- **[Playwright](https://playwright.dev/)** - Écrivez des tests end-to-end comme un pro
-- **[Storybook](https://storybook.js.org/)** - Créez, testez et montrez vos composants
-- **[Jest - Tests de cohérence et de test d'acceptation](https://jestjs.io/fr/docs/getting-started)** - Pour une confiance dans vos déploiements
-- **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
-- **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile et report vers Grafana
-- **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
-- **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes/Docker-compatibles pour des déploiements robustes
-- **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
-- **[N8n - Création d'un système de design/relation cohérent, réutilisable et atomique](https://docs.n8n.io/)** - Outil pour gérer les relations entre les composants et le flow de travail.
-- **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
-- **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
-- **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement efficacement.
+- 🚀 **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
+- 📖 **[Plugin de l'analyseur de taille de paquet](https://www.npmjs.com/package/@next/bundle-analyzer)** - Suivez votre taille de paquet
+- 📖 **[Storybook](https://storybook.js.org/)** - Créez, testez et montrez vos composants
+- 📖 **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
+- 📖 **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
+- 🧪 **[React Testing Library](https://testing-library.com/react)** - Pour des tests unitaires et d'intégration solides
+- 🧪 **[Playwright](https://playwright.dev/)** - Écrivez des tests end-to-end comme un pro
+- 🧪 **[Jest - Tests de cohérence et de test d'acceptation](https://jestjs.io/fr/docs/getting-started)** - Pour une confiance dans vos déploiements
+- 🛠️ **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile et report vers Grafana
+- 🛠️ **[TypeScript très strict](https://www.typescriptlang.org/)** - Avec la bibliothèque [`ts-reset`](https://github.com/total-typescript/ts-reset) pour une type safety ultime
+- 🛠️ **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes/Docker-compatibles pour des déploiements robustes
+- 🛠️ **[N8n - Création d'un système de design/relation cohérent, réutilisable et atomique](https://docs.n8n.io/)** - Outil pour gérer les relations entre les composants et le flow de travail.
 
 ## Sommaire
 
@@ -38,6 +44,7 @@ Dans ce Stack, nous avons:
   - [Fonctionnalités](#fonctionnalités)
   - [Sommaire](#sommaire)
   - [🎯 Getting Started](#-getting-started)
+  - [🤝 Participation au projet](#-participation-au-projet)
   - [🚀 Deployment](#-deployment)
   - [📃 Scripts](#-scripts)
   - [🔗 Coupling Graph (a remplacer par GraphQL et n8n)](#-coupling-graph-a-remplacer-par-graphql-et-n8n)
@@ -54,79 +61,83 @@ Dans ce Stack, nous avons:
     - [Jotai](#jotai)
     - [Recoil](#recoil)
   - [🤖 Assistance au code avec Codeium](#-assistance-au-code-avec-codeium)
-  - [💻 Environment Variables handling](#-environment-variables-handling)
-  - [🤝 Participation au projet](#-participation-au-projet)
-  - [Support](#support)
+  - [💻 Gestion des variables d'environnement](#-gestion-des-variables-denvironnement)
   - [📜 License](#-license)
-  - [Contributors](#contributors)
+  - [🐧 Contributors](#contributors)
 
 ## 🎯 Getting Started
 
 Avant toute chose: La machine doit être paramétrée correctement, l'outil "Dev Home" de Microsoft permet une configuration rapide et facile de l'environnement.
 
-Configuration type conseillée:
+Configuration minimale obligatoire:
 
-- Windows WSL 2: Ubuntu ou Debian
-- VS Code dans WSL 2
-- Docker Desktop ou Podman
+- Windows 11 Pro 21H1 au minimum, 23H2 conseillée. [Pour forcer l'install des Features Updates de Ms, executer l'outil "Assistant d'installation de Windows 11".](https://go.microsoft.com/fwlink/?linkid=2171764)
+- Windows WSL 2: Ubuntu ou Debian.
+- [Git configuré dans WSL et Windows](https://dev.to/stephanlamoureux/configuring-git-in-wsl-5e3m).
+- VS Code dans WSL 2.
+- Docker Desktop ou Podman (en option).
 
 Les utilitaires suivants sont conseillés:
 
-- Dev Home: Disponible sur le MS-Store.
-- UniGetUI: Manager de paquets multi-sources pour Windows (npm, scoop, pip)
-- NodeVersionManager: pour changer de version Node sans tout casser.
-- Yarn 4: Parce que c'est bien mieux avec un package-manager à jour.
-- WinUtil: Multi-tool pour optimiser rapidement le système, et installer en masse des programmes.
+- [Dev Home](https://github.com/microsoft/devhome): Disponible sur le MS-Store ou sur [Github](https://github.com/microsoft/devhome).
+- [UniGetUI](https://github.com/marticliment/UnigetUI): Manager de paquets multi-sources pour Windows (npm, scoop, pip).
+- [NodeVersionManager](https://github.com/coreybutler/nvm-windows/releases): pour changer de version Node sans tout casser.
+- [Yarn 4](https://yarnpkg.com/blog/release/4.0#installing-yarn): Parce que c'est bien mieux avec un package-manager à jour. (Et en plus la maj est inclue dans le projet, ça évite de se taper l'étape galère)
+- [WinUtil](https://github.com/ChrisTitusTech/winutil): Multi-tool pour optimiser rapidement le système, et installer en masse des programmes.
 
 Pour commencer:
 
 1. Faire ce step-by-step: <https://github.com/microsoft/vscode/wiki/Commit-Signing> - Impératif si volonté de commit.
 
-2. Fork & clone le repertoire avec Github Desktop ou GitKraken:
+2. Fork & clone le repertoire avec Github Desktop ou GitKraken dans WSL:
 
 ```bash
 git clone https://github.com/yonix06/nexar--private.git
 ```
 
-3. Installez les dépendances :
+3. Installez les dépendances dans le dossier avec bash ou powershell (de préférence hors VS Code) :
 
 ```bash
 yarn install --frozen-lockfile
 ```
+4. Lancer VS Code et installer les extentions recommandés par l'espace de travail (et faire le tri de celles qu'on ne veut eventuellement pas)
 
-4. Exécuter le serveur de développement :
+5. Exécuter le serveur de développement :
 
 ```bash
 yarn dev
 ```
 
-5. Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir le résultat.
+6. Ouvrez [http://localhost:4000](http://localhost:4000) avec votre navigateur pour voir le résultat.
 
-6. Ce projet utilise un hook git pour appliquer les [commits conventionnels](https://github.com/qoomon/git-conventional-commits). Pour installer le hook git, exécutez la commande suivante dans le répertoire racine du projet :
-
-```sh
-brew install pre-commit
-pre-commit install -t commit-msg
-```
-
-ou
+7. Ce projet utilise un hook git pour appliquer les [commits conventionnels](https://github.com/qoomon/git-conventional-commits). Pour installer le hook git, exécutez la commande suivante dans le répertoire racine du projet :
 
 ```sh
 yarn add pre-commit
 pre-commit install -t commit-msg
 ```
 
+## 🤝 Participation au projet
+
+Contributions are always welcome! To contribute, please follow these steps:
+
+1. Cloner le repertoire
+2. Creer sa propre branche ed dev intitulée: "dev-_'votrenom'_
+3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/) et de l'extension proposée pour automatiser les messages.
+4. Commit dans votre branche, pas celle des autres !
+5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI qui sera fait depuis main.
+
 ## 🚀 Deployment
 
 "One-click" déploiement avec [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js) en cliquant sur le bouton ci-dessous:
 
-[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/next-gestion-arretes) [Nécessite un compte, peut engendrer des frais]
+[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/yonix06/Nexar--Private/) [Nécessite un compte, peut engendrer des frais]
 
 ## 📃 Scripts
 
-Script de dev disponibles: `old/package.json`: (à executer avec yarn, exemple "yarn dev")
+Script de dev disponibles: `package.json`: (à executer avec yarn, exemple "yarn dev")
 
-- `yarn dev`: Starts the development server with colorized output
+- `yarn dev`: Starts the development server
 - `yarn build`: Builds the app for production
 - `yarn start`: Starts the production server
 - `yarn lint`: Lints the code using ESLint
@@ -192,7 +203,7 @@ npx tsx .\data\databaseManager.tsx
 
 ## 🧪 Testing
 
-Ce boilerplate est fourni avec divers configurations de test pour garantir la fiabilité et la robustesse de votre application.
+Ce stack est build avec divers configurations de test pour garantir la fiabilité et la robustesse de votre application.
 
 ### Running Tests
 
@@ -244,7 +255,7 @@ Pour vérifier que les composants s'affichent correctement sans erreurs, nous ut
 
 ## 🎨 Styling et système de design
 
-Ce boilerplate utilise Tailwind CSS pour le style et CVA pour créer un système de design puissant et facile à utiliser. Si vous voulez en savoir plus sur la configuration, regardez cette superbe vidéo sur Vercel :
+Ce stack utilise Tailwind CSS pour le style et CVA pour créer un système de design puissant et facile à utiliser.
 
 [Styling et système de design]
 
@@ -285,7 +296,7 @@ Avec Codeium, vous pouvez :
 
 Codeium est une révolution pour le développement logiciel. Il vous aide à écrire du code de meilleure qualité, plus rapidement. Il vous aide également à réduire les erreurs et à améliorer la qualité du code. Codeium est un outil indispensable pour tout développeur logiciel.
 
-## 💻 Environment Variables handling
+## 💻 Gestion des variables denvironnement
 
 [T3 Env](https://env.t3.gg/) est une bibliothèque qui fournit une vérification des variables d'environnement au moment de la compilation, une validation de type et une transformation. Elle garantit que votre application utilise les bonnes variables d'environnement et que leurs valeurs sont du type attendu. Vous n'aurez plus jamais de problèmes de runtime causés par des erreurs de variables d'environnement.
 
@@ -315,25 +326,11 @@ Si les variables d'environnement requises ne sont pas définies, vous obtiendrez
   ❌ Invalid environment variables: { SECRET_KEY: [ 'Required' ] }
 ```
 
-## 🤝 Participation au projet
-
-Contributions are always welcome! To contribute, please follow these steps:
-
-1. Cloner le repertoire
-2. Creer sa propre branche ed dev intitulée: "dev-_'votrenom'_
-3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/).
-4. Push dans la branche créer ci-dessus.
-5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI depuis main.
-
-## Support
-
-euuuh
-
 ## 📜 License
 
 Creative Commons License. Plus d'info:  [LICENSE](./LICENSE).
 
-## Contributors
+## 🐧 Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -341,7 +338,7 @@ Creative Commons License. Plus d'info:  [LICENSE](./LICENSE).
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.saintjeancapferrat.fr.com/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Yonix06"/><br /><sub><b>Yonix06</b></sub></a><br /><a href="https://github.com/yonix06/next-gestion-arretes/commits?author=yonix06" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.saintjeancapferrat.fr/"><img src="https://avatars.githubusercontent.com/u/15114126?v=4?s=100" width="100px;" alt="Yonix06"/><br /><sub><b>Yonix06</b></sub></a><br /><a href="https://github.com/yonix06/Nexar--Private/commits?author=yonix06" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
@@ -363,8 +360,8 @@ Creative Commons License. Plus d'info:  [LICENSE](./LICENSE).
 <!-- Badges and links -->
 
 [check-workflow-badge]: https://img.shields.io/github/actions/workflow/status/yonix06/Nexar--Private/check.yml?label=check
-[github-license-badge]: https://img.shields.io/github/license/yonix06/Nexar--Private?link=https%3A%2F%2Fgithub.com%2FBlazity%2Fnext-enterprise%2Fblob%2Fmain%2FLICENSE
-[github-contributors-badge]: https://img.shields.io/github/contributors/yonix06/Nexar--Private?link=https%3A%2F%2Fgithub.com%2FBlazity%2Fnext-enterprise%2Fgraphs%2Fcontributors
+[github-license-badge]: https://img.shields.io/github/license/yonix06/Nexar--Private?link=https%3A%2F%2Fgithub.com%2Fyonix06%2FNexar--Private%2Fblob%2Fmain%2FLICENSE
+[github-contributors-badge]: https://img.shields.io/github/contributors/yonix06/Nexar--Private?link=https%3A%2F%2Fgithub.com%2Fyonix06%2FNexar--Private%2Fgraphs%2Fcontributors
 
 [check-workflow-badge-link]: https://github.com/yonix06/Nexar--Private/actions/workflows/check.yml
 [github-license-badge-link]: https://github.com/yonix06/Nexar--Private/blob/main/LICENSE
