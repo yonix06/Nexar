@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-      - master
-      - develop
+      - dev-yo
+      - dev-main
   pull_request:
   workflow_dispatch:
 
