@@ -129,3 +129,14 @@ web_modules/
 .pnp.*
 
 .DS_Store
+
+
+.nx/cache
+.nx/workspace-data
+
+# Next.js
+.next
+out
+
+
+storybook-static

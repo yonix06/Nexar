@@ -28,15 +28,6 @@
       "@/*": [
         "./src/*"
       ],
-      "@core/*": [
-        "./src/@core/*"
-      ],
-      "@layouts/*": [
-        "./src/@layouts/*"
-      ],
-      "@menu/*": [
-        "./src/@menu/*"
-      ],
       "@assets/*": [
         "./src/assets/*"
       ],
@@ -45,6 +36,15 @@
       ],
       "@configs/*": [
         "./src/configs/*"
+      ],
+      "@core/*": [
+        "./src/@core/*"
+      ],
+      "@layouts/*": [
+        "./src/@layouts/*"
+      ],
+      "@menu/*": [
+        "./src/@menu/*"
       ],
       "@views/*": [
         "./src/views/*"

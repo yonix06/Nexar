@@ -51,7 +51,7 @@ export const Small: Story = {
   },
 };
 
-export const Gbfjn: Story = {
+export const Ternary: Story = {
   args: {
     primary: false,
     label: "Button"
