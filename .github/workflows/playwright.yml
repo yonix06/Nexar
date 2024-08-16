@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-      - master
-      - develop
+      - dev-yo
+      - dev-main
   pull_request: null
   workflow_dispatch: null
 jobs:
