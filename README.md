@@ -6,6 +6,7 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 
 > [!NOTE]
 > **Documentation pertinente**
+>
 > - [Next.JS](https://nextjs.org/docs)
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 > - [Material UI](https://mui.com/material-ui/getting-started/)
@@ -19,6 +20,7 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 Dans ce Stack, nous avons:
 
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
+- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
 - 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
 - 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
@@ -61,9 +63,9 @@ Dans ce Stack, nous avons:
     - [Jotai](#jotai)
     - [Recoil](#recoil)
   - [🤖 Assistance au code avec Codeium](#-assistance-au-code-avec-codeium)
-  - [💻 Gestion des variables d'environnement](#-gestion-des-variables-denvironnement)
+  - [💻 Gestion des variables denvironnement](#-gestion-des-variables-denvironnement)
   - [📜 License](#-license)
-  - [🐧 Contributors](#contributors)
+  - [🐧 Contributors](#-contributors)
 
 ## 🎯 Getting Started
 
@@ -95,11 +97,12 @@ Pour commencer:
 git clone https://github.com/yonix06/nexar--private.git
 ```
 
-3. Installez les dépendances dans le dossier avec bash ou powershell (de préférence hors VS Code) :
+3. Installez les dépendances dans le dossier avec bash ou powershell (de préférence hors VS Code, et penser à relancer régulièrement pour update les dependences du projet qui sont mis à jours par le bot) :
 
 ```bash
-yarn install --frozen-lockfile
+yarn install --immutable
 ```
+
 4. Lancer VS Code et installer les extentions recommandés par l'espace de travail (et faire le tri de celles qu'on ne veut eventuellement pas)
 
 5. Exécuter le serveur de développement :
@@ -262,6 +265,7 @@ Ce stack utilise Tailwind CSS pour le style et CVA pour créer un système de de
 Alors que les bibliothèques CSS-in-TS comme [Stitches](https://stitches.dev/) et [Vanilla Extract](https://vanilla-extract.style/) sont excellentes pour créer des composants d'interface utilisateur type-safe, elles ne sont peut-être pas la meilleure option pour tout le monde. Vous pourriez préférer plus de contrôle sur vos feuilles de style, utiliser un framework comme Tailwind CSS ou simplement aimer écrire votre propre CSS.
 
 ### CVA - Une nouvelle approche des variantes
+
 Créer des variantes à l'aide de CSS traditionnel peut être une tâche fastidieuse qui nécessite de faire correspondre manuellement les classes aux props et d'ajouter des types. CVA est là pour vous soustraire de cette peine. En vous offrant une approche facile et type-safe pour créer des variantes, CVA simplifie le processus et vous permet de créer des systèmes de design puissants tout en conservant le contrôle et la flexibilité du CSS.
 
 ## 💾 State Management
