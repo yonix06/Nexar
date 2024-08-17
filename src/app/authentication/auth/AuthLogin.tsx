@@ -1,4 +1,7 @@
 import React from "react";
+
+import Link from "next/link";
+
 import {
   Box,
   Typography,
@@ -8,7 +11,6 @@ import {
   Stack,
   Checkbox,
 } from "@mui/material";
-import Link from "next/link";
 
 import CustomTextField from "components/forms/theme-elements/CustomTextField";
 

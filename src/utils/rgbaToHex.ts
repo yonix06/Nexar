@@ -4,7 +4,7 @@ export const rgbaToHex = (colorStr: string, forceRemoveAlpha: boolean = false) =
 
   if (hasSlash) {
     // Extract the RGBA values from the input string
-    const rgbaValues = colorStr.match(/(\d+)\s+(\d+)\s+(\d+)\s+\/\s+([\d.]+)/)
+    const rgbaValues = /(\d+)\s+(\d+)\s+(\d+)\s+\/\s+([\d.]+)/.exec(colorStr)
 
     if (!rgbaValues) {
       return colorStr // Return the original string if it doesn't match the expected format
