@@ -15,7 +15,7 @@
     "deps:fix": "install --immutable",
     "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
     "prettier:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "preinstall": "npx npm-only-allow@latest --PM yarn",
+    "preinstall": "",
     "postinstall": "",
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
