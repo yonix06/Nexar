@@ -8,9 +8,8 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 > **Documentation pertinente**
 >
 > - [Next.JS](https://nextjs.org/docs)
+> - [Auth.JS](https://authjs.dev/)
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
-> - [Material UI](https://mui.com/material-ui/getting-started/)
-> - [Theme de Matérial UI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/overview)
 > - [Storybook](https://storybook.js.org/docs)
 > - [Prisma](https://www.prisma.io/docs)
 > - [Playwright](https://playwright.dev/docs/intro)
@@ -42,7 +41,7 @@ Dans ce Stack, nous avons:
 
 ## Sommaire
 
-- [Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS     ](#nexar---application-de-gestion-des-arrêtés-municipaux-basé-sur-nextjs-----)
+- [Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS](#nexar---application-de-gestion-des-arrêtés-municipaux-basé-sur-nextjs)
   - [Fonctionnalités](#fonctionnalités)
   - [Sommaire](#sommaire)
   - [🎯 Getting Started](#-getting-started)
