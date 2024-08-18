@@ -1,13 +1,3 @@
 {
-  "extends": ["plugin:cypress/recommended"],
-  "ignorePatterns": ["!**/*"],
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "parserOptions": {
-        "project": "./tsconfig.*?.json"
-      },
-      "rules": {}
-    }
-  ]
+  "extends": "next/core-web-vitals"
 }

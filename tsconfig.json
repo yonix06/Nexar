@@ -1,15 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "downlevelIteration": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./components/*"],
+      "@/pages/*": ["./app/*"],
+      "@/app/*": ["./app/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/styles/*": ["./styles/*"]
+    },
+
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -19,31 +27,8 @@
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"],
-      "@configs/*": ["./src/configs/*"],
-      "@core/*": ["./src/@core/*"],
-      "@layouts/*": ["./src/@layouts/*"],
-      "@menu/*": ["./src/@menu/*"],
-      "@views/*": ["./src/views/*"]
-    }
+    ]
   },
-  "include": ["next.config.mjs", "tailwind.config.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "**/*.stories.ts", "**/*.stories.js"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
-  "references": [
-    {
-      "path": "./tsconfig.storybook.json"
-    },
-    {
-      "path": "./e2e/tsconfig.json"
-    }
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

@@ -1,8 +1,13 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "root": "src",
   "targetDefaults": {
     "build": {
+      "cache": true
+    },
+    "build:icons": {
+      "cache": true
+    },
+    "format": {
       "cache": true
     },
     "lint": {
@@ -11,101 +16,18 @@
     "test": {
       "cache": true
     },
-    "@nx/esbuild:esbuild": {
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "^default"
-      ]
-    },
-    "dependences": {
-      "cache": true
-    },
-    "build:icons": {
-      "cache": true
-    },
     "e2e:headless": {
       "cache": true
     },
     "e2e:ui": {
       "cache": true
     },
-    "storybook": {
+    "test-storybook": {
+      "cache": true
+    },
+    "typecheck": {
       "cache": true
     }
   },
-  "defaultBase": "dev-yo",
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "jest:test"
-      }
-    },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/next/plugin",
-      "options": {
-        "startTargetName": "next:start",
-        "buildTargetName": "next:build",
-        "devTargetName": "next:dev",
-        "serveStaticTargetName": "serve-static"
-      }
-    },
-    {
-      "plugin": "@nx/storybook/plugin",
-      "options": {
-        "serveStorybookTargetName": "storybook",
-        "buildStorybookTargetName": "build-storybook",
-        "testStorybookTargetName": "test-storybook",
-        "staticStorybookTargetName": "static-storybook"
-      }
-    },
-    {
-      "plugin": "@nx/cypress/plugin",
-      "options": {
-        "targetName": "e2e",
-        "openTargetName": "open-cypress",
-        "componentTestingTargetName": "component-test",
-        "ciTargetName": "e2e-ci"
-      }
-    },
-    {
-      "plugin": "@nx/react-native/plugin",
-      "options": {
-        "startTargetName": "start",
-        "upgradeTargetName": "update",
-        "bundleTargetName": "bundle",
-        "podInstallTargetName": "pod-install",
-        "runIosTargetName": "run-ios",
-        "runAndroidTargetName": "run-android",
-        "buildIosTargetName": "build-ios",
-        "buildAndroidTargetName": "build-android",
-        "syncDepsTargetName": "sync-deps"
-      }
-    },
-    {
-      "plugin": "@nx/webpack/plugin",
-      "options": {
-        "buildTargetName": "build",
-        "serveTargetName": "serve",
-        "previewTargetName": "preview"
-      }
-    }
-  ],
-  "nxCloudAccessToken": "ZjYyZDA0OGUtYmVkNy00ZjQyLWFmNTEtMDA2MzE4Y2VhZDk2fHJlYWQtd3JpdGU="
+  "defaultBase": "main"
 }
