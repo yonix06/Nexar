@@ -1,0 +1,29 @@
+{
+  "name": "e2e-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./e2e/e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["Nexar"],
+  "targets": {
+    "e2e": {
+      "executor": "@ns3/nx-jest-playwright:jest-playwright",
+      "options": {
+        "devServerTarget": "Nexar:serve",
+        "jestConfig": "./e2e/e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "Nexar:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["./e2e/e2e/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
