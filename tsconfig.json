@@ -6,13 +6,12 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["./components/*"],
-      "@/pages/*": ["./app/*"],
       "@/app/*": ["./app/*"],
+      "@/components/*": ["./components/*"],
       "@/lib/*": ["./lib/*"],
+      "@/pages/*": ["./app/*"],
       "@/styles/*": ["./styles/*"]
     },
-
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -30,5 +29,15 @@
     ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/*.stories.ts", "**/*.stories.js"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.storybook.json"
+    }
+  ]
 }
