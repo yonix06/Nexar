@@ -55,16 +55,21 @@
     "tsx": "^4.17.0",
     "typescript": "5.2.2",
     "use-debounce": "^9.0.4",
-    "vaul": "^0.6.8"
+    "vaul": "^0.6.8",
+    "webpack": "^5.93.0"
   },
   "devDependencies": {
+    "@iconify/tools": "^4.0.5",
     "@nx-extend/playwright": "9.0.0",
-    "@nx/jest": "19.6.0",
+    "@nx/devkit": "19.7.0-canary.20240817-b91d788",
+    "@nx/esbuild": "19.7.0-canary.20240817-b91d788",
+    "@nx/jest": "19.7.0-canary.20240817-b91d788",
     "@nx/js": "19.7.0-canary.20240817-b91d788",
     "@nx/next": "19.6.0",
-    "@nx/react": "19.6.0",
+    "@nx/react": "19.7.0-canary.20240817-b91d788",
     "@nx/storybook": "19.7.0-canary.20240817-b91d788",
     "@nx/web": "19.7.0-canary.20240817-b91d788",
+    "@nx/webpack": "19.7.0-canary.20240817-b91d788",
     "@prisma/studio": "^0.502.0",
     "@storybook/addon-essentials": "^8.2.8",
     "@storybook/addon-interactions": "^8.2.8",
@@ -84,6 +89,8 @@
     "@types/prop-types": "^15",
     "autoprefixer": "^10.4.16",
     "concurrently": "^7.6.0",
+    "esbuild": "^0.19.2",
+    "jest": "^29.7.0",
     "nx": "19.6.0",
     "postcss": "^8.4.31",
     "prettier": "^2.8.8",
@@ -94,7 +101,38 @@
     "tailwindcss": "^3.3.3",
     "ts-node": "10.9.1",
     "ts-reset": "^0.0.1",
+    "webpack-cli": "^5.1.4",
     "zod": "^3.23.8"
   },
-  "nx": {}
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/esbuild:esbuild",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "defaultConfiguration": "production",
+        "options": {
+          "main": "/app",
+          "outputPath": "dist/Nexar",
+          "outputFileName": "main.js",
+          "assets": [
+            {
+              "glob": "./README.md",
+              "input": ".",
+              "output": "."
+            }
+          ]
+        },
+        "configurations": {
+          "development": {
+            "minify": false
+          },
+          "production": {
+            "minify": true
+          }
+        }
+      }
+    }
+  }
 }

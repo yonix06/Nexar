@@ -27,6 +27,11 @@
     },
     "typecheck": {
       "cache": true
+    },
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     }
   },
   "defaultBase": "main",
@@ -47,6 +52,20 @@
         "buildStorybookTargetName": "build-storybook",
         "testStorybookTargetName": "test-storybook",
         "staticStorybookTargetName": "static-storybook"
+      }
+    },
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/jest/plugin",
+      "options": {
+        "targetName": "jest:test"
       }
     }
   ]

@@ -1,4 +1,4 @@
-import Card from "@/components/home/card";
+import Card from "@/components/home/Card";
 import { DEPLOY_URL } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
