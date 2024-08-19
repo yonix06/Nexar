@@ -1,24 +1,28 @@
-import { Route, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { MapProvider } from './MapProvider';
 
-import styled from 'tailwind';
+const baseMaps = [
+  { value: 'google', label: 'Google Maps' },
+  { value: 'ign', label: 'IGN' },
+  { value: 'openstreetmap', label: 'OpenStreetMap' },
+];
 
-const StyledMapLayer = styled.div`
-  color: pink;
-`;
+export function BaseLayer() {
+  const [selectedMap, setSelectedMap] = useState(baseMaps[0].value);
 
-export function MapLayer() {
   return (
-    <StyledMapLayer>
-      <h1>Welcome to MapLayer!</h1>
-
-      <ul>
-        <li>
-          <Link to="/">MapLayer root</Link>
-        </li>
-      </ul>
-      <Route path="/" element={<div>This is the MapLayer root route.</div>} />
-    </StyledMapLayer>
+    <MapProvider selectedMap={selectedMap}>
+      <select
+        value={selectedMap}
+        onChange={(e) => setSelectedMap(e.target.value)}
+      >
+        {baseMaps.map((map) => (
+          <option key={map.value} value={map.value}>
+            {map.label}
+          </option>
+        ))}
+      </select>
+    </MapProvider>
   );
 }
 
-export default MapLayer;

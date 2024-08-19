@@ -1,3 +1,4 @@
+export * from './../components/Bouton/Bouton';
 export * from './../layouts/MenuSide/MenuSide';
 export * from './../layouts/MenuTop/MenuTop';
 export * from './../layouts/Vertical/Vertical';
