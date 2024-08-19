@@ -9,7 +9,9 @@
     "pre-commit": "^1.2.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-is": "18.3.1",
     "react-router-dom": "^6.26.1",
+    "styled-components": "5.3.6",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -43,10 +45,13 @@
     "@types/node": "18.16.9",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
+    "@types/react-is": "18.3.0",
+    "@types/styled-components": "5.1.26",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
     "autoprefixer": "10.4.13",
     "babel-jest": "^29.7.0",
+    "babel-plugin-styled-components": "1.10.7",
     "core-js": "^3.36.1",
     "eslint": "~8.57.0",
     "eslint-config-next": "14.2.3",
