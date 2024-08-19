@@ -1,0 +1,9 @@
+{
+  "name": "facturation-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/facturation-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["facturation"],
+  "// targets": "to see all targets run: nx show project facturation-e2e --web",
+  "targets": {}
+}

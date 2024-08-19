@@ -1,0 +1,9 @@
+{
+  "name": "gestion-utilisateurs",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/administration/gestion-utilisateurs/src",
+  "projectType": "application",
+  "tags": ["admin"],
+  "// targets": "to see all targets run: nx show project gestion-utilisateurs --web",
+  "targets": {}
+}
