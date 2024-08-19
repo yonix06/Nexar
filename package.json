@@ -41,7 +41,7 @@
     "@storybook/jest": "^0.2.3",
     "@storybook/nextjs": "^8.2.8",
     "@storybook/react-vite": "8.2.9",
-    "@storybook/test-runner": "^0.13.0",
+    "@storybook/test-runner": "^0.19.1",
     "@storybook/testing-library": "^0.2.2",
     "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.0.1",
