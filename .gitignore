@@ -3,4 +3,5 @@ node_modules
 .vscode
 .DS_Store
 .nx
-apps/old
+apps/old/**
+.next
