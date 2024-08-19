@@ -73,7 +73,7 @@
     "@opentelemetry/sdk-node": "^0.52.1",
     "@opentelemetry/sdk-trace-node": "^1.25.1",
     "@opentelemetry/semantic-conventions": "^1.25.1",
-    "@playwright/test": "^1.46.0",
+    "@playwright/test": "^1.46.1",
     "@prisma/client": "^5.18.0",
     "@prisma/studio": "^0.502.0",
     "@storybook/addon-essentials": "^8.2.9",
