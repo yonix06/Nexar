@@ -1,0 +1,9 @@
+{
+  "name": "sentiers-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/sentiers-e2e/src",
+  "implicitDependencies": ["sentiers"],
+  "// targets": "to see all targets run: nx show project sentiers-e2e --web",
+  "targets": {}
+}
