@@ -1,60 +1,60 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "targetDefaults": {
-    "build": {
-      "cache": true
-    },
-    "build:icons": {
-      "cache": true
-    },
-    "format": {
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    },
-    "e2e:headless": {
-      "cache": true
-    },
-    "e2e:ui": {
-      "cache": true
-    },
-    "test-storybook": {
-      "cache": true
-    },
-    "typecheck": {
-      "cache": true
-    },
-    "@nx/esbuild:esbuild": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["default", "^default"]
-    },
-    "@nx/jest:jest": {
-      "cache": true,
-      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"],
-      "options": {
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
-      }
-    }
+  "defaultBase": "master",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/eslint.config.js",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/src/test-setup.[jt]s",
+      "!{projectRoot}/test-setup.[jt]s"
+    ],
+    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "defaultBase": "main",
+  "nxCloudAccessToken": "MzI3MDlkYmMtNmJlNC00YmVlLWI1MjYtN2Y0NDY0NzIwMGVlfHJlYWQtd3JpdGU=",
   "plugins": [
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "plugin": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "plugin": "@nx/rollup/plugin",
+      "options": {
+        "buildTargetName": "build"
+      }
+    },
     {
       "plugin": "@nx/next/plugin",
       "options": {
-        "startTargetName": "next:start",
-        "buildTargetName": "next:build",
-        "devTargetName": "next:dev",
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
         "serveStaticTargetName": "serve-static"
       }
     },
@@ -66,20 +66,35 @@
         "testStorybookTargetName": "test-storybook",
         "staticStorybookTargetName": "static-storybook"
       }
-    },
-    {
-      "plugin": "@nx/webpack/plugin",
-      "options": {
-        "buildTargetName": "build",
-        "serveTargetName": "serve",
-        "previewTargetName": "preview"
+    }
+  ],
+  "targetDefaults": {
+    "e2e-ci--**/*": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "style": "tailwind",
+        "linter": "eslint",
+        "bundler": "webpack"
+      },
+      "component": {
+        "style": "tailwind"
+      },
+      "library": {
+        "style": "tailwind",
+        "linter": "eslint",
+        "unitTestRunner": "jest"
       }
     },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "jest:test"
+    "@nx/next": {
+      "application": {
+        "style": "tailwind",
+        "linter": "eslint"
       }
     }
-  ]
+  }
 }

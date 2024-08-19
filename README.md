@@ -1,14 +1,16 @@
-<img align="right" width="360px" height="210px" src="./public/logo/nexar.svg">
+<img align="right" width="360px" height="210px" src="libs/shared/ui/public/SJCF.png">
 
-# Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
+# Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
-Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. 🌍
+Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé basé sur React et Next.JS 14. 🌍
 
 > [!NOTE]
 > **Documentation pertinente**
 >
 > - [Next.JS](https://nextjs.org/docs)
 > - [Auth.JS](https://authjs.dev/)
+> - [NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
+> - [React](https://react.dev/learn/thinking-in-react)
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 > - [Storybook](https://storybook.js.org/docs)
 > - [Prisma](https://www.prisma.io/docs)
@@ -19,7 +21,7 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 Dans ce Stack, nous avons:
 
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
-- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument
+- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
 - 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
 - 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
@@ -41,14 +43,14 @@ Dans ce Stack, nous avons:
 
 ## Sommaire
 
-- [Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS](#nexar---application-de-gestion-des-arrêtés-municipaux-basé-sur-nextjs)
+- [Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier     ](#webapp-monolithique-pour-la-ville-de-sjcf----outils-pré-installés--nx-tailwind-css-jest-playwright-eslint-prettier-----)
   - [Fonctionnalités](#fonctionnalités)
   - [Sommaire](#sommaire)
   - [🎯 Getting Started](#-getting-started)
   - [🤝 Participation au projet](#-participation-au-projet)
   - [🚀 Deployment](#-deployment)
   - [📃 Scripts](#-scripts)
-  - [🔗 Coupling Graph (a remplacer par GraphQL et n8n)](#-coupling-graph-a-remplacer-par-graphql-et-n8n)
+  - [🔗 Coupling Graph (à remplacer par NX Graph)](#-coupling-graph-à-remplacer-par-nx-graph)
   - [🔗 Prisma (bdd)](#-prisma-bdd)
   - [🧪 Linting](#-linting)
   - [🧪 Testing](#-testing)
@@ -83,7 +85,7 @@ Les utilitaires suivants sont conseillés:
 - [Dev Home](https://github.com/microsoft/devhome): Disponible sur le MS-Store ou sur [Github](https://github.com/microsoft/devhome).
 - [UniGetUI](https://github.com/marticliment/UnigetUI): Manager de paquets multi-sources pour Windows (npm, scoop, pip).
 - [NodeVersionManager](https://github.com/coreybutler/nvm-windows/releases): pour changer de version Node sans tout casser.
-- [Yarn 4](https://yarnpkg.com/blog/release/4.0#installing-yarn): Parce que c'est bien mieux avec un package-manager à jour. (Et en plus la maj est inclue dans le projet, ça évite de se taper l'étape galère)
+- [NX global install](https://TODO:link): Parce que c'est bien mieux avec un project-manager.
 - [WinUtil](https://github.com/ChrisTitusTech/winutil): Multi-tool pour optimiser rapidement le système, et installer en masse des programmes.
 
 Pour commencer:
@@ -99,7 +101,7 @@ git clone https://github.com/yonix06/nexar--private.git
 3. Installez les dépendances dans le dossier avec bash ou powershell (de préférence hors VS Code, et penser à relancer régulièrement pour update les dependences du projet qui sont mis à jours par le bot) :
 
 ```bash
-yarn install --immutable
+npm install
 ```
 
 4. Lancer VS Code et installer les extentions recommandés par l'espace de travail (et faire le tri de celles qu'on ne veut eventuellement pas)
@@ -107,7 +109,7 @@ yarn install --immutable
 5. Exécuter le serveur de développement :
 
 ```bash
-yarn dev
+npm dev
 ```
 
 6. Ouvrez [http://localhost:4000](http://localhost:4000) avec votre navigateur pour voir le résultat.
@@ -115,8 +117,8 @@ yarn dev
 7. Ce projet utilise un hook git pour appliquer les [commits conventionnels](https://github.com/qoomon/git-conventional-commits). Pour installer le hook git, exécutez la commande suivante dans le répertoire racine du projet :
 
 ```sh
-yarn add pre-commit
-pre-commit install -t commit-msg
+npm add pre-commit
+pre-commit install -t commit-msg #Si besoin
 ```
 
 ## 🤝 Participation au projet
@@ -137,42 +139,42 @@ Contributions are always welcome! To contribute, please follow these steps:
 
 ## 📃 Scripts
 
-Script de dev disponibles: `package.json`: (à executer avec yarn, exemple "yarn dev")
+Script de dev disponibles: `package.json`: (à executer avec NX Console via VS Code)
 
-- `yarn dev`: Starts the development server
-- `yarn build`: Builds the app for production
-- `yarn start`: Starts the production server
-- `yarn lint`: Lints the code using ESLint
-- `yarn lint:fix`: Automatically fixes linting errors
-- `yarn prettier`: Checks the code for proper formatting
-- `yarn prettier:fix`: Automatically fixes formatting issues
-- `yarn analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
-- `yarn storybook`: Starts the Storybook server
-- `yarn build-storybook`: Builds the Storybook for deployment
-- `yarn test`: Runs unit and integration tests
-- `yarn e2e:headless`: Runs end-to-end tests in headless mode
-- `yarn e2e:ui`: Runs end-to-end tests with UI
-- `yarn format`: Formats the code with Prettier
-- `yarn postinstall`: Applies patches to external dependencies
-- `yarn preinstall`: Ensures the project is installed with Yarn
+- `nx dev`: Starts the development server
+- `nx build`: Builds the app for production
+- `nx start`: Starts the production server
+- `nx lint`: Lints the code using ESLint
+- `nx lint:fix`: Automatically fixes linting errors
+- `nx prettier`: Checks the code for proper formatting
+- `nx prettier:fix`: Automatically fixes formatting issues
+- `nx analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
+- `nx storybook`: Starts the Storybook server
+- `nx build-storybook`: Builds the Storybook for deployment
+- `nx test`: Runs unit and integration tests
+- `nx e2e:headless`: Runs end-to-end tests in headless mode
+- `nx e2e:ui`: Runs end-to-end tests with UI
+- `nx format`: Formats the code with Prettier
+- `nx postinstall`: Applies patches to external dependencies
+- `nx preinstall`: Ensures the project is installed with nx
 
-## 🔗 Coupling Graph (a remplacer par GraphQL et n8n)
+## 🔗 Coupling Graph (à remplacer par NX Graph)
 
 - Pour installer coupling-graph:
 - `winget install graphviz` ou `apt install graphviz`
-- `yarn add madge`
-- `yarn add graphviz`
-- `yarn add gvprss`
+- `nx add madge`
+- `nx add graphviz`
+- `nx add gvprss`
 
 - ---
 
 - `npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg`
-- ou `yarn coupling-graph` pour run sans les exceptions: **Generates a coupling and cohesion graph for the components**
+- ou `nx coupling-graph` pour run sans les exceptions: **Generates a coupling and cohesion graph for the components**
 
 Le script `coupling-graph` est un outil pratique qui permet de visualiser les liens et les connexions entre les modules internes de votre projet. Il est construit à l'aide de la bibliothèque [Madge](https://github.com/pahen/madge). Pour générer le graphique, exécutez la commande suivante :
 
 ```bash
-yarn coupling-graph
+npm coupling-graph
 ```
 
 Cela créera un fichier `graph.svg` qui contient une représentation graphique des connexions entre vos composants. Vous pouvez ouvrir le fichier avec n'importe quel visualiseur de fichiers SVG.
@@ -184,8 +186,8 @@ Cela créera un fichier `graph.svg` qui contient une représentation graphique d
 Pour installer le module, executer dans le dossier, via powershell, sans privilèges d'admin. Ne pas lancer via le terminal VSCode car certains fichiers ouverts doivent être modifiés.
 
 ```bash
-yarn add prisma
-yarn add @prisma/client
+npx add prisma
+npx add @prisma/client
 npx prisma init --datasource-provider sqlite
   (Set the DATABASE_URL in the .env file to point to your existing database.)
 npx prisma migrate dev --name init
@@ -194,14 +196,14 @@ npx prisma migrate dev --name init
 Seeding:
 
 ```bash
-yarn add tsx
+npm add tsx
 npx tsx .\data\databaseManager.tsx
 ```
 
 ## 🧪 Linting
 
-- **ESLint** : Exécutez `yarn lint` pour analyser le code
-- **Prettier** : Exécutez `yarn prettier` pour mettre en forme le code
+- **ESLint** : Exécutez `nx lint` pour analyser le code
+- **Prettier** : Exécutez `nx prettier` pour mettre en forme le code
 
 ## 🧪 Testing
 
@@ -209,9 +211,9 @@ Ce stack est build avec divers configurations de test pour garantir la fiabilit�
 
 ### Running Tests
 
-- **Tests unitaires et d'intégration** : Exécutez les tests Jest en utilisant la commande `yarn test`
-- **Tests end-to-end (mode headless)** : Exécutez les tests Playwright en mode headless avec la commande `yarn e2e:headless`
-- **Tests end-to-end (mode UI)** : Exécutez les tests Playwright avec l'interface utilisateur en utilisant la commande `yarn e2e:ui`
+- **Tests unitaires et d'intégration** : Exécutez les tests Jest en utilisant la commande `nx test`
+- **Tests end-to-end (mode headless)** : Exécutez les tests Playwright en mode headless avec la commande `nx e2e:headless`
+- **Tests end-to-end (mode UI)** : Exécutez les tests Playwright avec l'interface utilisateur en utilisant la commande `nx e2e:ui`
 
 ### Acceptance Tests
 
@@ -253,7 +255,7 @@ export const FilledForm: Story = {
 
 ### Tests de fonctionnement global (mode UI)
 
-Pour vérifier que les composants s'affichent correctement sans erreurs, nous utilisons les fonctionnalités de base de Storybook pour les tests de fonctionnement global. Simplement exécutez la commande `yarn test-storybook` pour effectuer ces tests. N'oubliez pas que vous devez écrire les histoires en utilisant soit du JSX, soit du TSX. Les tests fonctionnels ne fonctionnent pas bien avec les fichiers MDX.
+Pour vérifier que les composants s'affichent correctement sans erreurs, nous utilisons les fonctionnalités de base de Storybook pour les tests de fonctionnement global. Simplement exécutez la commande `nx test-storybook` pour effectuer ces tests. N'oubliez pas que vous devez écrire les histoires en utilisant soit du JSX, soit du TSX. Les tests fonctionnels ne fonctionnent pas bien avec les fichiers MDX.
 
 ## 🎨 Styling et système de design
 

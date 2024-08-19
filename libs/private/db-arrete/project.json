@@ -1,0 +1,9 @@
+{
+  "name": "db-arrete",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/private/db-arrete/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project db-arrete --web",
+  "targets": {}
+}

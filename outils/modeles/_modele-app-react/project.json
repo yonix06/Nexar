@@ -1,0 +1,9 @@
+{
+  "name": "modele-react",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "outils/modeles/_modele-app-react/src",
+  "projectType": "application",
+  "tags": ["admin"],
+  "// targets": "to see all targets run: nx show project modele-react --web",
+  "targets": {}
+}

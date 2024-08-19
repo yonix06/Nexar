@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nexar/db-arrete": ["libs/private/db-arrete/src/index.ts"],
+      "@nexar/db-evenementiel": ["libs/private/db-evenementiel/src/index.ts"],
+      "@nexar/fichiers-arrete": ["libs/private/fichiers-arrete/src/index.ts"],
+      "@nexar/fichiers-evenementiel": [
+        "libs/private/fichiers-evenementiel/src/index.ts"
+      ],
+      "@nexar/shared-db": ["libs/shared/db/src/index.ts"],
+      "@nexar/shared-db/server": ["libs/shared/db/src/server.ts"],
+      "@nexar/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "@shared-components": ["libs/shared/components/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

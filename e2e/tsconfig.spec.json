@@ -1,8 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "../../dist/out-tsc",
-    "types": ["jest-playwright-preset", "expect-playwright", "jest", "node"]
-  },
-  "include": ["src/**/*.ts", "src/**/*.js", "**/*.d.ts", "jest.config.ts"]
-}

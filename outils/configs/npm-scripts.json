@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "prisma generate && next dev",
+    "build": "prisma generate && prisma db push && next build",
+    "build:icons": "tsx src/assets/iconify-icons/bundle-icons-css.ts",
+    "start": "next start",
+    "format:write": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\"",
+    "format": "prettier \"**/*.{css,js,json,jsx,ts,tsx}\"",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "deps:upgrade": "upgrade-interactive",
+    "deps:fix": "install --immutable",
+    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "preinstall": "",
+    "postinstall": "",
+    "storybook": "storybook dev -p 6006",
+    "test-storybook": "test-storybook",
+    "build-storybook": "storybook build",
+    "test": "nx jest:test --passWithNoTests",
+    "e2e:headless": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "typecheck": "tsc --noEmit",
+    "coupling-graph": "nx graph --watch"
+  }
+}

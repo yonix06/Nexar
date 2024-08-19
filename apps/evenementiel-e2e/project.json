@@ -1,0 +1,9 @@
+{
+  "name": "evenementiel-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/evenementiel-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["evenementiel"],
+  "// targets": "to see all targets run: nx show project evenementiel-e2e --web",
+  "targets": {}
+}
