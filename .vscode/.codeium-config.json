@@ -1,0 +1,62 @@
+{
+    "context": {
+      "language": "fr",
+      "framework": "Next.js",
+      "CSSlibrary": "Tailwind CSS",
+      "packageManager": "npm",
+      "testingFramework": "Jest",
+      "storybook": true,
+      "playwright": true,
+      "es": true
+    },
+    "dossiersPin": [
+      {
+        "name": "apps",
+        "path": "/apps"
+      },
+      {
+        "name": "components",
+        "path": "/libs/shared/components"
+      },
+      {
+        "name": "styles",
+        "path": "/libs/shared/ui/styles"
+      },
+      {
+        "name": "theme",
+        "path": "/libs/shared/ui/theme"
+      },
+      {
+        "name": "public",
+        "path": "/libs/shared/ui/public"
+      }
+    ],
+    "fichiers": [
+      {
+        "name": "tailwind.css",
+        "path": "@styles/tailwind.css"
+      },
+      {
+        "name": "theme.ts",
+        "path": "@theme/theme.ts"
+      },
+      {
+        "name": "layout.tsx",
+        "path": "@apps/layout.tsx"
+      },
+      {
+        "name": "codeium-config.json",
+        "path": "/.vscode/codeium-config.json"
+      }
+    ],
+    "repoGit": [
+      {
+        "name": "Nexar",
+        "url": "https://github.com/yonix06/Nexar"
+      },
+      {
+        "name": "vercel/next.js",
+        "url": "https://github.com/vercel/next.js"
+      }
+    ]
+  }
