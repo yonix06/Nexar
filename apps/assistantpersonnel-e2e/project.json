@@ -1,0 +1,9 @@
+{
+  "name": "assistantpersonnel-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/assistantpersonnel-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["assistantpersonnel"],
+  "// targets": "to see all targets run: nx show project assistantpersonnel-e2e --web",
+  "targets": {}
+}

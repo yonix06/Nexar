@@ -9,6 +9,8 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 >
 > - [Next.JS](https://nextjs.org/docs)
 > - [Auth.JS](https://authjs.dev/)
+> - NX
+> - React
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 > - [Storybook](https://storybook.js.org/docs)
 > - [Prisma](https://www.prisma.io/docs)
@@ -19,7 +21,7 @@ Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. �
 Dans ce Stack, nous avons:
 
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
-- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument
+- 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
 - 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
 - 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
@@ -41,7 +43,7 @@ Dans ce Stack, nous avons:
 
 ## Sommaire
 
-- [Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS](#nexar---application-de-gestion-des-arrêtés-municipaux-basé-sur-nextjs)
+- [Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS     ](#nexar---application-de-gestion-des-arrêtés-municipaux-basé-sur-nextjs-----)
   - [Fonctionnalités](#fonctionnalités)
   - [Sommaire](#sommaire)
   - [🎯 Getting Started](#-getting-started)
