@@ -1,4 +1,4 @@
-<img align="right" width="360px" height="210px" src="./public/logo/nexar.svg">
+<img align="right" width="360px" height="210px" src="libs/shared/ui/public/SJCF.png">
 
 # Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
@@ -9,8 +9,8 @@ Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé ba
 >
 > - [Next.JS](https://nextjs.org/docs)
 > - [Auth.JS](https://authjs.dev/)
-> - NX
-> - React
+> - [NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
+> - [React](https://react.dev/learn/thinking-in-react)
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 > - [Storybook](https://storybook.js.org/docs)
 > - [Prisma](https://www.prisma.io/docs)
@@ -43,7 +43,7 @@ Dans ce Stack, nous avons:
 
 ## Sommaire
 
-- [Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS     ](#nexar---application-de-gestion-des-arrêtés-municipaux-basé-sur-nextjs-----)
+- [Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier     ](#webapp-monolithique-pour-la-ville-de-sjcf----outils-pré-installés--nx-tailwind-css-jest-playwright-eslint-prettier-----)
   - [Fonctionnalités](#fonctionnalités)
   - [Sommaire](#sommaire)
   - [🎯 Getting Started](#-getting-started)
