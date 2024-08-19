@@ -1,8 +1,8 @@
 <img align="right" width="360px" height="210px" src="./public/logo/nexar.svg">
 
-# Nexar - Application de gestion des arrêtés municipaux basé sur Next.JS </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
+# Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
-Bienvenue _Nexar_, application fullstack personnalisé basé sur Next.JS 14. 🌍
+Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé basé sur React et Next.JS 14. 🌍
 
 > [!NOTE]
 > **Documentation pertinente**
