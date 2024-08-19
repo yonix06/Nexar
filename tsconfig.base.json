@@ -21,10 +21,10 @@
       "@nexar/fichiers-evenementiel": [
         "libs/private/fichiers-evenementiel/src/index.ts"
       ],
+      "@nexar/shared-components": ["libs/shared/components/src/index.ts"],
       "@nexar/shared-db": ["libs/shared/db/src/index.ts"],
       "@nexar/shared-db/server": ["libs/shared/db/src/server.ts"],
-      "@nexar/shared-ui": ["libs/shared/ui/src/index.ts"],
-      "@shared-components": ["libs/shared/components/src/index.ts"]
+      "@nexar/shared-ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
