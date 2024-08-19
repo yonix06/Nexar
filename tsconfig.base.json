@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nexar/db-arrete": ["libs/private/db-arrete/src/index.ts"],
+      "@nexar/db-evenementiel": ["libs/private/db-evenementiel/src/index.ts"],
+      "@nexar/fichiers-arrete": ["libs/private/fichiers-arrete/src/index.ts"],
+      "@nexar/fichiers-evenementiel": [
+        "libs/private/fichiers-evenementiel/src/index.ts"
+      ],
       "@nexar/shared-db": ["libs/shared/db/src/index.ts"],
       "@nexar/shared-db/server": ["libs/shared/db/src/server.ts"],
       "@nexar/shared-ui": ["libs/shared/ui/src/index.ts"]

@@ -1,0 +1,9 @@
+{
+  "name": "ecrandiffusion-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/ecrandiffusion-e2e/src",
+  "implicitDependencies": ["ecrandiffusion"],
+  "// targets": "to see all targets run: nx show project ecrandiffusion-e2e --web",
+  "targets": {}
+}
