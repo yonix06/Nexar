@@ -364,10 +364,10 @@ Creative Commons License. Plus d'info:  [LICENSE](./LICENSE).
 
 <!-- Badges and links -->
 
-[check-workflow-badge]: https://img.shields.io/github/actions/workflow/status/yonix06/Nexar--Private/check.yml?label=check
-[github-license-badge]: https://img.shields.io/github/license/yonix06/Nexar--Private?link=https%3A%2F%2Fgithub.com%2Fyonix06%2FNexar--Private%2Fblob%2Fmain%2FLICENSE
-[github-contributors-badge]: https://img.shields.io/github/contributors/yonix06/Nexar--Private?link=https%3A%2F%2Fgithub.com%2Fyonix06%2FNexar--Private%2Fgraphs%2Fcontributors
+[check-workflow-badge]: https://img.shields.io/github/actions/workflow/status/yonix06/Nexar/check.yml?label=check
+[github-license-badge]: https://img.shields.io/github/license/yonix06/Nexar?link=https%3A%2F%2Fgithub.com%2Fyonix06%2FNexar%2Fblob%2Fmain%2FLICENSE
+[github-contributors-badge]: https://img.shields.io/github/contributors/yonix06/Nexar?link=https%3A%2F%2Fgithub.com%2Fyonix06%2FNexar%2Fgraphs%2Fcontributors
 
-[check-workflow-badge-link]: https://github.com/yonix06/Nexar--Private/actions/workflows/check.yml
-[github-license-badge-link]: https://github.com/yonix06/Nexar--Private/blob/main/LICENSE
-[github-contributors-badge-link]: https://github.com/yonix06/Nexar--Private/graphs/contributors
+[check-workflow-badge-link]: https://github.com/yonix06/Nexar/actions/workflows/check.yml
+[github-license-badge-link]: https://github.com/yonix06/Nexar/blob/main/LICENSE
+[github-contributors-badge-link]: https://github.com/yonix06/Nexar/graphs/contributors
