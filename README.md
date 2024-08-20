@@ -10,12 +10,16 @@ Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé ba
 > - [Next.JS](https://nextjs.org/docs)
 > - [Auth.JS](https://authjs.dev/)
 > - [NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
-> - [T3](https://create.t3.gg/en/other-recs)
 > - [React](https://react.dev/learn/thinking-in-react)
+> - [T3 Docs - Ressources React](https://create.t3.gg/en/other-recs)
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 > - [Storybook](https://storybook.js.org/docs)
 > - [Prisma](https://www.prisma.io/docs)
 > - [Playwright](https://playwright.dev/docs/intro)
+>
+> **To do**
+>
+> - //TODO: [Dev.to - Utiliser PHP comme backend pour React](https://dev.to/emmykolic/how-to-use-php-as-a-backend-using-react-for-frontend-3dca)
 
 ## Fonctionnalités
 
@@ -51,7 +55,7 @@ Dans ce Stack, nous avons:
   - [🤝 Participation au projet](#-participation-au-projet)
   - [🚀 Deployment](#-deployment)
   - [📃 Scripts](#-scripts)
-  - [🔗 Coupling Graph (à remplacer par NX Graph)](#-coupling-graph-à-remplacer-par-nx-graph)
+  - [🔗 Coupling Graph (C'est une usine à gaz, à remplacer par NX Graph et GraphQL)](#-coupling-graph-cest-une-usine-à-gaz-à-remplacer-par-nx-graph-et-graphql)
   - [🔗 Prisma (bdd)](#-prisma-bdd)
   - [🧪 Linting](#-linting)
   - [🧪 Testing](#-testing)
@@ -96,7 +100,7 @@ Pour commencer:
 2. Fork & clone le repertoire avec Github Desktop ou GitKraken dans WSL:
 
 ```bash
-git clone https://github.com/yonix06/nexar--private.git
+git clone https://github.com/yonix06/Nexar.git
 ```
 
 3. Installez les dépendances dans le dossier avec bash ou powershell (de préférence hors VS Code, et penser à relancer régulièrement pour update les dependences du projet qui sont mis à jours par le bot) :
@@ -113,7 +117,7 @@ npm install
 npm dev
 ```
 
-6. Ouvrez [http://localhost:4000](http://localhost:4000) avec votre navigateur pour voir le résultat.
+6. Ouvrez [http://localhost:4000](http://localhost:4000) (ou bien, suivre le lien donné dans la console) avec votre navigateur pour voir le résultat.
 
 7. Ce projet utilise un hook git pour appliquer les [commits conventionnels](https://github.com/qoomon/git-conventional-commits). Pour installer le hook git, exécutez la commande suivante dans le répertoire racine du projet :
 
@@ -140,7 +144,9 @@ Contributions are always welcome! To contribute, please follow these steps:
 
 ## 📃 Scripts
 
-Script de dev disponibles: `package.json`: (à executer avec NX Console via VS Code)
+(//TODO: à corriger et intégrer dans nx.json)
+
+Script de dev disponibles: `outils/configs/npm-scripts.json`: (à executer avec NX Console via VS Code)
 
 - `nx dev`: Starts the development server
 - `nx build`: Builds the app for production
@@ -159,7 +165,7 @@ Script de dev disponibles: `package.json`: (à executer avec NX Console via VS C
 - `nx postinstall`: Applies patches to external dependencies
 - `nx preinstall`: Ensures the project is installed with nx
 
-## 🔗 Coupling Graph (à remplacer par NX Graph)
+## 🔗 Coupling Graph (C'est une usine à gaz, à remplacer par NX Graph et GraphQL)
 
 - Pour installer coupling-graph:
 - `winget install graphviz` ou `apt install graphviz`
@@ -175,12 +181,18 @@ Script de dev disponibles: `package.json`: (à executer avec NX Console via VS C
 Le script `coupling-graph` est un outil pratique qui permet de visualiser les liens et les connexions entre les modules internes de votre projet. Il est construit à l'aide de la bibliothèque [Madge](https://github.com/pahen/madge). Pour générer le graphique, exécutez la commande suivante :
 
 ```bash
-npm coupling-graph
+npm coupling-graph ##La commande execute maintenant nx graph par défaut, il faut la modifier avec les éléments ci-dessus pour utiliser madge
 ```
 
-Cela créera un fichier `graph.svg` qui contient une représentation graphique des connexions entre vos composants. Vous pouvez ouvrir le fichier avec n'importe quel visualiseur de fichiers SVG.
+~~Cela créera un fichier `graph.svg` qui contient une représentation graphique des connexions entre vos composants. Vous pouvez ouvrir le fichier avec n'importe quel visualiseur de fichiers SVG.~~
 
-![graph](https://user-images.githubusercontent.com/28964599/233662744-3ba89713-8466-49cd-9be7-e6fb38191f58.png)
+Cela ouvre un site web qui affiche les liens entre les divers projets et composants.
+
+Madge:
+![madge-graph](https://user-images.githubusercontent.com/28964599/233662744-3ba89713-8466-49cd-9be7-e6fb38191f58.png)
+
+NX:
+![nx-graph](https://github.com/nrwl/nx/blob/master/docs/shared/images/project-graph.png?raw=true)
 
 ## 🔗 Prisma (bdd)
 
