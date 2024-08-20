@@ -1,9 +1,9 @@
 {
-  "name": "Portail",
+  "name": "portail",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/Portail",
+  "sourceRoot": "apps/portail/src",
   "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project Portail --web",
+  "tags": ["portail"],
+  "// targets": "to see all targets run: nx show project portail --web",
   "targets": {}
 }

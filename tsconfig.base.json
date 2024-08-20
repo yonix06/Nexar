@@ -19,6 +19,7 @@
       "@actions/email": ["hooks/email.ts"],
       "@actions/user": ["hooks/user.ts"],
       "@api/auth": ["libs/shared/ui/src/lib/api/auth/"],
+      "@components": ["libs/shared/components/src/index.ts"],
       "@config": ["libs/shared/config/"],
       "@config/auth": ["libs/shared/config/auth.ts"],
       "@config/db": ["libs/shared/config/db.ts"],
