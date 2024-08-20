@@ -19,7 +19,9 @@ Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé ba
 >
 > **To do**
 >
-> - //TODO: [Dev.to - Utiliser PHP comme backend pour React](https://dev.to/emmykolic/how-to-use-php-as-a-backend-using-react-for-frontend-3dca)
+> - //TODO: Progrès: - Dev.to ✔️ | tRPC Router 🐧❌
+> - [Dev.to - Utiliser PHP comme backend pour React](https://dev.to/emmykolic/how-to-use-php-as-a-backend-using-react-for-frontend-3dca)
+> - [T3.gg - Configuration du Routeur tRPC avec NextAuth.js](https://create.t3.gg/en/installation#advanced-usage)
 
 ## Fonctionnalités
 
