@@ -84,6 +84,9 @@
   "targetDefaults": {
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
+    },
+    "build-custom-server": {
+      "cache": true
     }
   },
   "generators": {

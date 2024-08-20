@@ -1,9 +1,0 @@
-{
-  "name": "portail-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "apps/portail-e2e/src",
-  "implicitDependencies": ["portail"],
-  "// targets": "to see all targets run: nx show project portail-e2e --web",
-  "targets": {}
-}

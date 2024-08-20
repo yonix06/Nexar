@@ -10,6 +10,7 @@ Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé ba
 > - [Next.JS](https://nextjs.org/docs)
 > - [Auth.JS](https://authjs.dev/)
 > - [NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
+> - [T3](https://create.t3.gg/en/other-recs)
 > - [React](https://react.dev/learn/thinking-in-react)
 > - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 > - [Storybook](https://storybook.js.org/docs)
