@@ -36,23 +36,20 @@ Dans ce Stack, nous avons:
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
-- 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Components UI
-- 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Components UI
+- 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Composants UI
+- 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI
 - ✨ **[ESlint](https://eslint.org/)** et **[Prettier](https://prettier.io/)** - Pour du code propre, cohérent et sans erreurs
-- ✨ **[T3 Env](https://env.t3.gg/)** - Gérez vos variables d'environnement efficacement.
-- 🚀 **[GitHub Actions](https://github.com/features/actions)** - Actions préconfigurées pour des workflows fluides, comprenant des statistiques de taille de paquet et des scores de performance
+- ✨ **[T3 Env](https://env.t3.gg/)** - Set d'outils T3 pour les variables d'environnements et la gestion des API du projet
+- 🚀 **[GitHub Actions](https://github.com/features/actions)** - Actions préconfigurées par Github comprenant des statistiques de taille de paquet et des scores de performance
 - 🚀 **[Git hook d'un message de commit conventionnel](https://www.conventionalcommits.org/)** - Gardez votre historique de commit propre et propre
-- 📖 **[Plugin de l'analyseur de taille de paquet](https://www.npmjs.com/package/@next/bundle-analyzer)** - Suivez votre taille de paquet
-- 📖 **[Storybook](https://storybook.js.org/)** - Créez, testez et montrez vos composants
-- 📖 **[Semantic Release](https://github.com/semantic-release/semantic-release)** - pour des changelogs automatiques
+- 📖 **[Storybook](https://storybook.js.org/)** - Création et test composants
 - 📖 **[Imports absolus](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Pas de spaghetti d'imports
-- 🧪 **[React Testing Library](https://testing-library.com/react)** - Pour des tests unitaires et d'intégration solides
-- 🧪 **[Playwright](https://playwright.dev/)** - Écrivez des tests end-to-end comme un pro
-- 🧪 **[Jest - Tests de cohérence et de test d'acceptation](https://jestjs.io/fr/docs/getting-started)** - Pour une confiance dans vos déploiements
-- 🛠️ **[Intégration de supervision](https://opentelemetry.io/)** - Intégration Open Telemetry pour une supervision facile et report vers Grafana
-- 🛠️ **[TypeScript très strict](https://www.typescriptlang.org/)** - Avec la bibliothèque [`ts-reset`](https://github.com/total-typescript/ts-reset) pour une type safety ultime
-- 🛠️ **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes/Docker-compatibles pour des déploiements robustes
-- 🛠️ **[N8n - Création d'un système de design/relation cohérent, réutilisable et atomique](https://docs.n8n.io/)** - Outil pour gérer les relations entre les composants et le flow de travail.
+- 🧪 **[Playwright](https://playwright.dev/)** - Gestion UI des tests end-to-end
+- 🧪 **[Jest - Tests de cohérence et de test d'acceptance](https://jestjs.io/fr/docs/getting-started)** - Pour une confiance absolu avant intégration
+- 🛠️ **[Intégration de supervision](https://opentelemetry.io/)** - Open Telemetry pour une supervision facile et report vers Grafana
+- 🛠️ **[TypeScript strict](https://www.typescriptlang.org/)** - Avec la bibliothèque [`ts-reset`](https://github.com/total-typescript/ts-reset)
+- 🛠️ **[HealthCheck](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes/Docker compatibles.
+- 🛠️ **[NX Graph et N8n - Création d'un système de design/relation cohérent](https://docs.n8n.io/)** - Outil pour gérer les relations entre les API d'applications, les composants et le flow de travail.
 
 ## Sommaire
 
