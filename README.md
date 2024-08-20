@@ -62,7 +62,7 @@ Dans ce Stack, nous avons:
   - [📃 Scripts](#-scripts)
   - [🔗 Coupling Graph (C'est une usine à gaz, à remplacer par NX Graph et GraphQL)](#-coupling-graph-cest-une-usine-à-gaz-à-remplacer-par-nx-graph-et-graphql)
   - [🔗 Prisma - Gestion BDD](#-prisma---gestion-bdd)
-  - [📖 Mise en page automatique](#-mise-en-page-automatique)
+  - [📖 Mise en page automatique du code](#-mise-en-page-automatique-du-code)
   - [🧪 Tests](#-tests)
     - [Tests ponctuels](#tests-ponctuels)
     - [Tests d'acceptance des composants](#tests-dacceptance-des-composants)
@@ -139,7 +139,7 @@ Contributions are always welcome! To contribute, please follow these steps:
 2. Creer sa propre branche de dev sous la forme: "dev-_'votrenom'_, à partir de la branche dev-main.
 3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/) et de l'extension proposée pour automatiser les messages.
 4. Les commits dans votre branche, les demandes de pull vers dev-main. La linéarité des commit est recommandée.
-5. Les commits soumis à la branche principale de dev doivent être cohérents au risque de se faire squash.
+5. Les commits soumis à la branche principale de dev doivent être cohérents au risque de se faire squash. //TODO: ajouter liens sur les conseil de base des commits
 6. CI lancé depuis main.
 
 ## 🚀 Déploiement
@@ -222,7 +222,7 @@ npm add tsx
 npx tsx .\data\databaseManager.tsx
 ```
 
-## 📖 Mise en page automatique
+## 📖 Mise en page automatique du code
 
 - **ESLint** : Exécutez `nx lint` pour analyser le code
 - **Prettier** : Exécutez `nx prettier` pour mettre en forme le code
