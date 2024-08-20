@@ -64,15 +64,15 @@ Dans ce Stack, nous avons:
   - [🚀 Déploiement](#-déploiement)
   - [📃 Scripts](#-scripts)
   - [🔗 Coupling Graph (C'est une usine à gaz, à remplacer par NX Graph et GraphQL)](#-coupling-graph-cest-une-usine-à-gaz-à-remplacer-par-nx-graph-et-graphql)
-  - [🔗 Prisma (bdd)](#-prisma-bdd)
-  - [🧪 Linting](#-linting)
-  - [🧪 Testing](#-testing)
-    - [Running Tests](#running-tests)
-    - [Acceptance Tests](#acceptance-tests)
-    - [Tests de fonctionnement global (mode UI)](#tests-de-fonctionnement-global-mode-ui)
+  - [🔗 Prisma - Gestion BDD](#-prisma---gestion-bdd)
+  - [📖 Mise en page automatique](#-mise-en-page-automatique)
+  - [🧪 Tests](#-tests)
+    - [Tests ponctuels](#tests-ponctuels)
+    - [Tests d'acceptance des composants](#tests-dacceptance-des-composants)
+    - [Tests de fonctionnement des composants (mode UI)](#tests-de-fonctionnement-des-composants-mode-ui)
   - [🎨 Styling et système de design](#-styling-et-système-de-design)
     - [CVA - Une nouvelle approche des variantes](#cva---une-nouvelle-approche-des-variantes)
-  - [💾 State Management](#-state-management)
+  - [💾 Management d'états des composants](#-management-détats-des-composants)
     - [Zustand](#zustand)
     - [Jotai](#jotai)
     - [Recoil](#recoil)
@@ -206,7 +206,7 @@ Madge:
 NX:
 ![nx-graph](https://github.com/nrwl/nx/blob/master/docs/shared/images/project-graph.png?raw=true)
 
-## 🔗 Prisma (bdd)
+## 🔗 Prisma - Gestion BDD
 
 Pour installer le module, executer dans le dossier, via powershell, sans privilèges d'admin. Ne pas lancer via le terminal VSCode car certains fichiers ouverts doivent être modifiés.
 
@@ -225,22 +225,22 @@ npm add tsx
 npx tsx .\data\databaseManager.tsx
 ```
 
-## 🧪 Linting
+## 📖 Mise en page automatique
 
 - **ESLint** : Exécutez `nx lint` pour analyser le code
 - **Prettier** : Exécutez `nx prettier` pour mettre en forme le code
 
-## 🧪 Testing
+## 🧪 Tests
 
 Ce stack est build avec divers configurations de test pour garantir la fiabilité et la robustesse de votre application.
 
-### Running Tests
+### Tests ponctuels
 
 - **Tests unitaires et d'intégration** : Exécutez les tests Jest en utilisant la commande `nx test`
 - **Tests end-to-end (mode headless)** : Exécutez les tests Playwright en mode headless avec la commande `nx e2e:headless`
 - **Tests end-to-end (mode UI)** : Exécutez les tests Playwright avec l'interface utilisateur en utilisant la commande `nx e2e:ui`
 
-### Acceptance Tests
+### Tests d'acceptance des composants
 
 Pour écrire des tests d'acceptation, nous utilisons la fonctionnalité de Storybook [`play`][1] qui vous permet d'interagir avec vos composants et de tester divers flux d'utilisateurs dans Storybook.
 
@@ -278,7 +278,7 @@ export const FilledForm: Story = {
 }
 ```
 
-### Tests de fonctionnement global (mode UI)
+### Tests de fonctionnement des composants (mode UI)
 
 Pour vérifier que les composants s'affichent correctement sans erreurs, nous utilisons les fonctionnalités de base de Storybook pour les tests de fonctionnement global. Simplement exécutez la commande `nx test-storybook` pour effectuer ces tests. N'oubliez pas que vous devez écrire les histoires en utilisant soit du JSX, soit du TSX. Les tests fonctionnels ne fonctionnent pas bien avec les fichiers MDX.
 
@@ -286,15 +286,13 @@ Pour vérifier que les composants s'affichent correctement sans erreurs, nous ut
 
 Ce stack utilise Tailwind CSS pour le style et CVA pour créer un système de design puissant et facile à utiliser.
 
-[Styling et système de design]
-
 Alors que les bibliothèques CSS-in-TS comme [Stitches](https://stitches.dev/) et [Vanilla Extract](https://vanilla-extract.style/) sont excellentes pour créer des composants d'interface utilisateur type-safe, elles ne sont peut-être pas la meilleure option pour tout le monde. Vous pourriez préférer plus de contrôle sur vos feuilles de style, utiliser un framework comme Tailwind CSS ou simplement aimer écrire votre propre CSS.
 
 ### CVA - Une nouvelle approche des variantes
 
 Créer des variantes à l'aide de CSS traditionnel peut être une tâche fastidieuse qui nécessite de faire correspondre manuellement les classes aux props et d'ajouter des types. CVA est là pour vous soustraire de cette peine. En vous offrant une approche facile et type-safe pour créer des variantes, CVA simplifie le processus et vous permet de créer des systèmes de design puissants tout en conservant le contrôle et la flexibilité du CSS.
 
-## 💾 State Management
+## 💾 Management d'états des composants
 
  //TODO:A choisir pour intégration
 
@@ -309,8 +307,6 @@ Créer des variantes à l'aide de CSS traditionnel peut être une tâche fastidi
 ### Recoil
 
 [Recoil](https://recoiljs.org/) est une bibliothèque de gestion d'état développée par Facebook, spécifiquement conçue pour les applications React. En utilisant des atomes et des sélecteurs, Recoil vous permet de gérer vos états et les états dérivés de manière efficace. Son principal avantage est la possibilité de mettre à jour les composants uniquement lorsque l'état auquel ils sont abonnés change, ce qui réduit les re-renders inutiles et maintient votre application rapide et efficace. Recoil offre également une excellente expérience de développement avec des outils de débogage intégrés.
-
-A choisir !
 
 ## 🤖 Assistance au code avec Codeium
 
