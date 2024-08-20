@@ -1,3 +1,4 @@
+export * from './lib/PhpDisplay/PhpDisplay';
 export * from './lib/MapLayers/MapLayer';
 export * from './lib/MapLayers/MapLayerEdition';
 export * from './lib/MapLayers/MapLayerEvenementiel';
