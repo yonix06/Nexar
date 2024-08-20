@@ -58,14 +58,16 @@
   "WillLuke.nextjs.addTypesOnSave": true,
   "WillLuke.nextjs.hasPrompted": true,
   "conventionalCommits.scopes": [
-    "app/",
-    "component/",
-    "app/ component/",
-    "/rootdir",
-    "extensions",
-    "modules config",
-    "admin",
-    "layout"
+    "Globale",
+    "Dépendences",
+    "Outils",
+    "Base de données",
+    "Variables d'Environnement",
+    "apps/",
+    "libs/components",
+    "libs/UI",
+    "libs/config",
+    "hooks/"
   ],
   "cSpell.words": [
     "arretes",
