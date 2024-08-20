@@ -38,15 +38,6 @@
   ],
   "cSpell.language": "en,lorem,en-US,en-GB,fr,fr-FR",
   "files.exclude": {
-    "**/.git": false,
-    "**/.svn": false,
-    "**/.hg": false,
-    "**/CVS": false,
-    "**/.DS_Store": false,
-    "**/Thumbs.db": false,
-    "**/*.code-profile": false
-  },
-  "explorerExclude.backup": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
@@ -55,6 +46,7 @@
     "**/Thumbs.db": true,
     "**/*.code-profile": true
   },
+  "explorerExclude.backup": {},
   "WillLuke.nextjs.addTypesOnSave": true,
   "WillLuke.nextjs.hasPrompted": true,
   "conventionalCommits.scopes": [
@@ -67,7 +59,8 @@
     "libs/components",
     "libs/UI",
     "libs/config",
-    "hooks/"
+    "hooks/",
+    "Reglages VS Code"
   ],
   "cSpell.words": [
     "arretes",
