@@ -121,7 +121,7 @@
         "apps/administration/gestion-bdd-e2e/src"
       ],
       "@apps/gestion-arrete": [
-        "apps/gestion-arrete/src/app/"
+        "apps/gestion-arrete/src/app"
       ],
       "@apps/evenementiel": [
         "apps/evenementiel/src/app"
