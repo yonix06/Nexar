@@ -7,6 +7,11 @@ Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé ba
 > [!NOTE]
 > **Documentation pertinente**
 >
+> - [Ultra condensé de -presque- tout les concepts du projet (café hautement conseillé)](https://github.com/nrwl/nx/blob/master/docs/README.md), dans les repertoires:
+>   - [docs/shared](https://github.com/nrwl/nx/tree/master/docs/shared)
+>   - [/concepts](https://github.com/nrwl/nx/tree/master/docs/shared/concepts)
+>   - [/decisions](https://github.com/nrwl/nx/tree/master/docs/shared/concepts/decisions)
+>
 > - [Next.JS](https://nextjs.org/docs)
 > - [Auth.JS](https://authjs.dev/)
 > - [NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
@@ -22,6 +27,7 @@ Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé ba
 > - //TODO: Progrès: - Dev.to ✔️ | tRPC Router 🐧❌
 > - [Dev.to - Utiliser PHP comme backend pour React](https://dev.to/emmykolic/how-to-use-php-as-a-backend-using-react-for-frontend-3dca)
 > - [T3.gg - Configuration du Routeur tRPC avec NextAuth.js](https://create.t3.gg/en/installation#advanced-usage)
+> - [tRPC.io - Documentation officielle](https://trpc.io/)
 
 ## Fonctionnalités
 
@@ -53,9 +59,9 @@ Dans ce Stack, nous avons:
 - [Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier     ](#webapp-monolithique-pour-la-ville-de-sjcf----outils-pré-installés--nx-tailwind-css-jest-playwright-eslint-prettier-----)
   - [Fonctionnalités](#fonctionnalités)
   - [Sommaire](#sommaire)
-  - [🎯 Getting Started](#-getting-started)
+  - [🎯 Préparation](#-préparation)
   - [🤝 Participation au projet](#-participation-au-projet)
-  - [🚀 Deployment](#-deployment)
+  - [🚀 Déploiement](#-déploiement)
   - [📃 Scripts](#-scripts)
   - [🔗 Coupling Graph (C'est une usine à gaz, à remplacer par NX Graph et GraphQL)](#-coupling-graph-cest-une-usine-à-gaz-à-remplacer-par-nx-graph-et-graphql)
   - [🔗 Prisma (bdd)](#-prisma-bdd)
@@ -75,24 +81,24 @@ Dans ce Stack, nous avons:
   - [📜 License](#-license)
   - [🐧 Contributors](#-contributors)
 
-## 🎯 Getting Started
+## 🎯 Préparation
 
 Avant toute chose: La machine doit être paramétrée correctement, l'outil "Dev Home" de Microsoft permet une configuration rapide et facile de l'environnement.
 
 Configuration minimale obligatoire:
 
-- Windows 11 Pro 21H1 au minimum, 23H2 conseillée. [Pour forcer l'install des Features Updates de Ms, executer l'outil "Assistant d'installation de Windows 11".](https://go.microsoft.com/fwlink/?linkid=2171764)
-- Windows WSL 2: Ubuntu ou Debian.
-- [Git configuré dans WSL et Windows](https://dev.to/stephanlamoureux/configuring-git-in-wsl-5e3m).
-- VS Code dans WSL 2.
-- Docker Desktop ou Podman (en option).
+- Windows 11 Pro 21H1 au minimum, 23H2 conseillée: [Pour forcer l'install des Features Updates de Ms, executer l'outil "Assistant d'installation de Windows 11"](https://go.microsoft.com/fwlink/?linkid=2171764)
+- [Windows WSL 2: Ubuntu ou Debian](https://learn.microsoft.com/fr-fr/windows/wsl/install)
+- [Git configuré dans WSL et Windows](https://dev.to/stephanlamoureux/configuring-git-in-wsl-5e3m)
+- [VS Code dans WSL 2](https://code.visualstudio.com/docs/remote/wsl)
+- [Docker Desktop ou Podman (en option)](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2)
 
 Les utilitaires suivants sont conseillés:
 
 - [Dev Home](https://github.com/microsoft/devhome): Disponible sur le MS-Store ou sur [Github](https://github.com/microsoft/devhome).
 - [UniGetUI](https://github.com/marticliment/UnigetUI): Manager de paquets multi-sources pour Windows (npm, scoop, pip).
 - [NodeVersionManager](https://github.com/coreybutler/nvm-windows/releases): pour changer de version Node sans tout casser.
-- [NX global install](https://TODO:link): Parce que c'est bien mieux avec un project-manager.
+- [NX global install](https://nx.dev/getting-started/installation#installing-nx-globally): Parce que c'est bien mieux avec un project-manager.
 - [WinUtil](https://github.com/ChrisTitusTech/winutil): Multi-tool pour optimiser rapidement le système, et installer en masse des programmes.
 
 Pour commencer:
@@ -133,12 +139,16 @@ pre-commit install -t commit-msg #Si besoin
 Contributions are always welcome! To contribute, please follow these steps:
 
 1. Cloner le repertoire
-2. Creer sa propre branche ed dev intitulée: "dev-_'votrenom'_
+2. Creer sa propre branche de dev sous la forme: "dev-_'votrenom'_, à partir de la branche dev-main.
 3. Faites vos changements et faites des commits formattés à l'aide de [Conventional Commits](https://www.conventionalcommits.org/) et de l'extension proposée pour automatiser les messages.
-4. Commit dans votre branche, pas celle des autres !
-5. Pour rassembler le travail, crée une requete de Pull vers dev-main, pour suite vers le CI qui sera fait depuis main.
+4. Les commits dans votre branche, les demandes de pull vers dev-main. La linéarité des commit est recommandée.
+5. Les commits soumis à la branche principale de dev doivent être cohérents au risque de se faire squash.
+6. CI lancé depuis main.
 
-## 🚀 Deployment
+## 🚀 Déploiement
+
+//TODO: Ecrire une doc sur une façon de déployer in-house
+//TODO: Ajouter un guide d'utilisation des outils CI de Github et de NX Cloud
 
 "One-click" déploiement avec [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js) en cliquant sur le bouton ci-dessous:
 
@@ -146,26 +156,26 @@ Contributions are always welcome! To contribute, please follow these steps:
 
 ## 📃 Scripts
 
-(//TODO: à corriger et intégrer dans nx.json)
+(//TODO: doc à corriger, passer à la doc NX )
 
-Script de dev disponibles: `outils/configs/npm-scripts.json`: (à executer avec NX Console via VS Code)
+Script de dev disponibles (Obsolètes, ne pas utiliser directement: à executer avec NX Console via VS Code): `outils/configs/npm-scripts.json`
 
-- `nx dev`: Starts the development server
-- `nx build`: Builds the app for production
-- `nx start`: Starts the production server
-- `nx lint`: Lints the code using ESLint
-- `nx lint:fix`: Automatically fixes linting errors
-- `nx prettier`: Checks the code for proper formatting
-- `nx prettier:fix`: Automatically fixes formatting issues
-- `nx analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
-- `nx storybook`: Starts the Storybook server
-- `nx build-storybook`: Builds the Storybook for deployment
-- `nx test`: Runs unit and integration tests
-- `nx e2e:headless`: Runs end-to-end tests in headless mode
-- `nx e2e:ui`: Runs end-to-end tests with UI
-- `nx format`: Formats the code with Prettier
-- `nx postinstall`: Applies patches to external dependencies
-- `nx preinstall`: Ensures the project is installed with nx
+- `dev`: Starts the development server
+- `build`: Builds the app for production
+- `start`: Starts the production server
+- `lint`: Lints the code using ESLint
+- `lint:fix`: Automatically fixes linting errors
+- `prettier`: Checks the code for proper formatting
+- `prettier:fix`: Automatically fixes formatting issues
+- `analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
+- `storybook`: Starts the Storybook server
+- `build-storybook`: Builds the Storybook for deployment
+- `test`: Runs unit and integration tests
+- `e2e:headless`: Runs end-to-end tests in headless mode
+- `e2e:ui`: Runs end-to-end tests with UI
+- `format`: Formats the code with Prettier
+- `postinstall`: Applies patches to external dependencies
+- `preinstall`: Ensures the project is installed with nx
 
 ## 🔗 Coupling Graph (C'est une usine à gaz, à remplacer par NX Graph et GraphQL)
 
