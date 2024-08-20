@@ -2,9 +2,7 @@
   "name": "@nexar/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "private": true,
   "dependencies": {
     "@auth/prisma-adapter": "^1.6.0",
