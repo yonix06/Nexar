@@ -119,7 +119,7 @@ npm install
 5. Exécuter le serveur de développement :
 
 ```bash
-npm dev
+npx nx run dev nom-de-l-application
 ```
 
 6. Ouvrez [http://localhost:4000](http://localhost:4000) (ou bien, suivre le lien donné dans la console) avec votre navigateur pour voir le résultat.
