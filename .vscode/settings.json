@@ -88,5 +88,6 @@
   "local-history.saveDelay": 5,
   "local-history.treeLocation": "localHistory",
   "checkpoints.locale": "fr-FR",
-  "terminal.integrated.gpuAcceleration": "off"
+  "terminal.integrated.gpuAcceleration": "off",
+  "storyExplorer.storybookConfigDir": ""
 }

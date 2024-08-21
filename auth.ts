@@ -3,9 +3,9 @@ import { getUserById } from "@/actions/user"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import NextAuth from "next-auth"
 
-import { env } from "@/env.mjs"
-import authConfig from "@/config/auth"
-import { prisma } from "@/config/db"
+import { env } from "./env.mjs"
+import authConfig from "./config/auth"
+import { prisma } from "./config/db"
 
 export const {
   handlers: { GET, POST },
