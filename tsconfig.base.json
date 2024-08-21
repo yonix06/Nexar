@@ -168,9 +168,6 @@
       "@fichiers/evenementiel": [
         "libs/private/fichiers-evenementiel/src/index.ts"
       ],
-      "@hooks": [
-        "hooks/"
-      ],
       "@icons": [
         "libs/shared/ui/src/lib/icons/index.tsx"
       ],
@@ -186,7 +183,7 @@
       "@shared/ui": [
         "libs/shared/ui/src/index.ts"
       ],
-      "@validation/auth": [
+      "@actions/validation/auth": [
         "hooks/validations/auth.ts"
       ]
     }
