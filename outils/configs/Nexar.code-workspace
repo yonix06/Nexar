@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"explorerExclude.backup": {},
+		"conventionalCommits.scopes": [
+			"Globale - Non recommandé",
+			"Dépendences (NX Console)",
+			"Outils (.outils/)",
+			"Base de données (.libs/shared/db/) | (.libs/private/db/)",
+			"Variables d'Environnement (.env | .env.mjs)",
+			"Applications (.apps/)",
+			"Routeur (.apps/portal/src/app/trpc/)",
+			"Composants (.libs/shared/components/",
+			"UI (.libs/shared/ui/)",
+			"Config globale (nx.json | tsconfig.base.json)",
+			"Hooks (.hooks/)",
+			"Reglages VS Code",
+			"Documentation (README.md)"
+		],
+		"local-history.daysLimit": 1,
+		"local-history.exclude": [
+			"**/old/**",
+			"**/.history/**",
+			"**/.vscode/**",
+			"**/node_modules/**",
+			"**/typings/**",
+			"**/out/**",
+			"**/Code/User/**"
+		],
+		"local-history.maxDisplay": 5,
+		"local-history.saveDelay": 5,
+		"local-history.treeLocation": "localHistory",
+		"checkpoints.locale": "fr-FR",
+		"terminal.integrated.gpuAcceleration": "off",
+		"storyExplorer.storybookConfigDir": "./**/**/.storybook",
+		"WillLuke.nextjs.addTypesOnSave": true,
+		"WillLuke.nextjs.hasPrompted": true
+	}
+}
