@@ -3,6 +3,9 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "ms-playwright.playwright",
-    "firsttris.vscode-jest-runner"
+    "firsttris.vscode-jest-runner",
+    "shahilkumar.docxreader",
+    "techiecouch.techiecouch-reactjs-react-native",
+    "hbenl.vscode-test-explorer"
   ]
 }
