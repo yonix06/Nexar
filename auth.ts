@@ -1,11 +1,11 @@
-import { linkOAuthAccount } from "@/actions/auth"
-import { getUserById } from "@/actions/user"
+import { linkOAuthAccount } from "./hooks/auth"
+import { getUserById } from "./hooks/user"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import NextAuth from "next-auth"
 
 import { env } from "./env.mjs"
-import authConfig from "./config/auth"
-import { prisma } from "./config/db"
+import authConfig from "./libs/shared/config/auth"
+import { prisma } from "./libs/shared/config/db"
 
 export const {
   handlers: { GET, POST },

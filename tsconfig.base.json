@@ -51,9 +51,6 @@
       "@administration/gestion-utilisateurs-e2e": [
         "apps/administration/gestion-utilisateurs-e2e/src"
       ],
-      "@api/auth": [
-        "libs/shared/ui/src/lib/api/auth/"
-      ],
       "@apps/assistantpersonnel": [
         "apps/assistantpersonnel/src/app"
       ],
