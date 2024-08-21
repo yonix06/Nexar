@@ -155,9 +155,7 @@ Contributions are always welcome! To contribute, please follow these steps:
 
 ## 📃 Scripts
 
-(//TODO: doc à corriger, passer à la doc NX )
-
-Script de dev disponibles (Obsolètes, ne pas utiliser directement: à executer avec NX Console via VS Code): `outils/configs/npm-scripts.json`
+Script de dev disponibles à executer avec NX Console dans VS Code: `outils/configs/npm-scripts.json`
 
 - `dev`: Starts the development server
 - `build`: Builds the app for production
