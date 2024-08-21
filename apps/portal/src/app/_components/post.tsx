@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { api } from "@portal/trpc/react";
+import { api } from "../../trpc/react";
 
 export function LatestPost() {
   const [latestPost] = api.post.getLatest.useSuspenseQuery();
@@ -35,11 +35,11 @@ export function LatestPost() {
           placeholder="Title"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full rounded-full px-4 py-2 text-black"
+          className="w-full px-4 py-2 text-black rounded-full"
         />
         <button
           type="submit"
-          className="rounded-full bg-white/10 px-10 py-3 font-semibold transition hover:bg-white/20"
+          className="px-10 py-3 font-semibold transition rounded-full bg-white/10 hover:bg-white/20"
           disabled={createPost.isPending}
         >
           {createPost.isPending ? "Submitting..." : "Submit"}

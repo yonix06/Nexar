@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import { LatestPost } from "@portal/app/_components/post";
-import { getServerAuthSession } from "@portal/server/auth";
-import { api, HydrateClient } from "@portal/trpc/server";
+import { LatestPost } from "../app/_components/post";
+import { getServerAuthSession } from "../server/auth";
+import { api, HydrateClient } from "../trpc/server";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
@@ -19,7 +19,7 @@ export default async function Home() {
           </h1>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
+              className="flex flex-col max-w-xs gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20"
               href="https://create.t3.gg/en/usage/first-steps"
               target="_blank"
             >
@@ -30,7 +30,7 @@ export default async function Home() {
               </div>
             </Link>
             <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
+              className="flex flex-col max-w-xs gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20"
               href="https://create.t3.gg/en/introduction"
               target="_blank"
             >
@@ -47,12 +47,12 @@ export default async function Home() {
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4">
-              <p className="text-center text-2xl text-white">
+              <p className="text-2xl text-center text-white">
                 {session && <span>Logged in as {session.user?.name}</span>}
               </p>
               <Link
                 href={session ? "/api/auth/signout" : "/api/auth/signin"}
-                className="rounded-full bg-white/10 px-10 py-3 font-semibold no-underline transition hover:bg-white/20"
+                className="px-10 py-3 font-semibold no-underline transition rounded-full bg-white/10 hover:bg-white/20"
               >
                 {session ? "Sign out" : "Sign in"}
               </Link>

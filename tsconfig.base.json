@@ -108,11 +108,11 @@
       "@apps/notifications-e2e": [
         "apps/notifications-e2e/src"
       ],
-      "@apps/rapport": [
-        "apps/rapport/src/app"
+      "@apps/portal": [
+        "apps/portal/src/app"
       ],
-      "@apps/rapport-e2e": [
-        "apps/rapport-e2e/src"
+      "@apps/portal-e2e": [
+        "apps/portal-e2e/src"
       ],
       "@apps/secretariat": [
         "apps/secretariat/src/app"

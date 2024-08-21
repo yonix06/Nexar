@@ -1,9 +1,9 @@
-import "@portal/styles/globals.css";
+import "../styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
-import { TRPCReactProvider } from "@portal/trpc/react";
+import { TRPCReactProvider } from "../../src/trpc/react";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
