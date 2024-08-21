@@ -36,8 +36,8 @@ Dans ce Stack, nous avons:
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
-- 🛸 **[Composants UI - MaterialUI](https://demos.themeselection.com/materio-mui-nextjs-admin-template/documentation/docs/guide/components/mui/avatar)** - Composants UI
-- 🛸 **[Composants UI -Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI
+- 🛸 **[Composants UI - MaterialUI](https://mui.com/material-ui/)** - Composants UI //TODO: à implémenter à la racine du projet
+- 🛸 **[Composants UI - Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI
 - ✨ **[ESlint](https://eslint.org/)** et **[Prettier](https://prettier.io/)** - Pour du code propre, cohérent et sans erreurs
 - ✨ **[T3 Env](https://env.t3.gg/)** - Set d'outils T3 pour les variables d'environnements et la gestion des API du projet
 - 🚀 **[GitHub Actions](https://github.com/features/actions)** - Actions préconfigurées par Github comprenant des statistiques de taille de paquet et des scores de performance
