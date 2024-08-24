@@ -7,7 +7,6 @@ tmp
 
 # dependencies
 node_modules
-.npmrc
 
 # IDEs and editors
 /.idea
