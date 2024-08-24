@@ -1,8 +1,8 @@
-<img align="right" width="360px" height="210px" src="libs/shared/ui/public/SJCF.png">
+<img align="center" width="360px" height="210px" src="libs/shared/ui/public/SJCF.png">
 
-# Webapp Monolithique pour la ville de SJCF. -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
+# Environnement de Dev pour webapps React / Next.js / et PHP (si si). -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
-Bienvenue sur _Nexar_, application monolithique react fullstack personnalisé basé sur React et Next.JS 14. 🌍
+Bienvenue sur _Projet Nexar_, stack de dev basé sur React et compatibles avec Javascript/Typescript et PHP. 🌍
 
 ## Fonctionnalités
 
@@ -11,7 +11,7 @@ Composition du stack:
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - :drum: **[Penpot](https://penpot.app/)** - Design -> Code, avec ou sans collab. (Docker obligatoire pour cet outil)
-- :drum: **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** - + [>Surprise pour PHP<](https://tiptap.dev/docs/editor/getting-started/install/php)
+- :drum: **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** - + [>Surprise pour PHP<](https://tiptap.dev/docs/editor/getting-started/install/php) //TODO: à intégrer
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
 - 🛸 **[Composants UI - MaterialUI](https://mui.com/material-ui/)** - Composants UI //TODO: à [implémenter](https://mui.com/material-ui/getting-started/installation/) à la racine du projet
 - 🛸 **[Composants UI - Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI
