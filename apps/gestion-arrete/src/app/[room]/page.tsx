@@ -6,11 +6,11 @@ import { useSearchParams } from 'next/navigation'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react'
 import { Doc as YDoc } from 'yjs'
 
-import { BlockEditor } from '@/components/BlockEditor'
+import { BlockEditor } from '../../components/BlockEditor'
 import { createPortal } from 'react-dom'
-import { Surface } from '@/components/ui/Surface'
-import { Toolbar } from '@/components/ui/Toolbar'
-import { Icon } from '@/components/ui/Icon'
+import { Surface } from '../../components/ui/Surface'
+import { Toolbar } from '../../components/ui/Toolbar'
+import { Icon } from '../../components/ui/Icon'
 
 const useDarkmode = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(

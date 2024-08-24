@@ -1,10 +1,10 @@
-import { DropdownButton } from '@/components/ui/Dropdown'
-import { Icon } from '@/components/ui/Icon'
-import { Surface } from '@/components/ui/Surface'
-import { Toolbar } from '@/components/ui/Toolbar'
-import { languages, tones } from '@/lib/constants'
+import { DropdownButton } from '../../../../components/ui/Dropdown'
+import { Icon } from '../../../../components/ui/Icon'
+import { Surface } from '../../../../components/ui/Surface'
+import { Toolbar } from '../../../../components/ui/Toolbar'
+import { languages, tones } from '../../../../lib/constants'
 import * as Dropdown from '@radix-ui/react-dropdown-menu'
-import type { Language } from '@/extensions/Ai'
+import type { Language } from '../../../../extensions/Ai'
 import { useCallback } from 'react'
 
 export type AIDropdownProps = {
