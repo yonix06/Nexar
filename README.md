@@ -11,7 +11,7 @@ Composition du stack:
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - :drum: **[Penpot](https://penpot.app/)** - Design -> Code, avec ou sans collab. (Docker obligatoire pour cet outil)
-- :drum: **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** WYSiWYG intégré
+- :drum: **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** - + [>Surprise pour PHP<](https://tiptap.dev/docs/editor/getting-started/install/php)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
 - 🛸 **[Composants UI - MaterialUI](https://mui.com/material-ui/)** - Composants UI //TODO: à [implémenter](https://mui.com/material-ui/getting-started/installation/) à la racine du projet
 - 🛸 **[Composants UI - Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI
