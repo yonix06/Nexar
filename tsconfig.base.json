@@ -10,16 +10,26 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@actions/auth": ["hooks/auth.ts"],
-      "@actions/email": ["hooks/email.ts"],
-      "@actions/user": ["hooks/user.ts"],
-      "@actions/validation/auth": ["hooks/validations/auth.ts"],
-      "@administration/dashboard": ["apps/administration/dashboard/src/app"],
+      "@actions/auth": [
+        "hooks/auth.ts"
+      ],
+      "@actions/email": [
+        "hooks/email.ts"
+      ],
+      "@actions/user": [
+        "hooks/user.ts"
+      ],
+      "@administration/dashboard": [
+        "apps/administration/dashboard/src/app"
+      ],
       "@administration/dashboard-e2e": [
         "apps/administration/dashboard-e2e/src"
       ],
@@ -41,53 +51,145 @@
       "@administration/gestion-utilisateurs-e2e": [
         "apps/administration/gestion-utilisateurs-e2e/src"
       ],
-      "@apps/assistantpersonnel": ["apps/assistantpersonnel/src/app"],
-      "@apps/assistantpersonnel-e2e": ["apps/assistantpersonnel-e2e/src"],
-      "@apps/cartographie": ["apps/cartographie/src/app"],
-      "@apps/cartographie-e2e": ["apps/cartographie-e2e/src"],
-      "@apps/ecrandiffusion": ["apps/ecrandiffusion/src/app"],
-      "@apps/ecrandiffusion-e2e": ["apps/ecrandiffusion-e2e/src"],
-      "@apps/evenementiel": ["apps/evenementiel/src/app"],
-      "@apps/evenementiel-e2e": ["apps/evenementiel-e2e/src"],
-      "@apps/facturation": ["apps/facturation/src/app"],
-      "@apps/facturation-e2e": ["apps/facturation-e2e/src"],
-      "@apps/gestion-arrete": ["apps/gestion-arrete/src/app"],
-      "@apps/gestion-arrete-e2e": ["apps/gestion-arrete-e2e/src"],
-      "@apps/gestion-vehicule": ["apps/gestion-vehicule/src/app"],
-      "@apps/gestion-vehicule-e2e": ["apps/gestion-vehicule-e2e/src"],
-      "@apps/lepetitjournal": ["apps/lepetitjournal/src/app"],
-      "@apps/lepetitjournal-e2e": ["apps/lepetitjournal-e2e/src"],
-      "@apps/notifications": ["apps/notifications/src/app"],
-      "@apps/notifications-e2e": ["apps/notifications-e2e/src"],
-      "@apps/portal": ["apps/portal/src/app"],
-      "@apps/portal-e2e": ["apps/portal-e2e/src"],
-      "@apps/secretariat": ["apps/secretariat/src/app"],
-      "@apps/secretariat-e2e": ["apps/secretariat-e2e/src"],
-      "@apps/sentiers": ["apps/sentiers/src/app"],
-      "@apps/sentiers-e2e": ["apps/sentiers-e2e/src"],
-      "@components": ["libs/shared/components/src/index.ts"],
-      "@config": ["libs/shared/config/"],
-      "@config/auth": ["libs/shared/config/auth.ts"],
-      "@config/db": ["libs/shared/config/db.ts"],
-      "@config/defaults": ["libs/shared/config/defaults.ts"],
-      "@config/email": ["libs/shared/config/email.ts"],
-      "@config/fonts": ["libs/shared/config/fonts.ts"],
-      "@config/i18n": ["libs/shared/config/i18n.ts"],
-      "@config/locales": ["libs/shared/config/locales.ts"],
-      "@config/site": ["libs/shared/config/site.ts"],
-      "@db/arrete": ["libs/private/db-arrete/src/index.ts"],
-      "@db/evenementiel": ["libs/private/db-evenementiel/src/index.ts"],
-      "@env.mjs": ["env.mjs"],
-      "@fichiers/arrete": ["libs/private/fichiers-arrete/src/index.ts"],
+      "@apps/assistantpersonnel": [
+        "apps/assistantpersonnel/src/app"
+      ],
+      "@apps/assistantpersonnel-e2e": [
+        "apps/assistantpersonnel-e2e/src"
+      ],
+      "@apps/cartographie": [
+        "apps/cartographie/src/app"
+      ],
+      "@apps/cartographie-e2e": [
+        "apps/cartographie-e2e/src"
+      ],
+      "@apps/ecrandiffusion": [
+        "apps/ecrandiffusion/src/app"
+      ],
+      "@apps/ecrandiffusion-e2e": [
+        "apps/ecrandiffusion-e2e/src"
+      ],
+      "@apps/evenementiel": [
+        "apps/evenementiel/src/app"
+      ],
+      "@apps/evenementiel-e2e": [
+        "apps/evenementiel-e2e/src"
+      ],
+      "@apps/facturation": [
+        "apps/facturation/src/app"
+      ],
+      "@apps/facturation-e2e": [
+        "apps/facturation-e2e/src"
+      ],
+      "@apps/gestion-arrete": [
+        "apps/gestion-arrete/src/app"
+      ],
+      "@apps/gestion-arrete-e2e": [
+        "apps/gestion-arrete-e2e/src"
+      ],
+      "@apps/gestion-vehicule": [
+        "apps/gestion-vehicule/src/app"
+      ],
+      "@apps/gestion-vehicule-e2e": [
+        "apps/gestion-vehicule-e2e/src"
+      ],
+      "@apps/lepetitjournal": [
+        "apps/lepetitjournal/src/app"
+      ],
+      "@apps/lepetitjournal-e2e": [
+        "apps/lepetitjournal-e2e/src"
+      ],
+      "@apps/notifications": [
+        "apps/notifications/src/app"
+      ],
+      "@apps/notifications-e2e": [
+        "apps/notifications-e2e/src"
+      ],
+      "@apps/portal": [
+        "apps/portal/src/app"
+      ],
+      "@apps/portal-e2e": [
+        "apps/portal-e2e/src"
+      ],
+      "@apps/secretariat": [
+        "apps/secretariat/src/app"
+      ],
+      "@apps/secretariat-e2e": [
+        "apps/secretariat-e2e/src"
+      ],
+      "@apps/sentiers": [
+        "apps/sentiers/src/app"
+      ],
+      "@apps/sentiers-e2e": [
+        "apps/sentiers-e2e/src"
+      ],
+      "@components": [
+        "libs/shared/components/src/index.ts"
+      ],
+      "@config": [
+        "libs/shared/config/"
+      ],
+      "@config/auth": [
+        "libs/shared/config/auth.ts"
+      ],
+      "@config/db": [
+        "libs/shared/config/db.ts"
+      ],
+      "@config/defaults": [
+        "libs/shared/config/defaults.ts"
+      ],
+      "@config/email": [
+        "libs/shared/config/email.ts"
+      ],
+      "@config/fonts": [
+        "libs/shared/config/fonts.ts"
+      ],
+      "@config/i18n": [
+        "libs/shared/config/i18n.ts"
+      ],
+      "@config/locales": [
+        "libs/shared/config/locales.ts"
+      ],
+      "@config/site": [
+        "libs/shared/config/site.ts"
+      ],
+      "@db/arrete": [
+        "libs/private/db-arrete/src/index.ts"
+      ],
+      "@db/evenementiel": [
+        "libs/private/db-evenementiel/src/index.ts"
+      ],
+      "@env.mjs": [
+        "env.mjs"
+      ],
+      "@fichiers/arrete": [
+        "libs/private/fichiers-arrete/src/index.ts"
+      ],
       "@fichiers/evenementiel": [
         "libs/private/fichiers-evenementiel/src/index.ts"
       ],
-      "@icons": ["libs/shared/ui/src/lib/icons/index.tsx"],
-      "@shared/components": ["libs/shared/components/src/index.ts"],
-      "@shared/db": ["libs/shared/db/src/index.ts"],
-      "@shared/db/server": ["libs/shared/db/src/server.ts"],
-      "@shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@icons": [
+        "libs/shared/ui/src/lib/icons/index.tsx"
+      ],
+      "@shared/components": [
+        "libs/shared/components/src/index.ts"
+      ],
+      "@shared/db": [
+        "libs/shared/db/src/index.ts"
+      ],
+      "@shared/db/server": [
+        "libs/shared/db/src/server.ts"
+      ],
+      "@shared/ui": [
+        "libs/shared/ui/src/index.ts"
+      ],
+      "@actions/validation/auth": [
+        "hooks/validations/auth.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

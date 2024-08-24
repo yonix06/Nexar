@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Route, Link } from 'react-router-dom'
+import styled from 'styled-components'
 import { env } from '@/env.mjs'
 import { transporter } from '@/config/email'
-import { Select } from 'components/forms/select'
-import { Input } from 'components/forms/input'
-import { Button } from 'components/button'
-
+import { Select } from '@/components/forms/select'
+import { Input } from '@/components/forms/input'
+import { Button } from '@/components/button'
+import { Route, Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
