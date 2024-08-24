@@ -1,7 +1,7 @@
-import { Button } from '../../../components/ui/Button'
-import { Icon } from '../../../components/ui/Icon'
-import { Surface } from '../../../components/ui/Surface'
-import { Toggle } from '../../../components/ui/Toggle'
+import { Button } from '@/components/ui/Button'
+import { Icon } from '@/components/ui/Icon'
+import { Surface } from '@/components/ui/Surface'
+import { Toggle } from '@/components/ui/Toggle'
 import { useState, useCallback, useMemo } from 'react'
 
 export type LinkEditorPanelProps = {

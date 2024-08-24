@@ -1,7 +1,7 @@
-import { Icon } from '../../../components/ui/Icon'
-import { Surface } from '../../../components/ui/Surface'
-import { Toolbar } from '../../../components/ui/Toolbar'
-import Tooltip from '../../../components/ui/Tooltip'
+import { Icon } from '@/components/ui/Icon'
+import { Surface } from '@/components/ui/Surface'
+import { Toolbar } from '@/components/ui/Toolbar'
+import Tooltip from '@/components/ui/Tooltip'
 
 export type LinkPreviewPanelProps = {
   url: string
