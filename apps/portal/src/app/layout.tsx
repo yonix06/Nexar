@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { Theme, ThemePanel } from '@radix-ui/themes';
@@ -18,7 +17,14 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${GeistSans.variable}`}>
       <body>
-      <Theme radius="full">
+      <Theme
+        accentColor="blue"
+        appearance="dark"
+        grayColor="gray"
+        panelBackground="transluscent"
+        scaling="100%"
+        radius="full"
+      >
         <TRPCReactProvider>{children}</TRPCReactProvider>
         <ThemePanel />
       </Theme>

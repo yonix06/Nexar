@@ -9,6 +9,7 @@
     "@nexar/source": "file:",
     "@prisma/client": "^5.18.0",
     "@prisma/studio": "^0.501.0",
+    "@radix-ui/react-popover": "1.1.1",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.14",

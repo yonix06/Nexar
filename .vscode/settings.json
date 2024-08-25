@@ -89,5 +89,8 @@
   "local-history.treeLocation": "localHistory",
   "checkpoints.locale": "fr-FR",
   "terminal.integrated.gpuAcceleration": "off",
-  "storyExplorer.storybookConfigDir": ""
+  "storyExplorer.storybookConfigDir": "",
+  "sculpt-ui.https": true,
+  "sculpt-ui.port": "3020-3030",
+  "sculpt-ui.folderForStarting": "apps/portal"
 }
