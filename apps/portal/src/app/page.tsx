@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#3292ff] to-[#0a0e5a] text-white">
+      <main className="flex min-h-screen flex-col items-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] text-center">
             Portail d&apos;<span className="text-[hsl(221,80%,32%)]">Applications</span> Saint-Jean Cap-ferrat
@@ -42,15 +42,15 @@ export default async function Home() {
             </Link>
           </div>}
           <div className="flex flex-col items-center gap-2">
-            <p className="text-2xl text-white">
+            <p className="text-2xl">
             {session && <div>
               {hello ? hello.greeting : "Loading tRPC query..."}
               </div>}
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4">
-              <p className="text-2xl text-center text-white">
-                {session && <span>Logged in as {session.user?.name}</span>}
+              <p className="text-2xl text-center">
+                {session && <span>Authentifié comme {session.user?.name}</span>}
               </p>
               <Link
                 href={session ? "/api/auth/signout" : "/api/auth/signin"}

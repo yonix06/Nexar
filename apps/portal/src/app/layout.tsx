@@ -2,8 +2,9 @@ import "../styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-
+import { Theme, ThemePanel } from '@radix-ui/themes';
 import { TRPCReactProvider } from "../../src/trpc/react";
+import '@radix-ui/themes/styles.css';
 
 export const metadata: Metadata = {
   title: "Portail d'application",
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${GeistSans.variable}`}>
       <body>
+      <Theme radius="full">
         <TRPCReactProvider>{children}</TRPCReactProvider>
+        <ThemePanel />
+      </Theme>
       </body>
     </html>
   );
