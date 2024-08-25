@@ -15,7 +15,7 @@ export default async function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#3292ff] to-[#0a0e5a] text-white">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] text-center">
-            Portail d'<span className="text-[hsl(221,80%,32%)]">Applications</span> Saint-Jean Cap-ferrat
+            Portail d&apos;<span className="text-[hsl(221,80%,32%)]">Applications</span> Saint-Jean Cap-ferrat
           </h1>
           {session && <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link

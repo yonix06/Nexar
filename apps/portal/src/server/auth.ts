@@ -7,12 +7,9 @@ import {
 import { type Adapter } from "next-auth/adapters";
 import DiscordProvider from "next-auth/providers/discord";
 import GitHub from "next-auth/providers/github";
-import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import { env } from "../env";
 import { db } from "../server/db";
-
-const ldap = require("ldapjs");
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
  * object and keep type safety.
@@ -43,17 +40,6 @@ declare module "next-auth" {
 
 export const authOptions: NextAuthOptions = {
   callbacks: {
-    async jwt({ token, user }) {
-      const isSignIn = user ? true : false
-      if (isSignIn) {
-        token.username = user.username
-        token.password = user.password
-      }
-      return token
-    },
-    async ldapsession({ session, token }) {
-      return { ...session, user: { username: token.username } }
-    },
     redirect: async ({ url, baseUrl }) => {
       // Redirect the user to a different page after authentication
       return '/';
@@ -75,48 +61,6 @@ export const authOptions: NextAuthOptions = {
     GitHub({
       clientId: env.AUTH_GITHUB_ID,
       clientSecret: env.AUTH_GITHUB_SECRET,
-    }),
-    CredentialsProvider({
-      name: "LDAP",
-      credentials: {
-        username: { label: "DN", type: "text", placeholder: "" },
-        password: { label: "Password", type: "password" },
-      },
-      async authorize(credentials, req) {
-        // You might want to pull this call out so we're not making a new LDAP client on every login attemp
-        const client = ldap.createClient({
-          url: process.env.LDAP_URI,
-        })
-
-        // Essentially promisify the LDAPJS client.bind function
-        return new Promise((resolve, reject) => {
-          client.bind(credentials.username, credentials.password, (error) => {
-            if (error) {
-              console.error("Failed")
-              reject()
-            } else {
-              console.log("Logged in")
-              resolve({
-                username: credentials.username,
-                password: credentials.password,
-              })
-            }
-          })
-        })
-        const res = await fetch("/api/auth", {
-          method: 'POST',
-          body: JSON.stringify(credentials),
-          headers: { "Content-Type": "application/json" }
-        })
-        const user = await res.json()
-
-      // If no error and we have user data, return it
-      if (res.ok && user) {
-        return user
-      }
-      // Return null if user data could not be retrieved
-      return null
-      },
     }),
     /**
      * ...add more providers here.
