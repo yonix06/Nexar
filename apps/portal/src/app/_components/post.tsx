@@ -45,7 +45,7 @@ export function LatestPost() {
           className="px-10 py-3 font-semibold transition rounded-full bg-white/10 hover:bg-white/20"
           disabled={createPost.isPending}
         >
-          {createPost.isPending ? "Submitting..." : "Créer un post"}
+          {createPost.isPending ? "Transmission..." : "Créer un post"}
         </Button>
       </Form.Root>
     </div>
