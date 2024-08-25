@@ -90,7 +90,7 @@
   "checkpoints.locale": "fr-FR",
   "terminal.integrated.gpuAcceleration": "off",
   "storyExplorer.storybookConfigDir": "",
-  "sculpt-ui.https": true,
+  "sculpt-ui.https": false,
   "sculpt-ui.port": "3020-3030",
-  "sculpt-ui.folderForStarting": "apps/portal"
+  "sculpt-ui.folderForStarting": ""
 }
