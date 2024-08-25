@@ -5,7 +5,7 @@ import {
 	createTRPCRouter,
 	// protectedProcedure,
 	publicProcedure,
-} from '../server/api/trpc';
+} from '../../server/api/trpc';
 
 export const getAll = async () => {
 	try {

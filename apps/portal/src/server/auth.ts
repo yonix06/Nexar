@@ -1,11 +1,13 @@
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import {
+  NextAuth,
   getServerSession,
   type DefaultSession,
   type NextAuthOptions,
 } from "next-auth";
 import { type Adapter } from "next-auth/adapters";
 import DiscordProvider from "next-auth/providers/discord";
+import GitHub from "next-auth/providers/github";
 
 import { env } from "../env";
 import { db } from "../server/db";
@@ -36,8 +38,14 @@ declare module "next-auth" {
  *
  * @see https://next-auth.js.org/configuration/options
  */
+
+
 export const authOptions: NextAuthOptions = {
   callbacks: {
+    redirect: async ({ url, baseUrl }) => {
+      // Redirect the user to a different page after authentication
+      return '/';
+    },
     session: ({ session, user }) => ({
       ...session,
       user: {
@@ -51,6 +59,10 @@ export const authOptions: NextAuthOptions = {
     DiscordProvider({
       clientId: env.DISCORD_CLIENT_ID,
       clientSecret: env.DISCORD_CLIENT_SECRET,
+    }),
+    GitHub({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET
     }),
     /**
      * ...add more providers here.
