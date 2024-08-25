@@ -1,0 +1,9 @@
+{
+  "name": "gestion-arretes",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/gestion-arretes",
+  "projectType": "application",
+  "tags": ["application"],
+  "// targets": "to see all targets run: nx show project gestion-arretes --web",
+  "targets": {}
+}

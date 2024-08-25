@@ -1,0 +1,12 @@
+{
+  "composite": true,
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "noEmit": false,
+    "incremental": true,
+
+    "types": ["node"]
+  },
+  "include": ["server/**/*.ts"]
+}

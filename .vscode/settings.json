@@ -38,15 +38,6 @@
   ],
   "cSpell.language": "en,lorem,en-US,en-GB,fr,fr-FR",
   "files.exclude": {
-    "**/.git": false,
-    "**/.svn": false,
-    "**/.hg": false,
-    "**/CVS": false,
-    "**/.DS_Store": false,
-    "**/Thumbs.db": false,
-    "**/*.code-profile": false
-  },
-  "explorerExclude.backup": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
@@ -55,36 +46,35 @@
     "**/Thumbs.db": true,
     "**/*.code-profile": true
   },
+  "explorerExclude.backup": {},
   "WillLuke.nextjs.addTypesOnSave": true,
   "WillLuke.nextjs.hasPrompted": true,
   "conventionalCommits.scopes": [
-    "app/",
-    "component/",
-    "app/ component/",
-    "/rootdir",
-    "extensions",
-    "modules config",
-    "admin",
-    "layout"
+    "Globale - Non recommandé",
+    "Dépendences (NX Console)",
+    "Outils (.outils/)",
+    "Base de données (.libs/shared/db/) | (.libs/private/db/)",
+    "Variables d'Environnement (.env | .env.mjs)",
+    "Applications (.apps/)",
+    "Routeur (.apps/portal/src/app/trpc/)",
+    "Composants (.libs/shared/components/",
+    "UI (.libs/shared/ui/)",
+    "Config globale (nx.json | tsconfig.base.json)",
+    "Hooks (.hooks/)",
+    "Reglages VS Code",
+    "Documentation (README.md)"
   ],
   "cSpell.words": [
     "arretes",
-    "bmstefanski",
     "errpages",
     "esnext",
     "googleusercontent",
     "healthz",
-    "Jabłoński",
-    "Jakub",
-    "jjablonski",
-    "Klepacki",
     "Mantine",
     "Nexar",
-    "Nexarr",
-    "Stefanski",
     "yonix"
   ],
-  "local-history.daysLimit": 10,
+  "local-history.daysLimit": 1,
   "local-history.exclude": [
     "**/old/**",
     "**/.history/**",
@@ -96,5 +86,8 @@
   ],
   "local-history.maxDisplay": 5,
   "local-history.saveDelay": 5,
-  "local-history.treeLocation": "localHistory"
+  "local-history.treeLocation": "localHistory",
+  "checkpoints.locale": "fr-FR",
+  "terminal.integrated.gpuAcceleration": "off",
+  "storyExplorer.storybookConfigDir": ""
 }
