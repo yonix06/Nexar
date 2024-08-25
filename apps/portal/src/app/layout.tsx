@@ -7,7 +7,7 @@ import { TRPCReactProvider } from "../../src/trpc/react";
 
 export const metadata: Metadata = {
   title: "Portail d'application",
-  description: "Yonix",
+  description: "Portail de connexion globale à la Mairie de Saint-Jean Cap-Ferrat",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
