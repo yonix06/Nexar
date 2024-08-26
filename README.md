@@ -10,11 +10,12 @@ Composition du stack:
 
 - 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
-- :drum: **[Penpot](https://penpot.app/)** - Design -> Code, avec ou sans collab. (Docker obligatoire pour cet outil)
-- :drum: **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** - + [>Surprise pour PHP<](https://tiptap.dev/docs/editor/getting-started/install/php) //TODO: à intégrer
+- 🥁 **[Penpot](https://penpot.app/)** - Design -> Code, avec ou sans collab. (Docker obligatoire pour cet outil) - Pas top pour mon usage.
+- 🥁 **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** - + [>Surprise pour PHP<](https://tiptap.dev/docs/editor/getting-started/install/php) //TODO: à intégrer
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - Un framework CSS basé sur les utilitaires pour le développement UI rapide
-- 🛸 **[Composants UI - MaterialUI](https://mui.com/material-ui/)** - Composants UI //TODO: à [implémenter](https://mui.com/material-ui/getting-started/installation/) à la racine du projet
-- 🛸 **[Composants UI - Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI
+- 🐧 **[Composant UI - Mantine](https://mantine.dev/getting-started/)** - Bibliothèque de [Composants UI](https://ui.mantine.dev/), à choisir entre les trois ! //TODO: à implémenter à la racine du projet
+- 🛸 **[Composants UI - MaterialUI](https://mui.com/material-ui/)** - Bibliothèque de Composants UI, à choisir entre les trois ! //TODO: à implémenter à la racine du projet
+- 🛸 **[Composants UI - Radix](https://www.radix-ui.com/)** - Bibliothèque de Composants UI, à choisir entre les trois ! //TODO: à implémenter à la racine du projet
 - ✨ **[ESlint](https://eslint.org/)** et **[Prettier](https://prettier.io/)** - Pour du code propre, cohérent et sans erreurs
 - ✨ **[T3 Env](https://env.t3.gg/)** - Set d'outils T3 pour les variables d'environnements et la gestion des API du projet
 - 🚀 **[GitHub Actions](https://github.com/features/actions)** - Actions préconfigurées par Github comprenant des statistiques de taille de paquet et des scores de performance
@@ -36,16 +37,16 @@ Composition du stack:
 >   - [/concepts](https://github.com/nrwl/nx/tree/master/docs/shared/concepts)
 >   - [/decisions](https://github.com/nrwl/nx/tree/master/docs/shared/concepts/decisions)
 >
-> - [Next.JS](https://nextjs.org/docs)
-> - [Auth.JS](https://authjs.dev/)
-> - [NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
-> - [React](https://react.dev/learn/thinking-in-react)
+> - [Basé sur Next.JS 14](https://nextjs.org/docs)
+> - [OAuth2 avec NextAuth.JS](https://next-auth.js.org/) //TODO: à migrer vers [Auth.JS](https://authjs.dev/), **[Guide](https://authjs.dev/getting-started/migrating-to-v5)**
+> - [Management du projet dans Visual Studio avec NX](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial)
+> - [Penser en React](https://react.dev/learn/thinking-in-react)
 > - [T3 Docs - Ressources React](https://create.t3.gg/en/other-recs)
-> - [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
-> - [Penpot](https://github.com/penpot/penpot) - [Design](https://penpot.app/design)
-> - [Storybook](https://storybook.js.org/docs)
-> - [Prisma](https://www.prisma.io/docs)
-> - [Playwright](https://playwright.dev/docs/intro)
+> - [Introduction au composants UI avec Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
+> - ([Penpot](https://github.com/penpot/penpot) - [Design](https://penpot.app/design))
+> - [Creation et design de composants et leur variants avec Storybook](https://storybook.js.org/docs)
+> - [Gestion de BDD avec Prisma - Creation, migration, backup, connecteurs, ...](https://www.prisma.io/docs)
+> - [Tests du code avec Playwright](https://playwright.dev/docs/intro)
 >
 > **To do**
 >
