@@ -2,7 +2,7 @@
 
 # Environnement de Dev pour webapps React / Next.js / et PHP (si si). -- Outils pré installés : NX, Tailwind CSS, Jest, Playwright, ESLint, Prettier </br>  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link]
 
-Bienvenue sur _Projet Nexar_, stack de dev basé sur React et compatibles avec Javascript/Typescript et PHP. 🌍
+Bienvenue sur _Projet Nexar_, stack de dev basé sur React et compatible avec Javascript/Typescript et PHP. 🌍
 
 ## Fonctionnalités
 
