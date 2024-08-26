@@ -85,7 +85,8 @@
       "@shared/components": ["libs/shared/components/src/index.ts"],
       "@shared/db": ["libs/shared/db/src/index.ts"],
       "@shared/db/server": ["libs/shared/db/src/server.ts"],
-      "@shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@shared/public": ["libs/shared/ui/public/"],
     }
   },
   "exclude": ["node_modules", "tmp"]
