@@ -293,6 +293,7 @@ Pour vérifier que les composants s'affichent correctement sans erreurs, nous ut
 >
 > - [Penpot templates](https://penpot.app/libraries-templates)
 > - [Radix Playground](https://www.radix-ui.com/themes/playground)
+> - [Mantine UI](https://ui.mantine.dev/) -- _Choix de la redaction_
 
 ### CSS
 

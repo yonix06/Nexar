@@ -1,5 +1,4 @@
 import './global.css';
-
 import '@mantine/core/styles.css';
 //import '@mantine/form/styles.css';
 import '@mantine/dates/styles.css';
@@ -14,9 +13,7 @@ import '@mantine/spotlight/styles.css';
 import '@mantine/nprogress/styles.css';
 import '@mantinex/mantine-logo/styles.css';
 import './theme';
-
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import { HeaderTabs } from '../_components/HeaderTabs/HeaderTabs';
 
 export const metadata = {
   title: 'My Mantine app',
@@ -35,7 +32,6 @@ export default function RootLayout({
         </head>
       <body>
         <MantineProvider>
-        <HeaderTabs />
         {children}
         </MantineProvider>
       </body>

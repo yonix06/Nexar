@@ -35,7 +35,7 @@ const user = {
   image: 'https://avatars.githubusercontent.com/u/15114126?v=4',
 };
 
-const tabs = [
+export const tabs = [
   'Accueil',
   'Consultation',
   'Creation',
@@ -45,6 +45,7 @@ const tabs = [
   'Reglages',
   'Centre d\'aide',
 ];
+
 
 
 export function HeaderTabs() {
