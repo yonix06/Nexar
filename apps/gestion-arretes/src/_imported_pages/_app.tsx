@@ -9,9 +9,9 @@ import '@mantinex/mantine-logo/styles.css';
 import Head from 'next/head';
 import { MantineProvider, DirectionProvider, localStorageColorSchemeManager } from '@mantine/core';
 import { ShikiProvider } from '@mantinex/shiki';
-import { HotKeysHandler } from '../_components/HotKeysHandler';
-import { Search } from '../_components/Search';
-import { GaScript } from '../_components/GaScript';
+import { HotKeysHandler } from '../components/HotKeysHandler';
+import { Search } from '../components/Search';
+import { GaScript } from '../components/GaScript';
 
 async function loadShiki() {
   const { getHighlighter } = await import('shikiji');

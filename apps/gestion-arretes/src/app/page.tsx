@@ -1,5 +1,5 @@
-import { HeaderTabs } from "../_lib/YoHeaderTabs/HeaderTabs";
-import { NavbarSearch } from "../_lib/YoNavbarSearch/NavbarSearch";
+import { HeaderTabs } from "../lib/YoHeaderTabs/HeaderTabs";
+import { NavbarSearch } from "../lib/YoNavbarSearch/NavbarSearch";
 export default function Index() {
   /*
    * Replace the elements below with your own.
