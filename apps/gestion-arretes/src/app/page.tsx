@@ -37,6 +37,7 @@ export default function Index() {
               </h2>
               <a href="#commands"> What&apos;s next? </a>
             </div>
+
             <div className="logo-container">
               <svg
                 fill="currentColor"
@@ -48,6 +49,8 @@ export default function Index() {
               </svg>
             </div>
           </div>
+
+          <div id="middle-content">
             <div id="other-links">
               <a
                 id="nx-console"
