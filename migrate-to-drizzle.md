@@ -5,7 +5,7 @@
 2. **Apply changes to the database**: Run the `drizzle-kit push` command to apply your changes to the database. Learn more about the push command [here](https://orm.drizzle.team/kit-docs/overview#prototyping-with-db-push).
 3. **Begin using the template**: You can now start using this template with Drizzle ORM.
 
-## If you migrating from Prisma
+## If you migrating from Prisma00
 
 1. **Replace the schema file**: Remove the existing `lib/schema.ts` file and rename `lib/legacy-schema.ts` to `lib/schema.ts`.
 2. **Update database schema**: `email` column in `users` table is set to `not null` to ensure compatibility with drizzle next-auth adapter. Apply this change by running the `drizzle-kit push` command. Learn more about `push` command [here](https://orm.drizzle.team/kit-docs/overview#prototyping-with-db-push).
