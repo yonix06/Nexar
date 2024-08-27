@@ -8,7 +8,7 @@ Bienvenue sur _Projet Nexar_, stack de dev basé sur React et compatible avec Ja
 
 Composition du stack:
 
-- 🏎️ **[Next.js](https://nextjs.org/)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
+- 🏎️ **[Next.js](https://nextjs.org/)** + **[Monorepo Plateform Starter kit](https://vercel.com/guides/nextjs-multi-tenant-application)** - Rapide par défaut, avec une configuration optimisée pour les performances (avec **App Directory**)
 - 😎 **[NX](https://nx.dev/nx-api/)** - Template, autoconfig, et générateur en tout genre pour a peu près tout ce qui est Javascript. (Ce truc est absolument fou)
 - 🥁 **[Penpot](https://penpot.app/)** - Design -> Code, avec ou sans collab. (Docker obligatoire pour cet outil) - Pas top pour mon usage.
 - 🥁 **[TipTap](https://tiptap.dev/docs/editor/getting-started/install)** - + [>Surprise pour PHP<](https://tiptap.dev/docs/editor/getting-started/install/php) //TODO: à intégrer
