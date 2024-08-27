@@ -1,7 +1,8 @@
+"use client";
 import { rem } from '@mantine/core';
 import { Spotlight, createSpotlight } from '@mantine/spotlight';
 import { IconSearch } from '@tabler/icons-react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 export const [searchStore, searchHandlers] = createSpotlight();
 

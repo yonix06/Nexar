@@ -13,32 +13,20 @@ import '@mantine/spotlight/styles.css';
 import '@mantine/nprogress/styles.css';
 import '@mantinex/mantine-logo/styles.css';
 import './theme';
-import { ShikiProvider } from '@mantinex/shiki';
-import { ColorSchemeScript, MantineProvider, DirectionProvider, localStorageColorSchemeManager } from '@mantine/core';
-import { HotKeysHandler } from '../components/HotKeysHandler';
+import { ColorSchemeScript, MantineProvider, DirectionProvider } from '@mantine/core';
+//import { HotKeysHandler } from '../components/HotKeysHandler';
 import { Search } from '../components/Search';
 import { GaScript } from '../components/GaScript';
 
 export const metadata = {
-  title: 'My Mantine app',
-  description: 'I have followed setup instructions carefully',
+  title: 'Gestion d\'arrêtés',
+  description: 'Bouh',
 };
-
-async function loadShiki() {
-  const { getHighlighter } = await import('shikiji');
-  const shiki = await getHighlighter({
-    langs: ['tsx', 'scss', 'html', 'bash', 'json'],
-  });
-
-  return shiki;
-}
 
 export default function RootLayout({
   children,
-  Component,
 }: {
-  children: React.ReactNode;
-  Component: any;
+  children: React.ReactNode | string | number | boolean;
 }) {
   return (
     <html lang="fr">
@@ -49,13 +37,10 @@ export default function RootLayout({
       <body>
        <DirectionProvider initialDirection="ltr" detectDirection={false}>
          <MantineProvider
-          defaultColorScheme="auto"
-          colorSchemeManager={localStorageColorSchemeManager({ key: 'mantine-ui-color-scheme' })}
+            defaultColorScheme="auto"
          >
-          <ShikiProvider loadShiki={loadShiki}>
-            <HotKeysHandler />
-              <Component {...children} />
-          </ShikiProvider>
+            {children}
+            <Search data={Array.isArray(children) ? children : []} />
          </MantineProvider>
         </DirectionProvider>
       </body>

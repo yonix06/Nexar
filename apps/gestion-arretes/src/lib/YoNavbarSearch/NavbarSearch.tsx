@@ -62,9 +62,8 @@ import {
     return (
       <nav className={classes.navbar}>
         <div className={classes.section}>
-          <UserButton />
         </div>
-  
+
         <TextInput
           placeholder="Search"
           size="xs"
