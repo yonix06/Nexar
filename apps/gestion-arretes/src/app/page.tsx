@@ -1,5 +1,8 @@
 import { HeaderTabs } from "../lib/YoHeaderTabs/HeaderTabs";
 import { NavbarSearch } from "../lib/YoNavbarSearch/NavbarSearch";
+import { countComponentsByCategory, getAllComponents } from '../data/components';
+
+
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -10,6 +13,8 @@ export default function Index() {
     <>
       <div className="wrapper">
         <HeaderTabs />
+      </div>
+      <div className="flex justify-end z-index-1">
         <NavbarSearch />
       </div>
     </>

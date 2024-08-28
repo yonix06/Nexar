@@ -1,51 +1,40 @@
-import './global.css';
-import '@mantine/core/styles.css';
-//import '@mantine/form/styles.css';
-import '@mantine/dates/styles.css';
-import '@mantine/charts/styles.css';
-import '@mantine/notifications/styles.css';
-import '@mantine/code-highlight/styles.css';
-import '@mantine/tiptap/styles.css';
-import '@mantine/dropzone/styles.css';
-import '@mantine/carousel/styles.css';
-import '@mantine/spotlight/styles.css';
-//import '@mantine/modals/styles.css';
-import '@mantine/nprogress/styles.css';
-import '@mantinex/mantine-logo/styles.css';
-import './theme';
+import { Html, Head, Main, NextScript } from 'next/document';
+
 import { ColorSchemeScript, MantineProvider, DirectionProvider } from '@mantine/core';
 //import { HotKeysHandler } from '../components/HotKeysHandler';
 import { Search } from '../components/Search';
 import { GaScript } from '../components/GaScript';
+import { HotKeysHandler } from '../components/HotKeysHandler';
 
-export const metadata = {
-  title: 'Gestion d\'arrêtés',
-  description: 'Bouh',
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode | string | number | boolean;
-}) {
+export default function Layout({ children, pageProps }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <head>
-          <ColorSchemeScript defaultColorScheme="auto" localStorageKey="mantine-ui-color-scheme"  />
+        <ColorSchemeScript defaultColorScheme="auto" localStorageKey="mantine-ui-color-scheme" />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" />
+        <meta name="og:image:width" content="1280" />
+        <meta name="og:image:height" content="640" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@mantinedev" />
+        <meta name="og:image" content="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png" />
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png" />
+        <meta itemProp="image" content="http://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png" />
+        <meta itemProp="description" content="120+ prebuilt components with Mantine" />
+        <meta name="description" content="120+ prebuilt components with Mantine" />
       </head>
       <GaScript />
-      <body>
-       <DirectionProvider initialDirection="ltr" detectDirection={false}>
-         <MantineProvider
-            defaultColorScheme="auto"
-         >
+      <DirectionProvider initialDirection="ltr" detectDirection={false}>
+        <body>
+        <MantineProvider
+          defaultColorScheme="auto"
+        >
+            <HotKeysHandler />
             {children}
-            <Search data={Array.isArray(children) ? children : []} />
-         </MantineProvider>
-        </DirectionProvider>
-      </body>
+            <Search data={pageProps.allComponents} />
+        </MantineProvider>
+        </body>
+      </DirectionProvider>
     </html>
   );
 }
-
-

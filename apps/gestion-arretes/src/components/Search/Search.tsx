@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 export const [searchStore, searchHandlers] = createSpotlight();
 
-export function Search({ data }: { data: any[] }) {
+export function Search({ data }: { data: string }) {
   const router = useRouter();
 
   const actions = data?.map((item) => ({
